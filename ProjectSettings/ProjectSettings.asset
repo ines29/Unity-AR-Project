@@ -135,7 +135,9 @@ PlayerSettings:
     16:9: 1
     Others: 1
   bundleVersion: 0.1
-  preloadedAssets: []
+  preloadedAssets:
+  - {fileID: -1016883017847502136, guid: 4effa6a5d3de77744b305e5c60ea0a63, type: 2}
+  - {fileID: 4623933930735513983, guid: a05d1dfac07c0f54386f14da82d6af32, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -617,11 +619,12 @@ PlayerSettings:
   m_MobileRenderingPath: 1
   metroPackageName: Template_3D
   metroPackageVersion: 
-  metroCertificatePath: 
+  metroCertificatePath: C:\Users\ines2\Documents\Github\unity-AR-project\Unity AR
+    Project\Assets\WSATestCertificate.pfx
   metroCertificatePassword: 
-  metroCertificateSubject: 
-  metroCertificateIssuer: 
-  metroCertificateNotAfter: 0000000000000000
+  metroCertificateSubject: DefaultCompany
+  metroCertificateIssuer: DefaultCompany
+  metroCertificateNotAfter: 004e167f436bda01
   metroApplicationDescription: Template_3D
   wsaImages: {}
   metroTileShortName: 
@@ -639,8 +642,8 @@ PlayerSettings:
   platformCapabilities:
     WindowsStoreApps:
       SpatialPerception: True
-      Microphone: True
       InternetClient: True
+      Microphone: True
   metroTargetDeviceFamilies: {}
   metroFTAName: 
   metroFTAFileTypes: []

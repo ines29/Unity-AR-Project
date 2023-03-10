@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class MouseClickMove : MonoBehaviour
 {
-
+    [SerializeField]
     private bool isClickable;
     private bool isMoving;
     private Vector3 targetPosition;
@@ -73,6 +73,7 @@ public class MouseClickMove : MonoBehaviour
 
     void OnTriggerStay(Collider other)
     {
+        Debug.Log("Enter");
         if (other.gameObject.CompareTag("EmptyCube"))
         {
             isClickable = true;
@@ -97,8 +98,10 @@ public class MouseClickMove : MonoBehaviour
     //newPosForEmptyCube auf die Position des angeklickten Würfels und isMoving auf true.
     void OnMouseDown()
     {
+        Debug.Log("Mouse Down");
         if (isClickable)
         {
+            Debug.Log("Is clickable");
             tempTargetPosition = targetPosition;
             newPosForEmptyCube = transform.position;
             isMoving = true;

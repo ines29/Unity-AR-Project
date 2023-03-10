@@ -15,6 +15,7 @@ public class MouseClickMove : MonoBehaviour
     private GameObject emptyCube;
     private float step = 0f;
     private float speed = 10f;
+    [SerializeField]
     private Dictionary<string, Vector3> originalPositions = new Dictionary<string, Vector3>();
     private Dictionary<string, Material> originalMaterials = new Dictionary<string, Material>();
     public Material greenMaterial;
@@ -26,24 +27,22 @@ public class MouseClickMove : MonoBehaviour
     void Start()
     {
         ////Ich habe ein Dictonary erstellt, hier werden alle ursprünglichen Positionen der einzelnen Würfel im Spiel gespeichert
-        originalPositions.Add("Cube1", new Vector3(-3, 0.5f, 3));
-        originalPositions.Add("Cube2", new Vector3(-1, 0.5f, 3));
-        originalPositions.Add("Cube3", new Vector3(1, 0.5f, 3));
-        originalPositions.Add("Cube4", new Vector3(3, 0.5f, 3));
-        originalPositions.Add("Cube5", new Vector3(-3, 0.5f, 1));
-        originalPositions.Add("Cube6", new Vector3(-1, 0.5f, 1));
-        originalPositions.Add("Cube7", new Vector3(1, 0.5f, 1));
-        originalPositions.Add("Cube8", new Vector3(3, 0.5f, 1));
-        originalPositions.Add("Cube9", new Vector3(-3, 0.5f, -1));
-        originalPositions.Add("Cube10", new Vector3(-1, 0.5f, -1));
-        originalPositions.Add("Cube11", new Vector3(1, 0.5f, -1));
-        originalPositions.Add("Cube12", new Vector3(3, 0.5f, -1));
-        originalPositions.Add("Cube13", new Vector3(-3, 0.5f, -3));
-        originalPositions.Add("Cube14", new Vector3(-1, 0.5f, -3));
-        originalPositions.Add("Cube15", new Vector3(1, 0.5f, -3));
-        originalPositions.Add("EmptyCube", new Vector3(3, 0.5f, -3));
-
-
+        originalPositions.Add("Cube1", new Vector3(-3, 5, 12));
+        originalPositions.Add("Cube2", new Vector3(-1, 5, 12));
+        originalPositions.Add("Cube3", new Vector3(1, 5, 12));
+        originalPositions.Add("Cube4", new Vector3(3, 5, 12));
+        originalPositions.Add("Cube5", new Vector3(-3, 3, 12));
+        originalPositions.Add("Cube6", new Vector3(-1, 3, 12));
+        originalPositions.Add("Cube7", new Vector3(1, 3, 12));
+        originalPositions.Add("Cube8", new Vector3(3, 3, 12));
+        originalPositions.Add("Cube9", new Vector3(-3, 1, 12));
+        originalPositions.Add("Cube10", new Vector3(-1, 1, 12));
+        originalPositions.Add("Cube11", new Vector3(1, 1, 12));
+        originalPositions.Add("Cube12", new Vector3(3, 1, 12));
+        originalPositions.Add("Cube13", new Vector3(-3,-1, 12));
+        originalPositions.Add("Cube14", new Vector3(-1, -1, 12));
+        originalPositions.Add("Cube15", new Vector3(1,-1, 12));
+        originalPositions.Add("EmptyCube", new Vector3(3, -1, 12));
         // speichert auch die ursprünglichen Materialien der einzelnen Würfel
         GameObject[] cubes = GameObject.FindGameObjectsWithTag("Cube");
         foreach (GameObject cube in cubes)
@@ -73,7 +72,6 @@ public class MouseClickMove : MonoBehaviour
 
     void OnTriggerStay(Collider other)
     {
-        Debug.Log("Enter");
         if (other.gameObject.CompareTag("EmptyCube"))
         {
             isClickable = true;
@@ -98,10 +96,8 @@ public class MouseClickMove : MonoBehaviour
     //newPosForEmptyCube auf die Position des angeklickten Würfels und isMoving auf true.
     void OnMouseDown()
     {
-        Debug.Log("Mouse Down");
         if (isClickable)
         {
-            Debug.Log("Is clickable");
             tempTargetPosition = targetPosition;
             newPosForEmptyCube = transform.position;
             isMoving = true;
@@ -177,6 +173,11 @@ public class MouseClickMove : MonoBehaviour
     {
         //eine Liste von Cube-Objekten erstellen
         GameObject[] cubes = GameObject.FindGameObjectsWithTag("Cube");
+        for(int i = 0; i < cubes.Length; i++)
+        {
+            cubes[i].transform.position = new Vector3(Mathf.Round(cubes[i].transform.position.x), Mathf.Round(cubes[i].transform.position.y), Mathf.Round(cubes[i].transform.position.z));
+        }
+
 
         //eine zufällige Permutation von Indizes von Cube-Objekten erstellen
         //Ein Array von Integer-Indizes wird erstellt, das die Länge der Cube-Liste hat
@@ -203,8 +204,10 @@ public class MouseClickMove : MonoBehaviour
         {
             int j = indices[i];
             Vector3 temp = cubes[j].transform.position;
+            //Debug.Log(temp);
             cubes[j].transform.position = cubes[i].transform.position;
             cubes[i].transform.position = temp;
         }
+
     }
 }

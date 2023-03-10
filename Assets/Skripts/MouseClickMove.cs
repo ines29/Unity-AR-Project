@@ -145,6 +145,7 @@ public class MouseClickMove : MonoBehaviour
             //Schließlich wird eine neue Vector3 erstellt, indem die gerundeten x-, y- und z-Werte in den entsprechenden Feldern der Vector3 gespeichert werden,
             //und diese neue Vector3 wird als die neue Position des Objekts "emptyCube" gesetzt.
             emptyCube.transform.position = new Vector3(Mathf.Round(emptyCube.transform.position.x * 100f) / 100f, Mathf.Round(emptyCube.transform.position.y * 100f) / 100f, Mathf.Round(emptyCube.transform.position.z * 100f) / 100f);
+            Debug.Log("gerundet");
             
             // Überprüfen ob alle Cubes in der urpsrünglichen Position sind
             bool allCubesAreInPlace = true;

@@ -9,6 +9,8 @@
 /[Bb]uilds/
 /[Ll]ogs/
 /[Uu]ser[Ss]ettings/
+/[Tt]emp/
+/[Pp]ackages/com.ptc.vuforia.engine-10.13.3.tgz
 
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
@@ -51,6 +53,8 @@ ExportedObj/
 *.pidb.meta
 *.pdb.meta
 *.mdb.meta
+*.prefab.meta
+*.preset.meta
 
 # Unity3D generated file on crash reports
 sysinfo.txt

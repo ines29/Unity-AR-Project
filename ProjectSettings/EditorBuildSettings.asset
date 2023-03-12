@@ -5,9 +5,12 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SchiebePuzzle.unity
     guid: 9605994cc1cbc624d960bfa4352b0ebc
+  - enabled: 1
+    path: Assets/Scenes/Jigsaw-Puzzle-Game.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: a05d1dfac07c0f54386f14da82d6af32, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 4effa6a5d3de77744b305e5c60ea0a63, type: 2}

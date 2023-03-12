@@ -615,8 +615,8 @@ PlayerSettings:
   apiCompatibilityLevelPerPlatform: {}
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: Template_3D
-  metroPackageVersion: 
+  metroPackageName: APflazeBuch
+  metroPackageVersion: 1.0.0.0
   metroCertificatePath: Assets\WSATestCertificate.pfx
   metroCertificatePassword: 
   metroCertificateSubject: DefaultCompany
@@ -624,7 +624,7 @@ PlayerSettings:
   metroCertificateNotAfter: 00d30d6b4c72da01
   metroApplicationDescription: Template_3D
   wsaImages: {}
-  metroTileShortName: 
+  metroTileShortName: "B\xFCcherregal + Pflanze"
   metroTileShowName: 0
   metroMediumTileShowName: 0
   metroLargeTileShowName: 0

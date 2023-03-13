@@ -96,7 +96,7 @@ public class MouseClickMove : MonoBehaviour
     //Wenn der angeklickte Würfel klickbar ist,
     //setzt diese Methode tempTargetPosition auf targetPosition,
     //newPosForEmptyCube auf die Position des angeklickten Würfels und isMoving auf true.
-    void OnMouseDown()
+    public void ButtonPressed ()
     {
         if (isClickable)
         {

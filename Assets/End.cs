@@ -13,12 +13,12 @@ public class End : MonoBehaviour
 	{
 		Destroy(other.gameObject);
 		StartCoroutine(Win());
-		gameObject.GetComponent<AudioSource>().Play();
 	}
 
 	IEnumerator Win()
 	{
 		yield return new WaitForSeconds(effectTime);
+		gameObject.GetComponent<AudioSource>().Play();
 		winPanel.SetActive(true);
 
 		//winEffect.SetActive(true);

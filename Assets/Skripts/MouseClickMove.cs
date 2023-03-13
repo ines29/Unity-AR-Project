@@ -12,6 +12,7 @@ public class MouseClickMove : MonoBehaviour
     private Vector3 targetPosition;
     private Vector3 newPosForEmptyCube;
     private Vector3 tempTargetPosition;
+    private Vector3 tempOriginPosition;
     private GameObject emptyCube;
     private float step = 0f;
     private float speed = 10f;
@@ -19,7 +20,7 @@ public class MouseClickMove : MonoBehaviour
     private Dictionary<string, Vector3> originalPositions = new Dictionary<string, Vector3>();
     private Dictionary<string, Material> originalMaterials = new Dictionary<string, Material>();
     public Material greenMaterial;
-
+    private GameObject[] cubes;
 
 
 
@@ -28,7 +29,7 @@ public class MouseClickMove : MonoBehaviour
     {
        
         ////Ich habe ein Dictonary erstellt, hier werden alle ursprünglichen Positionen der einzelnen Würfel im Spiel gespeichert
-        originalPositions.Add("Cube1", new Vector3(-3, 5, 12));
+       /* originalPositions.Add("Cube1", new Vector3(-3, 5, 12));
         originalPositions.Add("Cube2", new Vector3(-1, 5, 12));
         originalPositions.Add("Cube3", new Vector3(1, 5, 12));
         originalPositions.Add("Cube4", new Vector3(3, 5, 12));
@@ -43,13 +44,17 @@ public class MouseClickMove : MonoBehaviour
         originalPositions.Add("Cube13", new Vector3(-3,-1, 12));
         originalPositions.Add("Cube14", new Vector3(-1, -1, 12));
         originalPositions.Add("Cube15", new Vector3(1,-1, 12));
-        originalPositions.Add("EmptyCube", new Vector3(3, -1, 12));
+        originalPositions.Add("EmptyCube", new Vector3(3, -1, 12));*/
         // speichert auch die ursprünglichen Materialien der einzelnen Würfel
-        GameObject[] cubes = GameObject.FindGameObjectsWithTag("Cube");
+        cubes = GameObject.FindGameObjectsWithTag("Cube");
         foreach (GameObject cube in cubes)
         {
             originalMaterials.Add(cube.name, cube.GetComponent<Renderer>().material);
+            Debug.Log(cube.name + "x" + cube.transform.position.x * 100 + "y" + cube.transform.position.y * 100 + "z" + cube.transform.position.z * 100);
+            originalPositions.Add(cube.name, cube.transform.position);
+            Debug.Log(cube.name +  "x"+cube.transform.position.x*100 +"y"+ cube.transform.position.y * 100 + "z"+ cube.transform.position.z * 100);
         }
+        
         
         ShuffleCubes();
        
@@ -101,6 +106,7 @@ public class MouseClickMove : MonoBehaviour
         if (isClickable)
         {
             tempTargetPosition = targetPosition;
+            tempOriginPosition = transform.position;
             newPosForEmptyCube = transform.position;
             isMoving = true;
             //SwapCubes();
@@ -121,13 +127,13 @@ public class MouseClickMove : MonoBehaviour
         transform.position = Vector3.MoveTowards(transform.position, tempTargetPosition, step);
         //Debug.Log(transform.position);
         //wird die resultierende Position mit Mathf.Round() auf zwei Dezimalstellen gerundet und mit 100f multipliziert, um den Float-Typ zu erhalten.
-        transform.position = new Vector3(Mathf.Round(transform.position.x * 10000f) / 10000f, Mathf.Round(transform.position.y * 10000f) / 10000f, Mathf.Round(transform.position.z * 10000f) / 10000f);
+        transform.position = tempTargetPosition;
 
         // // Prüfen, ob die Position des Würfels und der Kugel ungefähr gleich sind
-        Debug.Log(Vector3.Distance(transform.position, tempTargetPosition));
+        //Debug.Log(Vector3.Distance(transform.position, tempTargetPosition));
         if (Vector3.Distance(transform.position, tempTargetPosition) < 0.007f)
         {
-            Debug.Log("swap");
+           // Debug.Log("swap");
             isMoving = false;
 
             // Prüfen, ob der Würfel in seine ursprüngliche Position verschoben wurde
@@ -135,6 +141,7 @@ public class MouseClickMove : MonoBehaviour
             {
                 //  das Material auf grün setzen, wenn es sich an der richtigen Stelle befindet
                 GetComponent<Renderer>().material = greenMaterial;
+                Debug.Log("correct");
             }
             else
             {
@@ -150,9 +157,10 @@ public class MouseClickMove : MonoBehaviour
             //und durch 100f dividiert, um auf zwei Dezimalstellen genau zu bleiben.
             //Schließlich wird eine neue Vector3 erstellt, indem die gerundeten x-, y- und z-Werte in den entsprechenden Feldern der Vector3 gespeichert werden,
             //und diese neue Vector3 wird als die neue Position des Objekts "emptyCube" gesetzt.
-            emptyCube.transform.position = new Vector3(Mathf.Round(emptyCube.transform.position.x * 10000f) / 10000f, Mathf.Round(emptyCube.transform.position.y * 10000f) / 10000f, Mathf.Round(emptyCube.transform.position.z * 10000f) / 10000f);
-            Debug.Log("gerundet");
-            
+            //emptyCube.transform.position = new Vector3(Mathf.Round(emptyCube.transform.position.x * 10000f) / 10000f, Mathf.Round(emptyCube.transform.position.y * 10000f) / 10000f, Mathf.Round(emptyCube.transform.position.z * 10000f) / 10000f);
+           
+            // Debug.Log("gerundet");
+
             // Überprüfen ob alle Cubes in der urpsrünglichen Position sind
             bool allCubesAreInPlace = true;
             foreach (KeyValuePair<string, Vector3> pair in originalPositions)
@@ -179,12 +187,13 @@ public class MouseClickMove : MonoBehaviour
     void ShuffleCubes()
     {
         //eine Liste von Cube-Objekten erstellen
-        GameObject[] cubes = GameObject.FindGameObjectsWithTag("Cube");
+        //GameObject[] cubes = GameObject.FindGameObjectsWithTag("Cube");
         
-        for(int i = 0; i < cubes.Length; i++)
+      /*  for(int i = 0; i < cubes.Length; i++)
         {
             cubes[i].transform.position = new Vector3(Mathf.Round(cubes[i].transform.position.x*1000)/1000, Mathf.Round(cubes[i].transform.position.y*1000)/1000, Mathf.Round(cubes[i].transform.position.z*1000)/1000);
-        }
+            
+        }*/
 
 
         //eine zufällige Permutation von Indizes von Cube-Objekten erstellen

@@ -26,6 +26,7 @@ public class MouseClickMove : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+       
         ////Ich habe ein Dictonary erstellt, hier werden alle ursprünglichen Positionen der einzelnen Würfel im Spiel gespeichert
         originalPositions.Add("Cube1", new Vector3(-3, 5, 12));
         originalPositions.Add("Cube2", new Vector3(-1, 5, 12));
@@ -49,8 +50,9 @@ public class MouseClickMove : MonoBehaviour
         {
             originalMaterials.Add(cube.name, cube.GetComponent<Renderer>().material);
         }
-
+        
         ShuffleCubes();
+       
     }
 
     //// Update is called once per frame
@@ -115,7 +117,9 @@ public class MouseClickMove : MonoBehaviour
 
     void SwapCubes()
     {
+        Debug.Log("test");
         transform.position = Vector3.MoveTowards(transform.position, tempTargetPosition, step);
+        Debug.Log(transform.position);
         //wird die resultierende Position mit Mathf.Round() auf zwei Dezimalstellen gerundet und mit 100f multipliziert, um den Float-Typ zu erhalten.
         transform.position = new Vector3(Mathf.Round(transform.position.x * 100f) / 100f, Mathf.Round(transform.position.y * 100f) / 100f, Mathf.Round(transform.position.z * 100f) / 100f);
 
@@ -174,9 +178,10 @@ public class MouseClickMove : MonoBehaviour
     {
         //eine Liste von Cube-Objekten erstellen
         GameObject[] cubes = GameObject.FindGameObjectsWithTag("Cube");
+        
         for(int i = 0; i < cubes.Length; i++)
         {
-            cubes[i].transform.position = new Vector3(Mathf.Round(cubes[i].transform.position.x), Mathf.Round(cubes[i].transform.position.y), Mathf.Round(cubes[i].transform.position.z));
+            cubes[i].transform.position = new Vector3(Mathf.Round(cubes[i].transform.position.x*10)/10, Mathf.Round(cubes[i].transform.position.y*10)/10, Mathf.Round(cubes[i].transform.position.z*10)/10);
         }
 
 

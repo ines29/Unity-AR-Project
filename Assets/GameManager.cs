@@ -6,6 +6,7 @@ public class GameManager : MonoBehaviour
 {
     public GameObject PipesHolder;
     public GameObject[] Pipes;
+    public GameObject Water;
     [SerializeField]
     public int totalPipes = 0;
     [SerializeField]
@@ -27,6 +28,7 @@ public class GameManager : MonoBehaviour
         if (correctedPipes == totalPipes)
         {
             Debug.Log("You win!");
+            Water.SetActive(true);
         }
 
         }

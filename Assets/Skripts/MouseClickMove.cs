@@ -121,11 +121,11 @@ public class MouseClickMove : MonoBehaviour
         transform.position = Vector3.MoveTowards(transform.position, tempTargetPosition, step);
         //Debug.Log(transform.position);
         //wird die resultierende Position mit Mathf.Round() auf zwei Dezimalstellen gerundet und mit 100f multipliziert, um den Float-Typ zu erhalten.
-        transform.position = new Vector3(Mathf.Round(transform.position.x * 100f) / 100f, Mathf.Round(transform.position.y * 100f) / 100f, Mathf.Round(transform.position.z * 100f) / 100f);
+        transform.position = new Vector3(Mathf.Round(transform.position.x * 10000f) / 10000f, Mathf.Round(transform.position.y * 10000f) / 10000f, Mathf.Round(transform.position.z * 10000f) / 10000f);
 
         // // Prüfen, ob die Position des Würfels und der Kugel ungefähr gleich sind
-        Debug.Log(0.001f);
-        if (Vector3.Distance(transform.position, tempTargetPosition) < 0.01f)
+        Debug.Log(Vector3.Distance(transform.position, tempTargetPosition));
+        if (Vector3.Distance(transform.position, tempTargetPosition) < 0.007f)
         {
             Debug.Log("swap");
             isMoving = false;

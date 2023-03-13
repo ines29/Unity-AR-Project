@@ -10,10 +10,20 @@ public class ColorChange : MonoBehaviour
     public Material YellowMaterial;
     private Material PreviousMaterial;
 
+    public GameObject plane;
+    public AudioSource cubeSound;
+
     // Start is called before the first frame update
     void Start()
     {
         PreviousMaterial = GetComponent<Renderer>().material;
+
+        if (GameObject.FindWithTag("Rules")!= null)
+        {
+            plane.SetActive(true);
+
+            Invoke("DetectivePlane", 10f);
+        }
     }
 
     // Update is called once per frame
@@ -28,6 +38,10 @@ public class ColorChange : MonoBehaviour
         {
             cube.GetComponent<Renderer>().material = RedMaterial;
             CheckWinCondition();
+            if (cubeSound != null)
+            {
+                cubeSound.Play();
+            }
            
         }
     }
@@ -39,7 +53,11 @@ public class ColorChange : MonoBehaviour
         {
             cube.GetComponent<Renderer>().material = BlueMaterial;
             CheckWinCondition();
-           
+            if (cubeSound != null)
+            {
+                cubeSound.Play();
+            }
+
         }
     }
 
@@ -50,7 +68,11 @@ public class ColorChange : MonoBehaviour
         {
             cube.GetComponent<Renderer>().material = GreenMaterial;
             CheckWinCondition();
-            
+            if (cubeSound != null)
+            {
+                cubeSound.Play();
+            }
+
         }
 
     }

@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SchiebePuzzle.unity
     guid: 9605994cc1cbc624d960bfa4352b0ebc
   - enabled: 1

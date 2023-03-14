@@ -159,7 +159,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5985de884c6374c4bbb33a1aa7ff818e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chessBoard: {fileID: 2056001641}
+  startCol: 5
+  startRow: 2
 --- !u!136 &18555176
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -221,7 +222,19 @@ MonoBehaviour:
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 18555174}
+        m_TargetAssemblyTypeName: SnapToPos, Assembly-CSharp
+        m_MethodName: PawnMoves
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onManipulationEnded:
     m_PersistentCalls:
       m_Calls: []
@@ -297,7 +310,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5985de884c6374c4bbb33a1aa7ff818e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chessBoard: {fileID: 2056001641}
+  startCol: 7
+  startRow: 7
 --- !u!136 &68982732
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -345,7 +359,19 @@ MonoBehaviour:
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 68982730}
+        m_TargetAssemblyTypeName: SnapToPos, Assembly-CSharp
+        m_MethodName: PawnMoves
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onManipulationEnded:
     m_PersistentCalls:
       m_Calls: []
@@ -405,7 +431,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5985de884c6374c4bbb33a1aa7ff818e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chessBoard: {fileID: 2056001641}
+  startCol: 8
+  startRow: 7
 --- !u!136 &97071115
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -449,11 +476,23 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 18555177}
+  constraintsManager: {fileID: 97071117}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 97071113}
+        m_TargetAssemblyTypeName: SnapToPos, Assembly-CSharp
+        m_MethodName: PawnMoves
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onManipulationEnded:
     m_PersistentCalls:
       m_Calls: []
@@ -543,7 +582,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5985de884c6374c4bbb33a1aa7ff818e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chessBoard: {fileID: 2056001641}
+  startCol: 5
+  startRow: 7
 --- !u!136 &159918795
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -591,7 +631,19 @@ MonoBehaviour:
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 159918793}
+        m_TargetAssemblyTypeName: SnapToPos, Assembly-CSharp
+        m_MethodName: PawnMoves
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onManipulationEnded:
     m_PersistentCalls:
       m_Calls: []
@@ -741,7 +793,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5985de884c6374c4bbb33a1aa7ff818e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chessBoard: {fileID: 2056001641}
+  startCol: 2
+  startRow: 1
 --- !u!136 &269032293
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -785,11 +838,23 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 18555177}
+  constraintsManager: {fileID: 269032295}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 269032291}
+        m_TargetAssemblyTypeName: SnapToPos, Assembly-CSharp
+        m_MethodName: KnightMoves
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onManipulationEnded:
     m_PersistentCalls:
       m_Calls: []
@@ -1395,7 +1460,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -4272026093922852170, guid: 333d9e0c2d0c22bb5ad021bc40a7a257, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.0021
+      value: -0.0021
       objectReference: {fileID: 0}
     - target: {fileID: -4272026093922852170, guid: 333d9e0c2d0c22bb5ad021bc40a7a257, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1438,7 +1503,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5985de884c6374c4bbb33a1aa7ff818e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chessBoard: {fileID: 2056001641}
+  startCol: 3
+  startRow: 7
 --- !u!114 &522597846
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1453,6 +1519,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShowTetherWhenManipulating: 0
   IsBoundsHandles: 0
+--- !u!4 &522597847 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -6151451014588545107, guid: 333d9e0c2d0c22bb5ad021bc40a7a257, type: 3}
+  m_PrefabInstance: {fileID: 518508709}
+  m_PrefabAsset: {fileID: 0}
 --- !u!136 &522597849
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1479,7 +1550,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 181cd563a8349c34ea8978b0bc8d9c7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hostTransform: {fileID: 0}
+  hostTransform: {fileID: 522597847}
   manipulationType: 3
   twoHandedManipulationType: 7
   allowFarManipulation: 1
@@ -1496,11 +1567,23 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 18555177}
+  constraintsManager: {fileID: 522597851}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 522597845}
+        m_TargetAssemblyTypeName: SnapToPos, Assembly-CSharp
+        m_MethodName: PawnMoves
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onManipulationEnded:
     m_PersistentCalls:
       m_Calls: []
@@ -1793,7 +1876,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5985de884c6374c4bbb33a1aa7ff818e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chessBoard: {fileID: 2056001641}
+  startCol: 4
+  startRow: 1
 --- !u!136 &654659205
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1837,11 +1921,23 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 18555177}
+  constraintsManager: {fileID: 654659207}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 654659203}
+        m_TargetAssemblyTypeName: SnapToPos, Assembly-CSharp
+        m_MethodName: QueenMoves
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onManipulationEnded:
     m_PersistentCalls:
       m_Calls: []
@@ -2122,7 +2218,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5985de884c6374c4bbb33a1aa7ff818e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chessBoard: {fileID: 2056001641}
+  startCol: 1
+  startRow: 8
 --- !u!114 &842026375
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2137,6 +2234,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShowTetherWhenManipulating: 0
   IsBoundsHandles: 0
+--- !u!4 &842026376 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5860264980486679503, guid: 333d9e0c2d0c22bb5ad021bc40a7a257, type: 3}
+  m_PrefabInstance: {fileID: 518508709}
+  m_PrefabAsset: {fileID: 0}
 --- !u!136 &842026378
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2163,7 +2265,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 181cd563a8349c34ea8978b0bc8d9c7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hostTransform: {fileID: 0}
+  hostTransform: {fileID: 842026376}
   manipulationType: 3
   twoHandedManipulationType: 7
   allowFarManipulation: 1
@@ -2180,11 +2282,23 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 18555177}
+  constraintsManager: {fileID: 842026380}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 842026374}
+        m_TargetAssemblyTypeName: SnapToPos, Assembly-CSharp
+        m_MethodName: RookMoves
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onManipulationEnded:
     m_PersistentCalls:
       m_Calls: []
@@ -2255,7 +2369,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5985de884c6374c4bbb33a1aa7ff818e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chessBoard: {fileID: 2056001641}
+  startCol: 4
+  startRow: 2
 --- !u!114 &911955054
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2270,6 +2385,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShowTetherWhenManipulating: 0
   IsBoundsHandles: 0
+--- !u!4 &911955055 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8643950247656180066, guid: 333d9e0c2d0c22bb5ad021bc40a7a257, type: 3}
+  m_PrefabInstance: {fileID: 518508709}
+  m_PrefabAsset: {fileID: 0}
 --- !u!136 &911955057
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2296,7 +2416,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 181cd563a8349c34ea8978b0bc8d9c7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hostTransform: {fileID: 0}
+  hostTransform: {fileID: 911955055}
   manipulationType: 3
   twoHandedManipulationType: 7
   allowFarManipulation: 1
@@ -2317,7 +2437,19 @@ MonoBehaviour:
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 911955053}
+        m_TargetAssemblyTypeName: SnapToPos, Assembly-CSharp
+        m_MethodName: PawnMoves
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onManipulationEnded:
     m_PersistentCalls:
       m_Calls: []
@@ -2448,7 +2580,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5985de884c6374c4bbb33a1aa7ff818e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chessBoard: {fileID: 2056001641}
+  startCol: 2
+  startRow: 8
 --- !u!114 &1013727049
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2463,6 +2596,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShowTetherWhenManipulating: 0
   IsBoundsHandles: 0
+--- !u!4 &1013727050 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5441037279452845427, guid: 333d9e0c2d0c22bb5ad021bc40a7a257, type: 3}
+  m_PrefabInstance: {fileID: 518508709}
+  m_PrefabAsset: {fileID: 0}
 --- !u!136 &1013727052
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2489,7 +2627,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 181cd563a8349c34ea8978b0bc8d9c7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hostTransform: {fileID: 0}
+  hostTransform: {fileID: 1013727050}
   manipulationType: 3
   twoHandedManipulationType: 7
   allowFarManipulation: 1
@@ -2506,11 +2644,23 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 18555177}
+  constraintsManager: {fileID: 1013727054}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1013727048}
+        m_TargetAssemblyTypeName: SnapToPos, Assembly-CSharp
+        m_MethodName: KnightMoves
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onManipulationEnded:
     m_PersistentCalls:
       m_Calls: []
@@ -2570,7 +2720,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5985de884c6374c4bbb33a1aa7ff818e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chessBoard: {fileID: 2056001641}
+  startCol: 1
+  startRow: 1
 --- !u!136 &1016040297
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2614,11 +2765,23 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 18555177}
+  constraintsManager: {fileID: 1016040299}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1016040295}
+        m_TargetAssemblyTypeName: SnapToPos, Assembly-CSharp
+        m_MethodName: RookMoves
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onManipulationEnded:
     m_PersistentCalls:
       m_Calls: []
@@ -2659,7 +2822,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5985de884c6374c4bbb33a1aa7ff818e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chessBoard: {fileID: 2056001641}
+  startCol: 5
+  startRow: 1
 --- !u!114 &1027300392
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2726,7 +2890,19 @@ MonoBehaviour:
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1027300391}
+        m_TargetAssemblyTypeName: SnapToPos, Assembly-CSharp
+        m_MethodName: KingMoves
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onManipulationEnded:
     m_PersistentCalls:
       m_Calls: []
@@ -2903,7 +3079,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5985de884c6374c4bbb33a1aa7ff818e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chessBoard: {fileID: 2056001641}
+  startCol: 8
+  startRow: 2
 --- !u!114 &1151828186
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2918,6 +3095,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShowTetherWhenManipulating: 0
   IsBoundsHandles: 0
+--- !u!4 &1151828187 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -3924650690326678932, guid: 333d9e0c2d0c22bb5ad021bc40a7a257, type: 3}
+  m_PrefabInstance: {fileID: 518508709}
+  m_PrefabAsset: {fileID: 0}
 --- !u!136 &1151828189
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2944,7 +3126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 181cd563a8349c34ea8978b0bc8d9c7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hostTransform: {fileID: 0}
+  hostTransform: {fileID: 1151828187}
   manipulationType: 3
   twoHandedManipulationType: 7
   allowFarManipulation: 1
@@ -2965,7 +3147,19 @@ MonoBehaviour:
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1151828185}
+        m_TargetAssemblyTypeName: SnapToPos, Assembly-CSharp
+        m_MethodName: PawnMoves
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onManipulationEnded:
     m_PersistentCalls:
       m_Calls: []
@@ -3025,7 +3219,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5985de884c6374c4bbb33a1aa7ff818e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chessBoard: {fileID: 2056001641}
+  startCol: 2
+  startRow: 2
 --- !u!136 &1170048315
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3069,11 +3264,23 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 18555177}
+  constraintsManager: {fileID: 1170048317}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1170048313}
+        m_TargetAssemblyTypeName: SnapToPos, Assembly-CSharp
+        m_MethodName: PawnMoves
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onManipulationEnded:
     m_PersistentCalls:
       m_Calls: []
@@ -3175,7 +3382,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5985de884c6374c4bbb33a1aa7ff818e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chessBoard: {fileID: 2056001641}
+  startCol: 6
+  startRow: 7
 --- !u!114 &1211232642
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3190,6 +3398,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShowTetherWhenManipulating: 0
   IsBoundsHandles: 0
+--- !u!4 &1211232643 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -1364737173697001796, guid: 333d9e0c2d0c22bb5ad021bc40a7a257, type: 3}
+  m_PrefabInstance: {fileID: 518508709}
+  m_PrefabAsset: {fileID: 0}
 --- !u!136 &1211232645
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3216,7 +3429,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 181cd563a8349c34ea8978b0bc8d9c7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hostTransform: {fileID: 0}
+  hostTransform: {fileID: 1211232643}
   manipulationType: 3
   twoHandedManipulationType: 7
   allowFarManipulation: 1
@@ -3233,11 +3446,23 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 18555177}
+  constraintsManager: {fileID: 1211232647}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1211232641}
+        m_TargetAssemblyTypeName: SnapToPos, Assembly-CSharp
+        m_MethodName: PawnMoves
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onManipulationEnded:
     m_PersistentCalls:
       m_Calls: []
@@ -3297,7 +3522,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5985de884c6374c4bbb33a1aa7ff818e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chessBoard: {fileID: 2056001641}
+  startCol: 1
+  startRow: 2
 --- !u!136 &1277879087
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3345,7 +3571,19 @@ MonoBehaviour:
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1277879085}
+        m_TargetAssemblyTypeName: SnapToPos, Assembly-CSharp
+        m_MethodName: PawnMoves
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onManipulationEnded:
     m_PersistentCalls:
       m_Calls: []
@@ -3506,7 +3744,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5985de884c6374c4bbb33a1aa7ff818e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chessBoard: {fileID: 2056001641}
+  startCol: 6
+  startRow: 1
 --- !u!114 &1370188950
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3521,6 +3760,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShowTetherWhenManipulating: 0
   IsBoundsHandles: 0
+--- !u!4 &1370188951 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1508615578867987786, guid: 333d9e0c2d0c22bb5ad021bc40a7a257, type: 3}
+  m_PrefabInstance: {fileID: 518508709}
+  m_PrefabAsset: {fileID: 0}
 --- !u!136 &1370188953
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3547,7 +3791,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 181cd563a8349c34ea8978b0bc8d9c7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hostTransform: {fileID: 0}
+  hostTransform: {fileID: 1370188951}
   manipulationType: 3
   twoHandedManipulationType: 7
   allowFarManipulation: 1
@@ -3564,11 +3808,23 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 18555177}
+  constraintsManager: {fileID: 1370188955}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1370188949}
+        m_TargetAssemblyTypeName: SnapToPos, Assembly-CSharp
+        m_MethodName: BishopMoves
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onManipulationEnded:
     m_PersistentCalls:
       m_Calls: []
@@ -3658,7 +3914,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5985de884c6374c4bbb33a1aa7ff818e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chessBoard: {fileID: 2056001641}
+  startCol: 3
+  startRow: 2
 --- !u!136 &1414612089
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3706,7 +3963,19 @@ MonoBehaviour:
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1414612084}
+        m_TargetAssemblyTypeName: SnapToPos, Assembly-CSharp
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onManipulationEnded:
     m_PersistentCalls:
       m_Calls: []
@@ -3807,7 +4076,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5985de884c6374c4bbb33a1aa7ff818e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chessBoard: {fileID: 2056001641}
+  startCol: 6
+  startRow: 2
 --- !u!114 &1516941523
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3822,6 +4092,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShowTetherWhenManipulating: 0
   IsBoundsHandles: 0
+--- !u!4 &1516941524 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 156668734556824257, guid: 333d9e0c2d0c22bb5ad021bc40a7a257, type: 3}
+  m_PrefabInstance: {fileID: 518508709}
+  m_PrefabAsset: {fileID: 0}
 --- !u!136 &1516941526
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3848,7 +4123,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 181cd563a8349c34ea8978b0bc8d9c7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hostTransform: {fileID: 0}
+  hostTransform: {fileID: 1516941524}
   manipulationType: 3
   twoHandedManipulationType: 7
   allowFarManipulation: 1
@@ -3869,7 +4144,19 @@ MonoBehaviour:
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1516941522}
+        m_TargetAssemblyTypeName: SnapToPos, Assembly-CSharp
+        m_MethodName: PawnMoves
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onManipulationEnded:
     m_PersistentCalls:
       m_Calls: []
@@ -4033,7 +4320,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5985de884c6374c4bbb33a1aa7ff818e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chessBoard: {fileID: 2056001641}
+  startCol: 3
+  startRow: 1
 --- !u!136 &1602353243
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -4077,11 +4365,23 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 18555177}
+  constraintsManager: {fileID: 1602353245}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1602353241}
+        m_TargetAssemblyTypeName: SnapToPos, Assembly-CSharp
+        m_MethodName: BishopMoves
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onManipulationEnded:
     m_PersistentCalls:
       m_Calls: []
@@ -4122,7 +4422,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5985de884c6374c4bbb33a1aa7ff818e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chessBoard: {fileID: 2056001641}
+  startCol: 7
+  startRow: 8
 --- !u!114 &1617438870
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4189,7 +4490,19 @@ MonoBehaviour:
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1617438869}
+        m_TargetAssemblyTypeName: SnapToPos, Assembly-CSharp
+        m_MethodName: KnightMoves
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onManipulationEnded:
     m_PersistentCalls:
       m_Calls: []
@@ -4290,7 +4603,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5985de884c6374c4bbb33a1aa7ff818e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chessBoard: {fileID: 2056001641}
+  startCol: 7
+  startRow: 2
 --- !u!114 &1674914137
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4305,6 +4619,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShowTetherWhenManipulating: 0
   IsBoundsHandles: 0
+--- !u!4 &1674914138 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6722431378318692551, guid: 333d9e0c2d0c22bb5ad021bc40a7a257, type: 3}
+  m_PrefabInstance: {fileID: 518508709}
+  m_PrefabAsset: {fileID: 0}
 --- !u!136 &1674914140
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -4331,7 +4650,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 181cd563a8349c34ea8978b0bc8d9c7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hostTransform: {fileID: 0}
+  hostTransform: {fileID: 1674914138}
   manipulationType: 3
   twoHandedManipulationType: 7
   allowFarManipulation: 1
@@ -4352,7 +4671,19 @@ MonoBehaviour:
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1674914136}
+        m_TargetAssemblyTypeName: SnapToPos, Assembly-CSharp
+        m_MethodName: PawnMoves
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onManipulationEnded:
     m_PersistentCalls:
       m_Calls: []
@@ -4423,7 +4754,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5985de884c6374c4bbb33a1aa7ff818e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chessBoard: {fileID: 2056001641}
+  startCol: 6
+  startRow: 8
 --- !u!114 &1690036194
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4438,19 +4770,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShowTetherWhenManipulating: 0
   IsBoundsHandles: 0
---- !u!114 &1690036195
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1690036192}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5985de884c6374c4bbb33a1aa7ff818e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  chessBoard: {fileID: 0}
 --- !u!136 &1690036197
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -4498,7 +4817,19 @@ MonoBehaviour:
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1690036193}
+        m_TargetAssemblyTypeName: SnapToPos, Assembly-CSharp
+        m_MethodName: BishopMoves
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onManipulationEnded:
     m_PersistentCalls:
       m_Calls: []
@@ -4678,7 +5009,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5985de884c6374c4bbb33a1aa7ff818e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chessBoard: {fileID: 2056001641}
+  startCol: 4
+  startRow: 8
 --- !u!136 &1833857430
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -4726,7 +5058,19 @@ MonoBehaviour:
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1833857428}
+        m_TargetAssemblyTypeName: SnapToPos, Assembly-CSharp
+        m_MethodName: KingMoves
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onManipulationEnded:
     m_PersistentCalls:
       m_Calls: []
@@ -4797,7 +5141,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5985de884c6374c4bbb33a1aa7ff818e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chessBoard: {fileID: 2056001641}
+  startCol: 3
+  startRow: 8
 --- !u!114 &1871900515
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4812,6 +5157,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShowTetherWhenManipulating: 0
   IsBoundsHandles: 0
+--- !u!4 &1871900516 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -1949889544583882347, guid: 333d9e0c2d0c22bb5ad021bc40a7a257, type: 3}
+  m_PrefabInstance: {fileID: 518508709}
+  m_PrefabAsset: {fileID: 0}
 --- !u!136 &1871900518
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -4838,7 +5188,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 181cd563a8349c34ea8978b0bc8d9c7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hostTransform: {fileID: 0}
+  hostTransform: {fileID: 1871900516}
   manipulationType: 3
   twoHandedManipulationType: 7
   allowFarManipulation: 1
@@ -4855,11 +5205,23 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 18555177}
+  constraintsManager: {fileID: 1871900520}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1871900514}
+        m_TargetAssemblyTypeName: SnapToPos, Assembly-CSharp
+        m_MethodName: BishopMoves
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onManipulationEnded:
     m_PersistentCalls:
       m_Calls: []
@@ -4900,7 +5262,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5985de884c6374c4bbb33a1aa7ff818e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chessBoard: {fileID: 2056001641}
+  startCol: 2
+  startRow: 7
 --- !u!114 &1877289610
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4915,6 +5278,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShowTetherWhenManipulating: 0
   IsBoundsHandles: 0
+--- !u!4 &1877289611 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3209319878924333048, guid: 333d9e0c2d0c22bb5ad021bc40a7a257, type: 3}
+  m_PrefabInstance: {fileID: 518508709}
+  m_PrefabAsset: {fileID: 0}
 --- !u!136 &1877289613
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -4941,7 +5309,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 181cd563a8349c34ea8978b0bc8d9c7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hostTransform: {fileID: 0}
+  hostTransform: {fileID: 1877289611}
   manipulationType: 3
   twoHandedManipulationType: 7
   allowFarManipulation: 1
@@ -4958,11 +5326,23 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 18555177}
+  constraintsManager: {fileID: 1877289615}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1877289609}
+        m_TargetAssemblyTypeName: SnapToPos, Assembly-CSharp
+        m_MethodName: PawnMoves
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onManipulationEnded:
     m_PersistentCalls:
       m_Calls: []
@@ -5082,7 +5462,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5985de884c6374c4bbb33a1aa7ff818e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chessBoard: {fileID: 2056001641}
+  startCol: 7
+  startRow: 1
 --- !u!136 &1936134281
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -5126,11 +5507,23 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 18555177}
+  constraintsManager: {fileID: 1936134283}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1936134279}
+        m_TargetAssemblyTypeName: SnapToPos, Assembly-CSharp
+        m_MethodName: KnightMoves
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onManipulationEnded:
     m_PersistentCalls:
       m_Calls: []
@@ -5280,7 +5673,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5985de884c6374c4bbb33a1aa7ff818e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chessBoard: {fileID: 2056001641}
+  startCol: 5
+  startRow: 8
 --- !u!136 &2010775989
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -5328,7 +5722,19 @@ MonoBehaviour:
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2010775987}
+        m_TargetAssemblyTypeName: SnapToPos, Assembly-CSharp
+        m_MethodName: QueenMoves
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onManipulationEnded:
     m_PersistentCalls:
       m_Calls: []
@@ -5388,7 +5794,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5985de884c6374c4bbb33a1aa7ff818e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chessBoard: {fileID: 2056001641}
+  startCol: 8
+  startRow: 1
 --- !u!136 &2018617982
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -5432,11 +5839,23 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 18555177}
+  constraintsManager: {fileID: 2018617984}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2018617980}
+        m_TargetAssemblyTypeName: SnapToPos, Assembly-CSharp
+        m_MethodName: RookMoves
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onManipulationEnded:
     m_PersistentCalls:
       m_Calls: []
@@ -5477,7 +5896,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5985de884c6374c4bbb33a1aa7ff818e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chessBoard: {fileID: 2056001641}
+  startCol: 4
+  startRow: 7
 --- !u!114 &2033107502
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5492,6 +5912,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShowTetherWhenManipulating: 0
   IsBoundsHandles: 0
+--- !u!4 &2033107503 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -2972657859179362469, guid: 333d9e0c2d0c22bb5ad021bc40a7a257, type: 3}
+  m_PrefabInstance: {fileID: 518508709}
+  m_PrefabAsset: {fileID: 0}
 --- !u!136 &2033107505
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -5518,7 +5943,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 181cd563a8349c34ea8978b0bc8d9c7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hostTransform: {fileID: 0}
+  hostTransform: {fileID: 2033107503}
   manipulationType: 3
   twoHandedManipulationType: 7
   allowFarManipulation: 1
@@ -5535,11 +5960,23 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 18555177}
+  constraintsManager: {fileID: 2033107507}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2033107501}
+        m_TargetAssemblyTypeName: SnapToPos, Assembly-CSharp
+        m_MethodName: PawnMoves
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onManipulationEnded:
     m_PersistentCalls:
       m_Calls: []
@@ -5599,7 +6036,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5985de884c6374c4bbb33a1aa7ff818e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chessBoard: {fileID: 2056001641}
+  startCol: 1
+  startRow: 7
 --- !u!136 &2049677055
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -5643,11 +6081,23 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 18555177}
+  constraintsManager: {fileID: 2049677057}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2049677053}
+        m_TargetAssemblyTypeName: SnapToPos, Assembly-CSharp
+        m_MethodName: PawnMoves
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onManipulationEnded:
     m_PersistentCalls:
       m_Calls: []
@@ -5707,20 +6157,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5985de884c6374c4bbb33a1aa7ff818e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chessBoard: {fileID: 2056001641}
---- !u!114 &2050748465
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2050748461}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5985de884c6374c4bbb33a1aa7ff818e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  chessBoard: {fileID: 0}
+  startCol: 8
+  startRow: 8
 --- !u!136 &2050748466
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -5768,7 +6206,19 @@ MonoBehaviour:
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2050748464}
+        m_TargetAssemblyTypeName: SnapToPos, Assembly-CSharp
+        m_MethodName: RookMoves
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onManipulationEnded:
     m_PersistentCalls:
       m_Calls: []
@@ -5792,11 +6242,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   autoConstraintSelection: 1
   selectedConstraints: []
---- !u!1 &2056001641 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -5971663317599960168, guid: 333d9e0c2d0c22bb5ad021bc40a7a257, type: 3}
-  m_PrefabInstance: {fileID: 518508709}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2056001642 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5842245503336501601, guid: 333d9e0c2d0c22bb5ad021bc40a7a257, type: 3}

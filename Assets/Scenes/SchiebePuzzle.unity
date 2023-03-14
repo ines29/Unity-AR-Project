@@ -690,8 +690,8 @@ MonoBehaviour:
   eventsToReceive: 0
   debounceThreshold: 0.01
   localForward: {x: -0, y: 1, z: 0}
-  localUp: {x: 0, y: 1, z: 0}
-  localCenter: {x: 0, y: 0, z: 0}
+  localUp: {x: 0, y: 0, z: -1}
+  localCenter: {x: 0, y: 0.5, z: 0}
   bounds: {x: 1, y: 1}
   touchableCollider: {fileID: 329064542}
 --- !u!114 &329064546
@@ -1018,8 +1018,8 @@ MonoBehaviour:
   eventsToReceive: 0
   debounceThreshold: 0.01
   localForward: {x: 0, y: 1, z: 0}
-  localUp: {x: 0, y: 1, z: 0}
-  localCenter: {x: 0, y: 0, z: 0}
+  localUp: {x: 0, y: 0, z: -1}
+  localCenter: {x: 0, y: 0.5, z: 0}
   bounds: {x: 1, y: 1}
   touchableCollider: {fileID: 403271016}
 --- !u!1 &549545566
@@ -1243,8 +1243,8 @@ MonoBehaviour:
   eventsToReceive: 0
   debounceThreshold: 0.01
   localForward: {x: 0, y: 1, z: 0}
-  localUp: {x: 0, y: 1, z: 0}
-  localCenter: {x: 0, y: 0, z: -0.075}
+  localUp: {x: 0, y: 0, z: -1}
+  localCenter: {x: 0, y: 0.5, z: 0}
   bounds: {x: 1, y: 1}
   touchableCollider: {fileID: 572219539}
 --- !u!114 &572219543
@@ -1690,8 +1690,8 @@ MonoBehaviour:
   eventsToReceive: 0
   debounceThreshold: 0.01
   localForward: {x: 0, y: 1, z: 0}
-  localUp: {x: 0, y: 1, z: 0}
-  localCenter: {x: 0, y: 0, z: 0}
+  localUp: {x: 0, y: 0, z: -1}
+  localCenter: {x: 0, y: 0.5, z: 0}
   bounds: {x: 1, y: 1}
   touchableCollider: {fileID: 681558065}
 --- !u!114 &681558069
@@ -1922,8 +1922,8 @@ MonoBehaviour:
   eventsToReceive: 0
   debounceThreshold: 0.01
   localForward: {x: -0, y: 1, z: 0}
-  localUp: {x: 0, y: 1, z: 0}
-  localCenter: {x: 0, y: 0, z: 0}
+  localUp: {x: 0, y: 0, z: -1}
+  localCenter: {x: 0, y: 0.5, z: 0}
   bounds: {x: 1, y: 1}
   touchableCollider: {fileID: 732888943}
 --- !u!1 &753120585
@@ -2171,8 +2171,8 @@ MonoBehaviour:
   eventsToReceive: 0
   debounceThreshold: 0.01
   localForward: {x: -0, y: 1, z: 0}
-  localUp: {x: 0, y: 1, z: 0}
-  localCenter: {x: 0, y: 0, z: 0}
+  localUp: {x: 0, y: 0, z: -1}
+  localCenter: {x: 0, y: 0.5, z: 0}
   bounds: {x: 1, y: 1}
   touchableCollider: {fileID: 765675403}
 --- !u!1 &862828941
@@ -2353,8 +2353,8 @@ MonoBehaviour:
   eventsToReceive: 0
   debounceThreshold: 0.01
   localForward: {x: 0, y: 1, z: 0}
-  localUp: {x: 0, y: 1, z: 0}
-  localCenter: {x: 0, y: 0, z: 0}
+  localUp: {x: 0, y: 0, z: -1}
+  localCenter: {x: 0, y: 0.5, z: 0}
   bounds: {x: 1, y: 1}
   touchableCollider: {fileID: 862828944}
 --- !u!1 &879869504
@@ -2535,8 +2535,8 @@ MonoBehaviour:
   eventsToReceive: 0
   debounceThreshold: 0.01
   localForward: {x: 0, y: 1, z: 0}
-  localUp: {x: 0, y: 1, z: 0}
-  localCenter: {x: 0, y: 0, z: 0}
+  localUp: {x: 0, y: 0, z: -1}
+  localCenter: {x: 0, y: 0.5, z: 0}
   bounds: {x: 1, y: 1}
   touchableCollider: {fileID: 879869507}
 --- !u!1 &896893443
@@ -3227,8 +3227,8 @@ MonoBehaviour:
   eventsToReceive: 0
   debounceThreshold: 0.01
   localForward: {x: 0, y: 1, z: 0}
-  localUp: {x: 0, y: 1, z: 0}
-  localCenter: {x: 0, y: 0, z: 0}
+  localUp: {x: 0, y: 0, z: -1}
+  localCenter: {x: 0, y: 0.5, z: 0}
   bounds: {x: 1, y: 1}
   touchableCollider: {fileID: 979416329}
 --- !u!1 &1024165852
@@ -3606,8 +3606,8 @@ MonoBehaviour:
   eventsToReceive: 0
   debounceThreshold: 0.01
   localForward: {x: -0, y: 1, z: 0}
-  localUp: {x: 0, y: 1, z: 0}
-  localCenter: {x: 0, y: 0, z: 0}
+  localUp: {x: 0, y: 0, z: -1}
+  localCenter: {x: 0, y: 0.5, z: 0}
   bounds: {x: 1, y: 1}
   touchableCollider: {fileID: 1146766068}
 --- !u!1 &1174059437
@@ -4719,8 +4719,8 @@ MonoBehaviour:
   eventsToReceive: 0
   debounceThreshold: 0.01
   localForward: {x: 0, y: 1, z: 0}
-  localUp: {x: 0, y: 1, z: 0}
-  localCenter: {x: 0, y: 0, z: 0}
+  localUp: {x: 0, y: 0, z: -1}
+  localCenter: {x: 0, y: 0.5, z: 0}
   bounds: {x: 1, y: 1}
   touchableCollider: {fileID: 1420923214}
 --- !u!1 &1479931399
@@ -5073,8 +5073,8 @@ MonoBehaviour:
   eventsToReceive: 0
   debounceThreshold: 0.01
   localForward: {x: -0, y: 1, z: 0}
-  localUp: {x: 0, y: 1, z: 0}
-  localCenter: {x: 0, y: 0, z: 0}
+  localUp: {x: 0, y: 0, z: -1}
+  localCenter: {x: 0, y: 0.5, z: 0}
   bounds: {x: 1, y: 1}
   touchableCollider: {fileID: 1538309506}
 --- !u!1 &1562424613
@@ -5255,8 +5255,8 @@ MonoBehaviour:
   eventsToReceive: 0
   debounceThreshold: 0.01
   localForward: {x: 0, y: 1, z: 0}
-  localUp: {x: 0, y: 1, z: 0}
-  localCenter: {x: 0, y: 0, z: 0}
+  localUp: {x: 0, y: 0, z: -1}
+  localCenter: {x: 0, y: 0.5, z: 0}
   bounds: {x: 1, y: 1}
   touchableCollider: {fileID: 1562424616}
 --- !u!1 &1567686772
@@ -5651,8 +5651,8 @@ MonoBehaviour:
   eventsToReceive: 0
   debounceThreshold: 0.01
   localForward: {x: 0, y: 1, z: 0}
-  localUp: {x: 0, y: 1, z: 0}
-  localCenter: {x: 0, y: 0, z: 0}
+  localUp: {x: 0, y: 0, z: -1}
+  localCenter: {x: 0, y: 0.5, z: 0}
   bounds: {x: 1, y: 1}
   touchableCollider: {fileID: 1826526446}
 --- !u!1 &1854843549
@@ -5833,8 +5833,8 @@ MonoBehaviour:
   eventsToReceive: 0
   debounceThreshold: 0.01
   localForward: {x: -0, y: 1, z: 0}
-  localUp: {x: 0, y: 1, z: 0}
-  localCenter: {x: 0, y: 0, z: 0}
+  localUp: {x: 0, y: 0, z: -1}
+  localCenter: {x: 0, y: 0.5, z: 0}
   bounds: {x: 1, y: 1}
   touchableCollider: {fileID: 1854843553}
 --- !u!1 &1902879983

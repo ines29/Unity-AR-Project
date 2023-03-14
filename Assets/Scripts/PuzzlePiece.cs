@@ -22,7 +22,13 @@ public class PuzzlePiece : MonoBehaviour
         //"rightPosition" auf die aktuelle Position des Puzzleteils setzen
         rightPosition = transform.position;
         // Setze die Startposition des Puzzleteils auf eine zufällige Position innerhalb eines Bereichs
-        transform.position = new Vector3(Random.Range(5f, 11f), Random.Range(2.5f, -7));
+        float range1 = Random.Range(5f, 11f);
+        float range2 = Random.Range(2.5f, -7);
+        Debug.Log(gameObject.name);
+        Debug.Log(transform.position);
+        Debug.Log("Range 1: " + range1 + " Range 2: " + range2);
+        transform.position = new Vector3(range1,range2);
+        Debug.Log(transform.position);
 
         // Erstelle den Platzhalter-GameObject an der richtigen Position
         GameObject placeholder = Instantiate(placeholderPrefab, rightPosition, Quaternion.identity);

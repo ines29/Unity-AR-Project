@@ -142,6 +142,7 @@ GameObject:
   - component: {fileID: 16269032}
   - component: {fileID: 16269027}
   - component: {fileID: 16269029}
+  - component: {fileID: 16269031}
   m_Layer: 0
   m_Name: Piece (21)
   m_TagString: Puzzle
@@ -329,6 +330,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63c897c097799da4a900032ad3471c47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ispressed: 0
   movingButtonVisuals: {fileID: 0}
   distanceSpaceMode: 1
   startPushDistance: 0
@@ -350,6 +352,20 @@ MonoBehaviour:
   ButtonReleased:
     m_PersistentCalls:
       m_Calls: []
+--- !u!136 &16269031
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 16269022}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.86
+  m_Height: 2.74
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0.67}
 --- !u!114 &16269032
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -523,6 +539,7 @@ GameObject:
   - component: {fileID: 63263170}
   - component: {fileID: 63263165}
   - component: {fileID: 63263167}
+  - component: {fileID: 63263169}
   m_Layer: 0
   m_Name: Piece (16)
   m_TagString: Puzzle
@@ -710,6 +727,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63c897c097799da4a900032ad3471c47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ispressed: 0
   movingButtonVisuals: {fileID: 0}
   distanceSpaceMode: 1
   startPushDistance: 0
@@ -731,6 +749,20 @@ MonoBehaviour:
   ButtonReleased:
     m_PersistentCalls:
       m_Calls: []
+--- !u!136 &63263169
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 63263160}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 1.3700004
+  m_Height: 1.7200004
+  m_Direction: 1
+  m_Center: {x: -0.00000011920929, y: -0.00000047683716, z: 0.6}
 --- !u!114 &63263170
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -758,7 +790,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 181cd563a8349c34ea8978b0bc8d9c7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hostTransform: {fileID: 0}
+  hostTransform: {fileID: 63263164}
   manipulationType: 3
   twoHandedManipulationType: 7
   allowFarManipulation: 1
@@ -775,7 +807,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 16269034}
+  constraintsManager: {fileID: 63263172}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -904,6 +936,7 @@ GameObject:
   - component: {fileID: 65113964}
   - component: {fileID: 65113959}
   - component: {fileID: 65113961}
+  - component: {fileID: 65113963}
   m_Layer: 0
   m_Name: Piece (5)
   m_TagString: Puzzle
@@ -1091,6 +1124,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63c897c097799da4a900032ad3471c47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ispressed: 0
   movingButtonVisuals: {fileID: 0}
   distanceSpaceMode: 1
   startPushDistance: 0
@@ -1112,6 +1146,20 @@ MonoBehaviour:
   ButtonReleased:
     m_PersistentCalls:
       m_Calls: []
+--- !u!136 &65113963
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 65113954}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.8450002
+  m_Height: 2.2300005
+  m_Direction: 1
+  m_Center: {x: -0.00000011920929, y: 0, z: 0.6}
 --- !u!114 &65113964
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1156,7 +1204,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 16269034}
+  constraintsManager: {fileID: 63263172}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -1367,6 +1415,7 @@ GameObject:
   - component: {fileID: 254628935}
   - component: {fileID: 254628930}
   - component: {fileID: 254628932}
+  - component: {fileID: 254628934}
   m_Layer: 0
   m_Name: Piece (28)
   m_TagString: Puzzle
@@ -1554,6 +1603,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63c897c097799da4a900032ad3471c47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ispressed: 0
   movingButtonVisuals: {fileID: 0}
   distanceSpaceMode: 1
   startPushDistance: 0
@@ -1575,6 +1625,20 @@ MonoBehaviour:
   ButtonReleased:
     m_PersistentCalls:
       m_Calls: []
+--- !u!136 &254628934
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 254628925}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.86
+  m_Height: 2.74
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0.67}
 --- !u!114 &254628935
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1666,6 +1730,7 @@ GameObject:
   - component: {fileID: 257467762}
   - component: {fileID: 257467757}
   - component: {fileID: 257467759}
+  - component: {fileID: 257467761}
   m_Layer: 0
   m_Name: Piece (22)
   m_TagString: Puzzle
@@ -1853,6 +1918,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63c897c097799da4a900032ad3471c47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ispressed: 0
   movingButtonVisuals: {fileID: 0}
   distanceSpaceMode: 1
   startPushDistance: 0
@@ -1874,6 +1940,20 @@ MonoBehaviour:
   ButtonReleased:
     m_PersistentCalls:
       m_Calls: []
+--- !u!136 &257467761
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 257467752}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.8600002
+  m_Height: 2.7400007
+  m_Direction: 1
+  m_Center: {x: -0.00000011920929, y: 0, z: 0.67}
 --- !u!114 &257467762
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2467,6 +2547,7 @@ GameObject:
   - component: {fileID: 421992592}
   - component: {fileID: 421992587}
   - component: {fileID: 421992589}
+  - component: {fileID: 421992591}
   m_Layer: 0
   m_Name: Piece (27)
   m_TagString: Puzzle
@@ -2654,6 +2735,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63c897c097799da4a900032ad3471c47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ispressed: 0
   movingButtonVisuals: {fileID: 0}
   distanceSpaceMode: 1
   startPushDistance: 0
@@ -2675,6 +2757,20 @@ MonoBehaviour:
   ButtonReleased:
     m_PersistentCalls:
       m_Calls: []
+--- !u!136 &421992591
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 421992582}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.8600002
+  m_Height: 2.7400007
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.00000011920929, z: 0.67}
 --- !u!114 &421992592
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2767,6 +2863,7 @@ GameObject:
   - component: {fileID: 452357453}
   - component: {fileID: 452357449}
   - component: {fileID: 452357451}
+  - component: {fileID: 452357457}
   m_Layer: 0
   m_Name: Piece (0)
   m_TagString: Puzzle
@@ -2942,7 +3039,7 @@ CapsuleCollider:
   m_Radius: 0.87104774
   m_Height: 2.5611277
   m_Direction: 1
-  m_Center: {x: -0.012929678, y: 0.16556382, z: 0.67236626}
+  m_Center: {x: -0.012929678, y: 0.16556382, z: 0.6}
 --- !u!114 &452357452
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2955,6 +3052,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63c897c097799da4a900032ad3471c47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ispressed: 0
   movingButtonVisuals: {fileID: 0}
   distanceSpaceMode: 1
   startPushDistance: 0
@@ -3033,7 +3131,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 452357456}
+  constraintsManager: {fileID: 63263172}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -3061,6 +3159,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   autoConstraintSelection: 1
   selectedConstraints: []
+--- !u!136 &452357457
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 452357444}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.845
+  m_Height: 2.23
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &486042874
 GameObject:
   m_ObjectHideFlags: 0
@@ -3080,6 +3192,7 @@ GameObject:
   - component: {fileID: 486042884}
   - component: {fileID: 486042879}
   - component: {fileID: 486042881}
+  - component: {fileID: 486042883}
   m_Layer: 0
   m_Name: Piece (6)
   m_TagString: Puzzle
@@ -3267,6 +3380,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63c897c097799da4a900032ad3471c47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ispressed: 0
   movingButtonVisuals: {fileID: 0}
   distanceSpaceMode: 1
   startPushDistance: 0
@@ -3288,6 +3402,20 @@ MonoBehaviour:
   ButtonReleased:
     m_PersistentCalls:
       m_Calls: []
+--- !u!136 &486042883
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 486042874}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 1.3700004
+  m_Height: 1.7200004
+  m_Direction: 1
+  m_Center: {x: -0.00000011920929, y: 0.00000023841858, z: 0.6}
 --- !u!114 &486042884
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3332,7 +3460,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 16269034}
+  constraintsManager: {fileID: 63263172}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -3379,6 +3507,7 @@ GameObject:
   - component: {fileID: 552596665}
   - component: {fileID: 552596660}
   - component: {fileID: 552596662}
+  - component: {fileID: 552596664}
   m_Layer: 0
   m_Name: Piece (18)
   m_TagString: Puzzle
@@ -3566,6 +3695,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63c897c097799da4a900032ad3471c47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ispressed: 0
   movingButtonVisuals: {fileID: 0}
   distanceSpaceMode: 1
   startPushDistance: 0
@@ -3587,6 +3717,20 @@ MonoBehaviour:
   ButtonReleased:
     m_PersistentCalls:
       m_Calls: []
+--- !u!136 &552596664
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 552596655}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 1.3700004
+  m_Height: 1.7200004
+  m_Direction: 1
+  m_Center: {x: 0, y: -0.00000047683716, z: 0.67}
 --- !u!114 &552596665
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3863,6 +4007,7 @@ GameObject:
   - component: {fileID: 679335142}
   - component: {fileID: 679335137}
   - component: {fileID: 679335139}
+  - component: {fileID: 679335141}
   m_Layer: 0
   m_Name: Piece (8)
   m_TagString: Puzzle
@@ -4050,6 +4195,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63c897c097799da4a900032ad3471c47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ispressed: 0
   movingButtonVisuals: {fileID: 0}
   distanceSpaceMode: 1
   startPushDistance: 0
@@ -4071,6 +4217,20 @@ MonoBehaviour:
   ButtonReleased:
     m_PersistentCalls:
       m_Calls: []
+--- !u!136 &679335141
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 679335132}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 1.3700004
+  m_Height: 1.7200004
+  m_Direction: 1
+  m_Center: {x: 0.00000023841858, y: 0.00000023841858, z: 0.6}
 --- !u!114 &679335142
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4115,7 +4275,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 16269034}
+  constraintsManager: {fileID: 63263172}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -4480,6 +4640,7 @@ GameObject:
   - component: {fileID: 791069286}
   - component: {fileID: 791069281}
   - component: {fileID: 791069283}
+  - component: {fileID: 791069285}
   m_Layer: 0
   m_Name: Piece (11)
   m_TagString: Puzzle
@@ -4667,6 +4828,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63c897c097799da4a900032ad3471c47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ispressed: 0
   movingButtonVisuals: {fileID: 0}
   distanceSpaceMode: 1
   startPushDistance: 0
@@ -4688,6 +4850,20 @@ MonoBehaviour:
   ButtonReleased:
     m_PersistentCalls:
       m_Calls: []
+--- !u!136 &791069285
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 791069276}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 1.37
+  m_Height: 1.72
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0.6}
 --- !u!114 &791069286
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4732,7 +4908,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 16269034}
+  constraintsManager: {fileID: 63263172}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -5201,6 +5377,7 @@ GameObject:
   - component: {fileID: 875872040}
   - component: {fileID: 875872035}
   - component: {fileID: 875872037}
+  - component: {fileID: 875872039}
   m_Layer: 0
   m_Name: Piece (25)
   m_TagString: Puzzle
@@ -5388,6 +5565,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63c897c097799da4a900032ad3471c47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ispressed: 0
   movingButtonVisuals: {fileID: 0}
   distanceSpaceMode: 1
   startPushDistance: 0
@@ -5409,6 +5587,20 @@ MonoBehaviour:
   ButtonReleased:
     m_PersistentCalls:
       m_Calls: []
+--- !u!136 &875872039
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 875872030}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.86
+  m_Height: 2.74
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0.67}
 --- !u!114 &875872040
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5582,6 +5774,7 @@ GameObject:
   - component: {fileID: 894417683}
   - component: {fileID: 894417678}
   - component: {fileID: 894417680}
+  - component: {fileID: 894417682}
   m_Layer: 0
   m_Name: Piece (23)
   m_TagString: Puzzle
@@ -5769,6 +5962,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63c897c097799da4a900032ad3471c47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ispressed: 0
   movingButtonVisuals: {fileID: 0}
   distanceSpaceMode: 1
   startPushDistance: 0
@@ -5790,6 +5984,20 @@ MonoBehaviour:
   ButtonReleased:
     m_PersistentCalls:
       m_Calls: []
+--- !u!136 &894417682
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 894417673}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.8600002
+  m_Height: 2.7400007
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0.67}
 --- !u!114 &894417683
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5881,6 +6089,7 @@ GameObject:
   - component: {fileID: 910790977}
   - component: {fileID: 910790972}
   - component: {fileID: 910790974}
+  - component: {fileID: 910790976}
   m_Layer: 0
   m_Name: Piece (4)
   m_TagString: Puzzle
@@ -6068,6 +6277,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63c897c097799da4a900032ad3471c47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ispressed: 0
   movingButtonVisuals: {fileID: 0}
   distanceSpaceMode: 1
   startPushDistance: 0
@@ -6089,6 +6299,20 @@ MonoBehaviour:
   ButtonReleased:
     m_PersistentCalls:
       m_Calls: []
+--- !u!136 &910790976
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 910790967}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 1.1150002
+  m_Height: 1.7200004
+  m_Direction: 1
+  m_Center: {x: 0.00000011920929, y: 0, z: 0.6}
 --- !u!114 &910790977
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6133,7 +6357,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 16269034}
+  constraintsManager: {fileID: 63263172}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -6308,6 +6532,7 @@ GameObject:
   - component: {fileID: 1012425611}
   - component: {fileID: 1012425606}
   - component: {fileID: 1012425608}
+  - component: {fileID: 1012425610}
   m_Layer: 0
   m_Name: Piece (34)
   m_TagString: Puzzle
@@ -6495,6 +6720,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63c897c097799da4a900032ad3471c47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ispressed: 0
   movingButtonVisuals: {fileID: 0}
   distanceSpaceMode: 1
   startPushDistance: 0
@@ -6516,6 +6742,20 @@ MonoBehaviour:
   ButtonReleased:
     m_PersistentCalls:
       m_Calls: []
+--- !u!136 &1012425610
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1012425601}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.86
+  m_Height: 2.74
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0.67}
 --- !u!114 &1012425611
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6560,7 +6800,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 1012425613}
+  constraintsManager: {fileID: 16269034}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -6607,6 +6847,7 @@ GameObject:
   - component: {fileID: 1017332464}
   - component: {fileID: 1017332459}
   - component: {fileID: 1017332461}
+  - component: {fileID: 1017332463}
   m_Layer: 0
   m_Name: Piece (29)
   m_TagString: Puzzle
@@ -6794,6 +7035,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63c897c097799da4a900032ad3471c47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ispressed: 0
   movingButtonVisuals: {fileID: 0}
   distanceSpaceMode: 1
   startPushDistance: 0
@@ -6815,6 +7057,20 @@ MonoBehaviour:
   ButtonReleased:
     m_PersistentCalls:
       m_Calls: []
+--- !u!136 &1017332463
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1017332454}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.8600002
+  m_Height: 2.7400007
+  m_Direction: 1
+  m_Center: {x: -0.00000023841858, y: 0.00000023841858, z: 0.67}
 --- !u!114 &1017332464
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7210,6 +7466,7 @@ GameObject:
   - component: {fileID: 1084889999}
   - component: {fileID: 1084889994}
   - component: {fileID: 1084889996}
+  - component: {fileID: 1084889998}
   m_Layer: 0
   m_Name: Piece (3)
   m_TagString: Puzzle
@@ -7397,6 +7654,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63c897c097799da4a900032ad3471c47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ispressed: 0
   movingButtonVisuals: {fileID: 0}
   distanceSpaceMode: 1
   startPushDistance: 0
@@ -7418,6 +7676,20 @@ MonoBehaviour:
   ButtonReleased:
     m_PersistentCalls:
       m_Calls: []
+--- !u!136 &1084889998
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1084889989}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 1.37
+  m_Height: 1.72
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0.6}
 --- !u!114 &1084889999
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7462,7 +7734,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 16269034}
+  constraintsManager: {fileID: 63263172}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -7509,6 +7781,7 @@ GameObject:
   - component: {fileID: 1116172358}
   - component: {fileID: 1116172353}
   - component: {fileID: 1116172355}
+  - component: {fileID: 1116172357}
   m_Layer: 0
   m_Name: Piece (13)
   m_TagString: Puzzle
@@ -7696,6 +7969,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63c897c097799da4a900032ad3471c47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ispressed: 0
   movingButtonVisuals: {fileID: 0}
   distanceSpaceMode: 1
   startPushDistance: 0
@@ -7717,6 +7991,20 @@ MonoBehaviour:
   ButtonReleased:
     m_PersistentCalls:
       m_Calls: []
+--- !u!136 &1116172357
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1116172348}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 1.37
+  m_Height: 1.72
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0.6}
 --- !u!114 &1116172358
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7761,7 +8049,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 16269034}
+  constraintsManager: {fileID: 63263172}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -8054,6 +8342,7 @@ GameObject:
   - component: {fileID: 1312062262}
   - component: {fileID: 1312062257}
   - component: {fileID: 1312062259}
+  - component: {fileID: 1312062261}
   m_Layer: 0
   m_Name: Piece (19)
   m_TagString: Puzzle
@@ -8241,6 +8530,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63c897c097799da4a900032ad3471c47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ispressed: 0
   movingButtonVisuals: {fileID: 0}
   distanceSpaceMode: 1
   startPushDistance: 0
@@ -8262,6 +8552,20 @@ MonoBehaviour:
   ButtonReleased:
     m_PersistentCalls:
       m_Calls: []
+--- !u!136 &1312062261
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1312062252}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.8450002
+  m_Height: 2.2300005
+  m_Direction: 1
+  m_Center: {x: -0.00000047683716, y: 0, z: 0.67}
 --- !u!114 &1312062262
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8517,6 +8821,7 @@ GameObject:
   - component: {fileID: 1400520064}
   - component: {fileID: 1400520059}
   - component: {fileID: 1400520061}
+  - component: {fileID: 1400520063}
   m_Layer: 0
   m_Name: Piece (10)
   m_TagString: Puzzle
@@ -8704,6 +9009,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63c897c097799da4a900032ad3471c47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ispressed: 0
   movingButtonVisuals: {fileID: 0}
   distanceSpaceMode: 1
   startPushDistance: 0
@@ -8725,6 +9031,20 @@ MonoBehaviour:
   ButtonReleased:
     m_PersistentCalls:
       m_Calls: []
+--- !u!136 &1400520063
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1400520054}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.845
+  m_Height: 2.23
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0.6}
 --- !u!114 &1400520064
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8769,7 +9089,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 16269034}
+  constraintsManager: {fileID: 63263172}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -8816,6 +9136,7 @@ GameObject:
   - component: {fileID: 1420667600}
   - component: {fileID: 1420667595}
   - component: {fileID: 1420667597}
+  - component: {fileID: 1420667599}
   m_Layer: 0
   m_Name: Piece (1)
   m_TagString: Puzzle
@@ -9003,6 +9324,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63c897c097799da4a900032ad3471c47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ispressed: 0
   movingButtonVisuals: {fileID: 0}
   distanceSpaceMode: 1
   startPushDistance: 0
@@ -9024,6 +9346,20 @@ MonoBehaviour:
   ButtonReleased:
     m_PersistentCalls:
       m_Calls: []
+--- !u!136 &1420667599
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1420667590}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 1.37
+  m_Height: 1.72
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0.6}
 --- !u!114 &1420667600
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9068,7 +9404,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 16269034}
+  constraintsManager: {fileID: 63263172}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -9115,6 +9451,7 @@ GameObject:
   - component: {fileID: 1424441236}
   - component: {fileID: 1424441231}
   - component: {fileID: 1424441233}
+  - component: {fileID: 1424441235}
   m_Layer: 0
   m_Name: Piece (24)
   m_TagString: Puzzle
@@ -9302,6 +9639,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63c897c097799da4a900032ad3471c47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ispressed: 0
   movingButtonVisuals: {fileID: 0}
   distanceSpaceMode: 1
   startPushDistance: 0
@@ -9323,6 +9661,20 @@ MonoBehaviour:
   ButtonReleased:
     m_PersistentCalls:
       m_Calls: []
+--- !u!136 &1424441235
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1424441226}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.86
+  m_Height: 2.74
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0.67}
 --- !u!114 &1424441236
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9496,6 +9848,7 @@ GameObject:
   - component: {fileID: 1441044207}
   - component: {fileID: 1441044202}
   - component: {fileID: 1441044204}
+  - component: {fileID: 1441044206}
   m_Layer: 0
   m_Name: Piece (31)
   m_TagString: Puzzle
@@ -9683,6 +10036,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63c897c097799da4a900032ad3471c47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ispressed: 0
   movingButtonVisuals: {fileID: 0}
   distanceSpaceMode: 1
   startPushDistance: 0
@@ -9704,6 +10058,20 @@ MonoBehaviour:
   ButtonReleased:
     m_PersistentCalls:
       m_Calls: []
+--- !u!136 &1441044206
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1441044197}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.8600002
+  m_Height: 2.7400007
+  m_Direction: 1
+  m_Center: {x: 0.000000059604645, y: 0, z: 0.67}
 --- !u!114 &1441044207
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9731,7 +10099,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 181cd563a8349c34ea8978b0bc8d9c7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hostTransform: {fileID: 0}
+  hostTransform: {fileID: 1441044201}
   manipulationType: 3
   twoHandedManipulationType: 7
   allowFarManipulation: 1
@@ -9748,7 +10116,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 16269034}
+  constraintsManager: {fileID: 1441044209}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -9795,6 +10163,7 @@ GameObject:
   - component: {fileID: 1466107151}
   - component: {fileID: 1466107146}
   - component: {fileID: 1466107148}
+  - component: {fileID: 1466107150}
   m_Layer: 0
   m_Name: Piece (32)
   m_TagString: Puzzle
@@ -9982,6 +10351,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63c897c097799da4a900032ad3471c47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ispressed: 0
   movingButtonVisuals: {fileID: 0}
   distanceSpaceMode: 1
   startPushDistance: 0
@@ -10003,6 +10373,20 @@ MonoBehaviour:
   ButtonReleased:
     m_PersistentCalls:
       m_Calls: []
+--- !u!136 &1466107150
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1466107141}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.86
+  m_Height: 2.74
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0.67}
 --- !u!114 &1466107151
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10290,6 +10674,7 @@ GameObject:
   - component: {fileID: 1533940674}
   - component: {fileID: 1533940669}
   - component: {fileID: 1533940671}
+  - component: {fileID: 1533940673}
   m_Layer: 0
   m_Name: Piece (35)
   m_TagString: Puzzle
@@ -10477,6 +10862,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63c897c097799da4a900032ad3471c47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ispressed: 0
   movingButtonVisuals: {fileID: 0}
   distanceSpaceMode: 1
   startPushDistance: 0
@@ -10498,6 +10884,20 @@ MonoBehaviour:
   ButtonReleased:
     m_PersistentCalls:
       m_Calls: []
+--- !u!136 &1533940673
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1533940664}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.8600002
+  m_Height: 2.7400007
+  m_Direction: 1
+  m_Center: {x: -0.00000008940697, y: 0, z: 0.67}
 --- !u!114 &1533940674
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10671,6 +11071,7 @@ GameObject:
   - component: {fileID: 1552452332}
   - component: {fileID: 1552452327}
   - component: {fileID: 1552452329}
+  - component: {fileID: 1552452331}
   m_Layer: 0
   m_Name: Piece (33)
   m_TagString: Puzzle
@@ -10858,6 +11259,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63c897c097799da4a900032ad3471c47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ispressed: 0
   movingButtonVisuals: {fileID: 0}
   distanceSpaceMode: 1
   startPushDistance: 0
@@ -10879,6 +11281,20 @@ MonoBehaviour:
   ButtonReleased:
     m_PersistentCalls:
       m_Calls: []
+--- !u!136 &1552452331
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1552452322}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.8600002
+  m_Height: 2.7400007
+  m_Direction: 1
+  m_Center: {x: -0.00000023841858, y: 0.00000011920929, z: 0.67}
 --- !u!114 &1552452332
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10970,6 +11386,7 @@ GameObject:
   - component: {fileID: 1608810145}
   - component: {fileID: 1608810140}
   - component: {fileID: 1608810142}
+  - component: {fileID: 1608810144}
   m_Layer: 0
   m_Name: Piece (12)
   m_TagString: Puzzle
@@ -11157,6 +11574,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63c897c097799da4a900032ad3471c47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ispressed: 0
   movingButtonVisuals: {fileID: 0}
   distanceSpaceMode: 1
   startPushDistance: 0
@@ -11178,6 +11596,20 @@ MonoBehaviour:
   ButtonReleased:
     m_PersistentCalls:
       m_Calls: []
+--- !u!136 &1608810144
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1608810135}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 1.1150002
+  m_Height: 1.7200004
+  m_Direction: 1
+  m_Center: {x: -0.00000047683716, y: 0.00000011920929, z: 0.6}
 --- !u!114 &1608810145
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11222,7 +11654,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 16269034}
+  constraintsManager: {fileID: 63263172}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -11489,6 +11921,7 @@ GameObject:
   - component: {fileID: 1716705230}
   - component: {fileID: 1716705225}
   - component: {fileID: 1716705227}
+  - component: {fileID: 1716705229}
   m_Layer: 0
   m_Name: Piece (20)
   m_TagString: Puzzle
@@ -11676,6 +12109,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63c897c097799da4a900032ad3471c47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ispressed: 0
   movingButtonVisuals: {fileID: 0}
   distanceSpaceMode: 1
   startPushDistance: 0
@@ -11697,6 +12131,20 @@ MonoBehaviour:
   ButtonReleased:
     m_PersistentCalls:
       m_Calls: []
+--- !u!136 &1716705229
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1716705220}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.86
+  m_Height: 2.74
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0.67}
 --- !u!114 &1716705230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11870,6 +12318,7 @@ GameObject:
   - component: {fileID: 1721701297}
   - component: {fileID: 1721701292}
   - component: {fileID: 1721701294}
+  - component: {fileID: 1721701296}
   m_Layer: 0
   m_Name: Piece (26)
   m_TagString: Puzzle
@@ -12057,6 +12506,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63c897c097799da4a900032ad3471c47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ispressed: 0
   movingButtonVisuals: {fileID: 0}
   distanceSpaceMode: 1
   startPushDistance: 0
@@ -12078,6 +12528,20 @@ MonoBehaviour:
   ButtonReleased:
     m_PersistentCalls:
       m_Calls: []
+--- !u!136 &1721701296
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1721701287}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.8600002
+  m_Height: 2.7400007
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.00000011920929, z: 0.67}
 --- !u!114 &1721701297
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12364,6 +12828,7 @@ GameObject:
   - component: {fileID: 1769963992}
   - component: {fileID: 1769963987}
   - component: {fileID: 1769963989}
+  - component: {fileID: 1769963991}
   m_Layer: 0
   m_Name: Piece (15)
   m_TagString: Puzzle
@@ -12551,6 +13016,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63c897c097799da4a900032ad3471c47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ispressed: 0
   movingButtonVisuals: {fileID: 0}
   distanceSpaceMode: 1
   startPushDistance: 0
@@ -12572,6 +13038,20 @@ MonoBehaviour:
   ButtonReleased:
     m_PersistentCalls:
       m_Calls: []
+--- !u!136 &1769963991
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1769963982}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 1.115
+  m_Height: 1.72
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0.6}
 --- !u!114 &1769963992
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12616,7 +13096,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 16269034}
+  constraintsManager: {fileID: 63263172}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -12663,6 +13143,7 @@ GameObject:
   - component: {fileID: 1848927339}
   - component: {fileID: 1848927334}
   - component: {fileID: 1848927336}
+  - component: {fileID: 1848927338}
   m_Layer: 0
   m_Name: Piece (30)
   m_TagString: Puzzle
@@ -12850,6 +13331,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63c897c097799da4a900032ad3471c47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ispressed: 0
   movingButtonVisuals: {fileID: 0}
   distanceSpaceMode: 1
   startPushDistance: 0
@@ -12871,6 +13353,20 @@ MonoBehaviour:
   ButtonReleased:
     m_PersistentCalls:
       m_Calls: []
+--- !u!136 &1848927338
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1848927329}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.86
+  m_Height: 2.74
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0.67}
 --- !u!114 &1848927339
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13044,6 +13540,7 @@ GameObject:
   - component: {fileID: 1903532792}
   - component: {fileID: 1903532787}
   - component: {fileID: 1903532789}
+  - component: {fileID: 1903532791}
   m_Layer: 0
   m_Name: Piece (2)
   m_TagString: Puzzle
@@ -13231,6 +13728,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63c897c097799da4a900032ad3471c47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ispressed: 0
   movingButtonVisuals: {fileID: 0}
   distanceSpaceMode: 1
   startPushDistance: 0
@@ -13252,6 +13750,20 @@ MonoBehaviour:
   ButtonReleased:
     m_PersistentCalls:
       m_Calls: []
+--- !u!136 &1903532791
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1903532782}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 1.1150002
+  m_Height: 1.7200004
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0.6}
 --- !u!114 &1903532792
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13296,7 +13808,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 16269034}
+  constraintsManager: {fileID: 63263172}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -13589,6 +14101,7 @@ GameObject:
   - component: {fileID: 1981420619}
   - component: {fileID: 1981420614}
   - component: {fileID: 1981420616}
+  - component: {fileID: 1981420618}
   m_Layer: 0
   m_Name: Piece (14)
   m_TagString: Puzzle
@@ -13776,6 +14289,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63c897c097799da4a900032ad3471c47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ispressed: 0
   movingButtonVisuals: {fileID: 0}
   distanceSpaceMode: 1
   startPushDistance: 0
@@ -13797,6 +14311,20 @@ MonoBehaviour:
   ButtonReleased:
     m_PersistentCalls:
       m_Calls: []
+--- !u!136 &1981420618
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1981420609}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 1.1150002
+  m_Height: 1.7200004
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.00000047683716, z: 0.6}
 --- !u!114 &1981420619
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13841,7 +14369,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 16269034}
+  constraintsManager: {fileID: 63263172}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -13888,6 +14416,7 @@ GameObject:
   - component: {fileID: 1982336766}
   - component: {fileID: 1982336761}
   - component: {fileID: 1982336763}
+  - component: {fileID: 1982336765}
   m_Layer: 0
   m_Name: Piece (7)
   m_TagString: Puzzle
@@ -14075,6 +14604,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63c897c097799da4a900032ad3471c47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ispressed: 0
   movingButtonVisuals: {fileID: 0}
   distanceSpaceMode: 1
   startPushDistance: 0
@@ -14096,6 +14626,20 @@ MonoBehaviour:
   ButtonReleased:
     m_PersistentCalls:
       m_Calls: []
+--- !u!136 &1982336765
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1982336756}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 1.115
+  m_Height: 1.72
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0.6}
 --- !u!114 &1982336766
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14140,7 +14684,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 16269034}
+  constraintsManager: {fileID: 63263172}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -14269,6 +14813,7 @@ GameObject:
   - component: {fileID: 1993177157}
   - component: {fileID: 1993177152}
   - component: {fileID: 1993177154}
+  - component: {fileID: 1993177156}
   m_Layer: 0
   m_Name: Piece (9)
   m_TagString: Puzzle
@@ -14456,6 +15001,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63c897c097799da4a900032ad3471c47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ispressed: 0
   movingButtonVisuals: {fileID: 0}
   distanceSpaceMode: 1
   startPushDistance: 0
@@ -14477,6 +15023,20 @@ MonoBehaviour:
   ButtonReleased:
     m_PersistentCalls:
       m_Calls: []
+--- !u!136 &1993177156
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1993177147}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 1.115
+  m_Height: 1.72
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0.6}
 --- !u!114 &1993177157
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14521,7 +15081,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 16269034}
+  constraintsManager: {fileID: 63263172}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -14896,6 +15456,7 @@ GameObject:
   - component: {fileID: 2141152048}
   - component: {fileID: 2141152043}
   - component: {fileID: 2141152045}
+  - component: {fileID: 2141152047}
   m_Layer: 0
   m_Name: Piece (17)
   m_TagString: Puzzle
@@ -15083,6 +15644,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63c897c097799da4a900032ad3471c47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ispressed: 0
   movingButtonVisuals: {fileID: 0}
   distanceSpaceMode: 1
   startPushDistance: 0
@@ -15104,6 +15666,20 @@ MonoBehaviour:
   ButtonReleased:
     m_PersistentCalls:
       m_Calls: []
+--- !u!136 &2141152047
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2141152038}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 1.115
+  m_Height: 1.72
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0.67}
 --- !u!114 &2141152048
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15131,7 +15707,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 181cd563a8349c34ea8978b0bc8d9c7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hostTransform: {fileID: 0}
+  hostTransform: {fileID: 2141152042}
   manipulationType: 3
   twoHandedManipulationType: 7
   allowFarManipulation: 1
@@ -15148,7 +15724,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 16269034}
+  constraintsManager: {fileID: 2141152050}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:

@@ -757,10 +757,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 1.3700004
-  m_Height: 1.7200004
-  m_Direction: 1
-  m_Center: {x: -0.00000011920929, y: -0.00000047683716, z: 0.6}
+  m_Radius: 0.8699645
+  m_Height: 2.7400007
+  m_Direction: 0
+  m_Center: {x: -0.0000001192093, y: 0.0370391, z: 0.6}
 --- !u!114 &63263170
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1662,7 +1662,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 181cd563a8349c34ea8978b0bc8d9c7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hostTransform: {fileID: 0}
+  hostTransform: {fileID: 254628929}
   manipulationType: 3
   twoHandedManipulationType: 7
   allowFarManipulation: 1
@@ -1679,7 +1679,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 16269034}
+  constraintsManager: {fileID: 254628937}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -1976,7 +1976,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 181cd563a8349c34ea8978b0bc8d9c7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hostTransform: {fileID: 0}
+  hostTransform: {fileID: 257467756}
   manipulationType: 3
   twoHandedManipulationType: 7
   allowFarManipulation: 1
@@ -1993,7 +1993,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 16269034}
+  constraintsManager: {fileID: 257467764}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -2792,7 +2792,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 181cd563a8349c34ea8978b0bc8d9c7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hostTransform: {fileID: 0}
+  hostTransform: {fileID: 421992586}
   manipulationType: 3
   twoHandedManipulationType: 7
   allowFarManipulation: 1
@@ -2809,7 +2809,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 16269034}
+  constraintsManager: {fileID: 421992594}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -3435,7 +3435,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 181cd563a8349c34ea8978b0bc8d9c7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hostTransform: {fileID: 0}
+  hostTransform: {fileID: 486042878}
   manipulationType: 3
   twoHandedManipulationType: 7
   allowFarManipulation: 1
@@ -3452,7 +3452,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 63263172}
+  constraintsManager: {fileID: 486042886}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -3718,10 +3718,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 1.3700004
-  m_Height: 1.7200004
-  m_Direction: 1
-  m_Center: {x: 0, y: -0.00000047683716, z: 0.67}
+  m_Radius: 0.83292526
+  m_Height: 2.517763
+  m_Direction: 0
+  m_Center: {x: 0.11111903, y: 0.037038922, z: 0.66999984}
 --- !u!114 &552596665
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3749,7 +3749,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 181cd563a8349c34ea8978b0bc8d9c7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hostTransform: {fileID: 0}
+  hostTransform: {fileID: 552596659}
   manipulationType: 3
   twoHandedManipulationType: 7
   allowFarManipulation: 1
@@ -3766,7 +3766,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 16269034}
+  constraintsManager: {fileID: 552596667}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -4217,10 +4217,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 1.3700004
-  m_Height: 1.7200004
-  m_Direction: 1
-  m_Center: {x: 0.00000023841858, y: 0.00000023841858, z: 0.6}
+  m_Radius: 0.8339931
+  m_Height: 2.7400007
+  m_Direction: 0
+  m_Center: {x: 0.00000023841858, y: 0.008000314, z: 0.6}
 --- !u!114 &679335142
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4248,7 +4248,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 181cd563a8349c34ea8978b0bc8d9c7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hostTransform: {fileID: 0}
+  hostTransform: {fileID: 679335136}
   manipulationType: 3
   twoHandedManipulationType: 7
   allowFarManipulation: 1
@@ -4265,7 +4265,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 63263172}
+  constraintsManager: {fileID: 679335144}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -4849,10 +4849,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 1.37
-  m_Height: 1.72
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0.6}
+  m_Radius: 0.8699641
+  m_Height: 2.74
+  m_Direction: 0
+  m_Center: {x: 0, y: -0.018519878, z: 0.6}
 --- !u!114 &791069286
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4880,7 +4880,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 181cd563a8349c34ea8978b0bc8d9c7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hostTransform: {fileID: 0}
+  hostTransform: {fileID: 791069280}
   manipulationType: 3
   twoHandedManipulationType: 7
   allowFarManipulation: 1
@@ -4897,7 +4897,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 63263172}
+  constraintsManager: {fileID: 791069288}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -5616,7 +5616,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 181cd563a8349c34ea8978b0bc8d9c7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hostTransform: {fileID: 0}
+  hostTransform: {fileID: 875872034}
   manipulationType: 3
   twoHandedManipulationType: 7
   allowFarManipulation: 1
@@ -5633,7 +5633,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 16269034}
+  constraintsManager: {fileID: 875872042}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -6012,7 +6012,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 181cd563a8349c34ea8978b0bc8d9c7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hostTransform: {fileID: 0}
+  hostTransform: {fileID: 894417677}
   manipulationType: 3
   twoHandedManipulationType: 7
   allowFarManipulation: 1
@@ -6029,7 +6029,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 16269034}
+  constraintsManager: {fileID: 894417685}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -6785,7 +6785,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 16269034}
+  constraintsManager: {fileID: 1012425613}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -7082,7 +7082,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 181cd563a8349c34ea8978b0bc8d9c7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hostTransform: {fileID: 0}
+  hostTransform: {fileID: 1017332458}
   manipulationType: 3
   twoHandedManipulationType: 7
   allowFarManipulation: 1
@@ -7099,7 +7099,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 16269034}
+  constraintsManager: {fileID: 1017332466}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -7983,10 +7983,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 1.37
-  m_Height: 1.72
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0.6}
+  m_Radius: 0.8792238
+  m_Height: 2.74
+  m_Direction: 0
+  m_Center: {x: 0, y: 0.02777958, z: 0.6}
 --- !u!114 &1116172358
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8014,7 +8014,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 181cd563a8349c34ea8978b0bc8d9c7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hostTransform: {fileID: 0}
+  hostTransform: {fileID: 1116172352}
   manipulationType: 3
   twoHandedManipulationType: 7
   allowFarManipulation: 1
@@ -8031,7 +8031,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 63263172}
+  constraintsManager: {fileID: 1116172360}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -8574,7 +8574,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 181cd563a8349c34ea8978b0bc8d9c7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hostTransform: {fileID: 0}
+  hostTransform: {fileID: 1312062256}
   manipulationType: 3
   twoHandedManipulationType: 7
   allowFarManipulation: 1
@@ -8591,7 +8591,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 16269034}
+  constraintsManager: {fileID: 1312062264}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -9052,7 +9052,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 181cd563a8349c34ea8978b0bc8d9c7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hostTransform: {fileID: 0}
+  hostTransform: {fileID: 1400520058}
   manipulationType: 3
   twoHandedManipulationType: 7
   allowFarManipulation: 1
@@ -9069,7 +9069,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 63263172}
+  constraintsManager: {fileID: 1400520066}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -9680,7 +9680,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 181cd563a8349c34ea8978b0bc8d9c7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hostTransform: {fileID: 0}
+  hostTransform: {fileID: 1424441230}
   manipulationType: 3
   twoHandedManipulationType: 7
   allowFarManipulation: 1
@@ -9697,7 +9697,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 16269034}
+  constraintsManager: {fileID: 1424441238}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -10390,7 +10390,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 181cd563a8349c34ea8978b0bc8d9c7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hostTransform: {fileID: 0}
+  hostTransform: {fileID: 1466107145}
   manipulationType: 3
   twoHandedManipulationType: 7
   allowFarManipulation: 1
@@ -10407,7 +10407,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 16269034}
+  constraintsManager: {fileID: 1466107153}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -10917,7 +10917,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 16269034}
+  constraintsManager: {fileID: 1533940676}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -11296,7 +11296,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 181cd563a8349c34ea8978b0bc8d9c7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hostTransform: {fileID: 0}
+  hostTransform: {fileID: 1552452326}
   manipulationType: 3
   twoHandedManipulationType: 7
   allowFarManipulation: 1
@@ -11313,7 +11313,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 16269034}
+  constraintsManager: {fileID: 1552452334}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -11579,10 +11579,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 1.1150002
-  m_Height: 1.7200004
-  m_Direction: 1
-  m_Center: {x: -0.00000047683716, y: 0.00000011920929, z: 0.6}
+  m_Radius: 0.8649823
+  m_Height: 2.2300005
+  m_Direction: 0
+  m_Center: {x: -0.00000047683713, y: -0.009259582, z: 0.6}
 --- !u!114 &1608810145
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11610,7 +11610,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 181cd563a8349c34ea8978b0bc8d9c7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hostTransform: {fileID: 0}
+  hostTransform: {fileID: 1608810139}
   manipulationType: 3
   twoHandedManipulationType: 7
   allowFarManipulation: 1
@@ -11627,7 +11627,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 63263172}
+  constraintsManager: {fileID: 1608810147}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -12144,7 +12144,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 181cd563a8349c34ea8978b0bc8d9c7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hostTransform: {fileID: 0}
+  hostTransform: {fileID: 1716705224}
   manipulationType: 3
   twoHandedManipulationType: 7
   allowFarManipulation: 1
@@ -12161,7 +12161,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 16269034}
+  constraintsManager: {fileID: 1716705232}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -12540,7 +12540,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 181cd563a8349c34ea8978b0bc8d9c7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hostTransform: {fileID: 0}
+  hostTransform: {fileID: 1721701291}
   manipulationType: 3
   twoHandedManipulationType: 7
   allowFarManipulation: 1
@@ -12557,7 +12557,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 16269034}
+  constraintsManager: {fileID: 1721701299}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -13018,9 +13018,9 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 1.115
-  m_Height: 1.72
-  m_Direction: 1
+  m_Radius: 0.87424207
+  m_Height: 2.23
+  m_Direction: 0
   m_Center: {x: 0, y: 0, z: 0.6}
 --- !u!114 &1769963992
 MonoBehaviour:
@@ -13049,7 +13049,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 181cd563a8349c34ea8978b0bc8d9c7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hostTransform: {fileID: 0}
+  hostTransform: {fileID: 1769963986}
   manipulationType: 3
   twoHandedManipulationType: 7
   allowFarManipulation: 1
@@ -13066,7 +13066,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 63263172}
+  constraintsManager: {fileID: 1769963994}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -13363,7 +13363,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 181cd563a8349c34ea8978b0bc8d9c7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hostTransform: {fileID: 0}
+  hostTransform: {fileID: 1848927333}
   manipulationType: 3
   twoHandedManipulationType: 7
   allowFarManipulation: 1
@@ -13380,7 +13380,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 16269034}
+  constraintsManager: {fileID: 1848927341}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -14288,10 +14288,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 1.1150002
-  m_Height: 1.7200004
-  m_Direction: 1
-  m_Center: {x: 0, y: 0.00000047683716, z: 0.6}
+  m_Radius: 0.8557227
+  m_Height: 2.2300005
+  m_Direction: 0
+  m_Center: {x: 8.227411e-17, y: -0.03703952, z: 0.6}
 --- !u!114 &1981420619
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14319,7 +14319,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 181cd563a8349c34ea8978b0bc8d9c7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hostTransform: {fileID: 0}
+  hostTransform: {fileID: 1981420613}
   manipulationType: 3
   twoHandedManipulationType: 7
   allowFarManipulation: 1
@@ -14336,7 +14336,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 63263172}
+  constraintsManager: {fileID: 1981420621}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -14602,10 +14602,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 1.115
-  m_Height: 1.72
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0.6}
+  m_Radius: 0.8509961
+  m_Height: 2.23
+  m_Direction: 0
+  m_Center: {x: 0, y: 0.007999957, z: 0.6}
 --- !u!114 &1982336766
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14633,7 +14633,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 181cd563a8349c34ea8978b0bc8d9c7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hostTransform: {fileID: 0}
+  hostTransform: {fileID: 1982336760}
   manipulationType: 3
   twoHandedManipulationType: 7
   allowFarManipulation: 1
@@ -14650,7 +14650,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 63263172}
+  constraintsManager: {fileID: 1982336768}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -14998,10 +14998,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 1.115
-  m_Height: 1.72
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0.6}
+  m_Radius: 0.8589964
+  m_Height: 2.23
+  m_Direction: 0
+  m_Center: {x: 0, y: -0, z: 0.6}
 --- !u!114 &1993177157
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15029,7 +15029,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 181cd563a8349c34ea8978b0bc8d9c7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hostTransform: {fileID: 0}
+  hostTransform: {fileID: 1993177151}
   manipulationType: 3
   twoHandedManipulationType: 7
   allowFarManipulation: 1
@@ -15046,7 +15046,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 63263172}
+  constraintsManager: {fileID: 1993177159}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -15640,10 +15640,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 1.115
-  m_Height: 1.72
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0.67}
+  m_Radius: 0.81868243
+  m_Height: 2.23
+  m_Direction: 0
+  m_Center: {x: 0, y: -0.01851964, z: 0.6700001}
 --- !u!114 &2141152048
 MonoBehaviour:
   m_ObjectHideFlags: 0

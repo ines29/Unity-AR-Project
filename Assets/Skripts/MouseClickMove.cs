@@ -19,6 +19,8 @@ public class MouseClickMove : MonoBehaviour
     private Dictionary<string, Vector3> originalPositions = new Dictionary<string, Vector3>();
     private Dictionary<string, Material> originalMaterials = new Dictionary<string, Material>();
     public Material greenMaterial;
+    private bool isSaved = false;
+    private int count=1;
 
 
 
@@ -26,9 +28,9 @@ public class MouseClickMove : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       
+
         ////Ich habe ein Dictonary erstellt, hier werden alle ursprünglichen Positionen der einzelnen Würfel im Spiel gespeichert
-        originalPositions.Add("Cube1", new Vector3(-3, 5, 12));
+        /*originalPositions.Add("Cube1", new Vector3(-3, 5, 12));
         originalPositions.Add("Cube2", new Vector3(-1, 5, 12));
         originalPositions.Add("Cube3", new Vector3(1, 5, 12));
         originalPositions.Add("Cube4", new Vector3(3, 5, 12));
@@ -43,23 +45,36 @@ public class MouseClickMove : MonoBehaviour
         originalPositions.Add("Cube13", new Vector3(-3,-1, 12));
         originalPositions.Add("Cube14", new Vector3(-1, -1, 12));
         originalPositions.Add("Cube15", new Vector3(1,-1, 12));
-        originalPositions.Add("EmptyCube", new Vector3(3, -1, 12));
+        originalPositions.Add("EmptyCube", new Vector3(3, -1, 12));*/
         // speichert auch die ursprünglichen Materialien der einzelnen Würfel
-        GameObject[] cubes = GameObject.FindGameObjectsWithTag("Cube");
-        foreach (GameObject cube in cubes)
-        {
-            originalMaterials.Add(cube.name, cube.GetComponent<Renderer>().material);
-        }
+       
         
         ShuffleCubes();
        
     }
+    void Awake()
+    {
+        GameObject[] cubes = GameObject.FindGameObjectsWithTag("Cube");
 
-    //// Update is called once per frame
-    //Die Methode Update() wird einmal pro Frame aufgerufen und prüft,
-    //ob sich ein Würfel gerade bewegt. Ist dies der Fall, bewegt das Skript den Würfel in Richtung seiner Zielposition
-    // Update is called once per frame
-    void Update()
+
+        foreach (GameObject cube in cubes)
+        {
+            //Debug.Log("is filled " + originalPositions.ContainsKey(cube.name));
+            if (!originalPositions.ContainsKey(cube.name))
+            {
+                originalMaterials.Add(cube.name, cube.GetComponent<Renderer>().material);
+                originalPositions.Add(cube.name, cube.transform.position);
+                Debug.Log(cube.name + cube.transform.position);
+            }
+        }
+
+    }
+
+        //// Update is called once per frame
+        //Die Methode Update() wird einmal pro Frame aufgerufen und prüft,
+        //ob sich ein Würfel gerade bewegt. Ist dies der Fall, bewegt das Skript den Würfel in Richtung seiner Zielposition
+        // Update is called once per frame
+        void Update()
     {
         if (isMoving)
         {
@@ -98,7 +113,7 @@ public class MouseClickMove : MonoBehaviour
     //newPosForEmptyCube auf die Position des angeklickten Würfels und isMoving auf true.
     public void ButtonPressed ()
     {
-        Debug.Log("test");
+        
         if (isClickable)
         {
             tempTargetPosition = targetPosition;
@@ -120,7 +135,7 @@ public class MouseClickMove : MonoBehaviour
     {
        
         transform.position = Vector3.MoveTowards(transform.position, tempTargetPosition, step);
-        //Debug.Log(transform.position);
+        Debug.Log("new Position"+transform.position*1000);
         //wird die resultierende Position mit Mathf.Round() auf zwei Dezimalstellen gerundet und mit 100f multipliziert, um den Float-Typ zu erhalten.
         transform.position = tempTargetPosition;
 
@@ -132,6 +147,7 @@ public class MouseClickMove : MonoBehaviour
             isMoving = false;
 
             // Prüfen, ob der Würfel in seine ursprüngliche Position verschoben wurde
+           // Debug.Log(originalPositions[gameObject.name]);
             if (transform.position == originalPositions[gameObject.name])
             {
                 //  das Material auf grün setzen, wenn es sich an der richtigen Stelle befindet
@@ -184,9 +200,14 @@ public class MouseClickMove : MonoBehaviour
         
         for(int i = 0; i < cubes.Length; i++)
         {
+            /*Debug.Log(originalPositions.ContainsKey(cubes[i].name));
+            if (!originalPositions.ContainsKey(cubes[i].name)) {
+                originalPositions.Add(cubes[i].name, cubes[i].transform.position);
+                Debug.Log("original "+cubes[i].name + cubes[i].transform.position*1000);
+            }*/
             //cubes[i].transform.position = new Vector3(Mathf.Round(cubes[i].transform.position.x*1000)/1000, Mathf.Round(cubes[i].transform.position.y*1000)/1000, Mathf.Round(cubes[i].transform.position.z*1000)/1000);
         }
-
+        
 
         //eine zufällige Permutation von Indizes von Cube-Objekten erstellen
         //Ein Array von Integer-Indizes wird erstellt, das die Länge der Cube-Liste hat
@@ -213,7 +234,7 @@ public class MouseClickMove : MonoBehaviour
         {
             int j = indices[i];
             Vector3 temp = cubes[j].transform.position;
-            //Debug.Log(temp);
+            
             cubes[j].transform.position = cubes[i].transform.position;
             cubes[i].transform.position = temp;
         }

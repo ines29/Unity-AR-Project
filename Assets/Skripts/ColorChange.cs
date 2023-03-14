@@ -10,7 +10,10 @@ public class ColorChange : MonoBehaviour
     public Material YellowMaterial;
     private Material PreviousMaterial;
 
-    public GameObject plane;
+    public GameObject fireworks;
+    public float fireworksDelay = 1.0f;
+
+    //public GameObject plane;
     public AudioSource cubeSound;
 
     // Start is called before the first frame update
@@ -18,12 +21,14 @@ public class ColorChange : MonoBehaviour
     {
         PreviousMaterial = GetComponent<Renderer>().material;
 
-        if (GameObject.FindWithTag("Rules")!= null)
-        {
-            plane.SetActive(true);
+        fireworks.SetActive(false);
 
-            Invoke("DetectivePlane", 10f);
-        }
+        /* if (GameObject.FindWithTag("Rules")!= null)
+         {
+             plane.SetActive(true);
+
+             Invoke("DetectivePlane", 10f);
+         }*/
     }
 
     // Update is called once per frame
@@ -82,6 +87,19 @@ public class ColorChange : MonoBehaviour
         GetComponent<Renderer>().material = PreviousMaterial;
     }
 
+    public void PlayFireworks()
+    {
+        StartCoroutine(PlayFireworksCoroutine());
+    }
+
+    private IEnumerator PlayFireworksCoroutine()
+    {
+        yield return new WaitForSeconds(fireworksDelay);
+        fireworks.SetActive(true);
+        //start the fireworks particle system
+        fireworks.GetComponent<ParticleSystem>().Play();
+    }
+
     public void CheckWinCondition()
     {
         GameObject cube = GameObject.FindWithTag("Cube");
@@ -94,7 +112,8 @@ public class ColorChange : MonoBehaviour
         {
 
             Debug.Log("You won the game!");
-            
+            PlayFireworks();
+
         }
 
     }

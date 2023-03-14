@@ -55,7 +55,7 @@ public class MouseClickMove : MonoBehaviour
     void Awake()
     {
         GameObject[] cubes = GameObject.FindGameObjectsWithTag("Cube");
-        GameObject[] win = GameObject.FindGameObjectsWithTag("Cubewin");
+        
         //win[0].SetActive(false);
 
         foreach (GameObject cube in cubes)
@@ -65,7 +65,7 @@ public class MouseClickMove : MonoBehaviour
             {
                 originalMaterials.Add(cube.name, cube.GetComponent<Renderer>().material);
                 originalPositions.Add(cube.name, cube.transform.position);
-                Debug.Log(cube.name + cube.transform.position);
+               // Debug.Log(cube.name + cube.transform.position);
             }
             
         }
@@ -137,7 +137,7 @@ public class MouseClickMove : MonoBehaviour
     {
        
         transform.position = Vector3.MoveTowards(transform.position, tempTargetPosition, step);
-        Debug.Log("new Position"+transform.position*1000);
+        //Debug.Log("new Position"+transform.position*1000);
         //wird die resultierende Position mit Mathf.Round() auf zwei Dezimalstellen gerundet und mit 100f multipliziert, um den Float-Typ zu erhalten.
         transform.position = tempTargetPosition;
 
@@ -174,17 +174,31 @@ public class MouseClickMove : MonoBehaviour
             
             // Überprüfen ob alle Cubes in der urpsrünglichen Position sind
             bool allCubesAreInPlace = true;
+            int correctCubes = 0;
             foreach (KeyValuePair<string, Vector3> pair in originalPositions)
             {
+                Debug.Log("win calculation");
                 if (pair.Key != "EmptyCube")
                 {
                     GameObject cube = GameObject.Find(pair.Key);
-                    if (cube.transform.position != pair.Value)
+                    Debug.Log(cube.transform.position*100);
+                    Debug.Log(pair.Value * 100);
+                    if (cube.transform.position != pair.Value && correctCubes<3)
                     {
                         allCubesAreInPlace = false;
-                        break;
+                        //break;
+                    }
+                    else {
+                        Debug.Log("correct");
+                        correctCubes++;
+
                     }
                 }
+                
+
+            }
+            if (correctCubes > 2) {
+                allCubesAreInPlace = true;
             }
 
             //// Wenn alle Würfel an ihrer ursprünglichen Position sind, wird eine Meldung auf der Konsole ausgegeben
@@ -199,7 +213,7 @@ public class MouseClickMove : MonoBehaviour
     {
         //eine Liste von Cube-Objekten erstellen
         GameObject[] cubes = GameObject.FindGameObjectsWithTag("Cube");
-        
+       
         for(int i = 0; i < cubes.Length; i++)
         {
             /*Debug.Log(originalPositions.ContainsKey(cubes[i].name));

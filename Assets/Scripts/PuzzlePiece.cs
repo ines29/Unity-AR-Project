@@ -46,9 +46,11 @@ public class PuzzlePiece : MonoBehaviour
         Debug.Log(other.name + gameObject.name);
         if (other.name == gameObject.name + " Placeholder")
         {
+
             if (!inRightPosition)
             {
                 Debug.Log("Match");
+                StartCoroutine(Snap());
 
                 // Pr�fe, ob das Puzzleteil sich innerhalb des Radius von der aktuellen Zielposition befindet
 
@@ -63,9 +65,8 @@ public class PuzzlePiece : MonoBehaviour
 
 
 
+
         }
-
     }
-
 
 }

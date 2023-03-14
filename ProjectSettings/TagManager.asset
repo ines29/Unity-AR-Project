@@ -12,6 +12,9 @@ TagManager:
   - Chess Board
   - Black
   - White
+  - Puzzle
+  - placeholderPrefab
+  - SnapPosition
   layers:
   - Default
   - TransparentFX

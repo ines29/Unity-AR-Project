@@ -11,6 +11,8 @@ public class winningScript : MonoBehaviour
     //Referenz auf das Endmenu-GameObject
     public GameObject EndMenu;
 
+    public GameObject testCube;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -40,6 +42,8 @@ public class winningScript : MonoBehaviour
     // Methode, um das Spiel zu beenden
     public void EndGame()
     {
+        testCube.SetActive(true);
+
         // Deaktiviere das Puzzle-Objekt
         GameObject puzzleObject = GameObject.Find("Puzzle");
         puzzleObject.SetActive(false);

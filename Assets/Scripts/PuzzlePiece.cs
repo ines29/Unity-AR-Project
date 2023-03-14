@@ -39,18 +39,18 @@ public class PuzzlePiece : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         Debug.Log(other.name+ gameObject.name);
-        if (other.name == gameObject.name+" Placeholder")
+        if (other.name == gameObject.name + " Placeholder")
         {
-            Debug.Log("Match");
-            StartCoroutine(Snap());
-         
+
             if (!inRightPosition)
             {
                 Debug.Log("Match");
+                StartCoroutine(Snap());
 
                 // Prüfe, ob das Puzzleteil sich innerhalb des Radius von der aktuellen Zielposition befindet
 
-                    
+
+            }
         }
 
     }

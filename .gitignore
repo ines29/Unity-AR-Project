@@ -55,10 +55,6 @@ ExportedObj/
 # Unity3D generated file on crash reports
 sysinfo.txt
 
-# Potentially very big Unity3D Assets
-*.fbx
-*.fbx.meta
-
 # Builds
 *.apk
 *.aab

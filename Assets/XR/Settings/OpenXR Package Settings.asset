@@ -275,7 +275,7 @@ MonoBehaviour:
   - {fileID: -4363030319241170058}
   - {fileID: 1097507631289515396}
   m_renderMode: 1
-  m_depthSubmissionMode: 1
+  m_depthSubmissionMode: 0
 --- !u!114 &-2190238587587996907
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -639,7 +639,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3cf79659a011bd419c7a2a30eb74e9a, type: 3}
   m_Name: EyeGazeInteraction WSA
   m_EditorClassIdentifier: 
-  m_enabled: 1
+  m_enabled: 0
   nameUi: Eye Gaze Interaction Profile
   version: 0.0.1
   featureIdInternal: com.unity.openxr.feature.input.eyetracking

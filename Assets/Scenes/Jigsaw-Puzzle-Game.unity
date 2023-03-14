@@ -360,7 +360,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 16269022}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.86
   m_Height: 2.74
@@ -381,6 +381,7 @@ MonoBehaviour:
   inRightPosition: 0
   selected: 0
   placeholderPrefab: {fileID: 1513393044}
+  script: {fileID: 0}
 --- !u!114 &16269033
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -757,7 +758,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 63263160}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.8699645
   m_Height: 2.7400007
@@ -778,6 +779,7 @@ MonoBehaviour:
   inRightPosition: 0
   selected: 0
   placeholderPrefab: {fileID: 1513393044}
+  script: {fileID: 0}
 --- !u!114 &63263171
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -807,7 +809,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 63263172}
+  constraintsManager: {fileID: 16269034}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -1154,7 +1156,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 65113954}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.8450002
   m_Height: 2.2300005
@@ -1175,6 +1177,7 @@ MonoBehaviour:
   inRightPosition: 0
   selected: 0
   placeholderPrefab: {fileID: 1513393044}
+  script: {fileID: 0}
 --- !u!114 &65113965
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1187,7 +1190,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 181cd563a8349c34ea8978b0bc8d9c7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hostTransform: {fileID: 0}
+  hostTransform: {fileID: 65113958}
   manipulationType: 3
   twoHandedManipulationType: 7
   allowFarManipulation: 1
@@ -1204,7 +1207,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 63263172}
+  constraintsManager: {fileID: 16269034}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -1633,7 +1636,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 254628925}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.86
   m_Height: 2.74
@@ -1654,6 +1657,7 @@ MonoBehaviour:
   inRightPosition: 0
   selected: 0
   placeholderPrefab: {fileID: 1513393044}
+  script: {fileID: 0}
 --- !u!114 &254628936
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1683,7 +1687,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 254628937}
+  constraintsManager: {fileID: 16269034}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -1948,7 +1952,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 257467752}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.8600002
   m_Height: 2.7400007
@@ -1969,6 +1973,7 @@ MonoBehaviour:
   inRightPosition: 0
   selected: 0
   placeholderPrefab: {fileID: 1513393044}
+  script: {fileID: 0}
 --- !u!114 &257467763
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1998,7 +2003,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 257467764}
+  constraintsManager: {fileID: 16269034}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -2765,7 +2770,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 421992582}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.8600002
   m_Height: 2.7400007
@@ -2786,6 +2791,7 @@ MonoBehaviour:
   inRightPosition: 0
   selected: 0
   placeholderPrefab: {fileID: 1513393044}
+  script: {fileID: 0}
 --- !u!114 &421992593
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2815,7 +2821,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 421992594}
+  constraintsManager: {fileID: 16269034}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -3034,7 +3040,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 452357444}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.87104774
   m_Height: 2.5611277
@@ -3094,7 +3100,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 452357444}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fba74ac498ccadd43ad3cc6866284044, type: 3}
   m_Name: 
@@ -3102,6 +3108,7 @@ MonoBehaviour:
   inRightPosition: 0
   selected: 0
   placeholderPrefab: {fileID: 1513393044}
+  script: {fileID: 0}
 --- !u!114 &452357455
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3131,7 +3138,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 63263172}
+  constraintsManager: {fileID: 16269034}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -3410,7 +3417,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 486042874}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 1.3700004
   m_Height: 1.7200004
@@ -3431,6 +3438,7 @@ MonoBehaviour:
   inRightPosition: 0
   selected: 0
   placeholderPrefab: {fileID: 1513393044}
+  script: {fileID: 0}
 --- !u!114 &486042885
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3460,7 +3468,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 486042886}
+  constraintsManager: {fileID: 16269034}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -3725,7 +3733,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 552596655}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.83292526
   m_Height: 2.517763
@@ -3746,6 +3754,7 @@ MonoBehaviour:
   inRightPosition: 0
   selected: 0
   placeholderPrefab: {fileID: 1513393044}
+  script: {fileID: 0}
 --- !u!114 &552596666
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3775,7 +3784,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 552596667}
+  constraintsManager: {fileID: 16269034}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -4225,7 +4234,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 679335132}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.8339931
   m_Height: 2.7400007
@@ -4246,6 +4255,7 @@ MonoBehaviour:
   inRightPosition: 0
   selected: 0
   placeholderPrefab: {fileID: 1513393044}
+  script: {fileID: 0}
 --- !u!114 &679335143
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4275,7 +4285,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 679335144}
+  constraintsManager: {fileID: 16269034}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -4858,7 +4868,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 791069276}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.8699641
   m_Height: 2.74
@@ -4879,6 +4889,7 @@ MonoBehaviour:
   inRightPosition: 0
   selected: 0
   placeholderPrefab: {fileID: 1513393044}
+  script: {fileID: 0}
 --- !u!114 &791069287
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4908,7 +4919,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 791069288}
+  constraintsManager: {fileID: 16269034}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -5595,7 +5606,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 875872030}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.86
   m_Height: 2.74
@@ -5616,6 +5627,7 @@ MonoBehaviour:
   inRightPosition: 0
   selected: 0
   placeholderPrefab: {fileID: 1513393044}
+  script: {fileID: 0}
 --- !u!114 &875872041
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5645,7 +5657,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 875872042}
+  constraintsManager: {fileID: 16269034}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -5992,7 +6004,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 894417673}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.8600002
   m_Height: 2.7400007
@@ -6013,6 +6025,7 @@ MonoBehaviour:
   inRightPosition: 0
   selected: 0
   placeholderPrefab: {fileID: 1513393044}
+  script: {fileID: 0}
 --- !u!114 &894417684
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6042,7 +6055,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 894417685}
+  constraintsManager: {fileID: 16269034}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -6307,7 +6320,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 910790967}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 1.1150002
   m_Height: 1.7200004
@@ -6328,6 +6341,7 @@ MonoBehaviour:
   inRightPosition: 0
   selected: 0
   placeholderPrefab: {fileID: 1513393044}
+  script: {fileID: 0}
 --- !u!114 &910790978
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6340,7 +6354,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 181cd563a8349c34ea8978b0bc8d9c7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hostTransform: {fileID: 0}
+  hostTransform: {fileID: 910790971}
   manipulationType: 3
   twoHandedManipulationType: 7
   allowFarManipulation: 1
@@ -6357,7 +6371,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 63263172}
+  constraintsManager: {fileID: 16269034}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -6750,7 +6764,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1012425601}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.86
   m_Height: 2.74
@@ -6771,6 +6785,7 @@ MonoBehaviour:
   inRightPosition: 0
   selected: 0
   placeholderPrefab: {fileID: 1513393044}
+  script: {fileID: 0}
 --- !u!114 &1012425612
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6800,7 +6815,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 1012425613}
+  constraintsManager: {fileID: 16269034}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -7065,7 +7080,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1017332454}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.8600002
   m_Height: 2.7400007
@@ -7086,6 +7101,7 @@ MonoBehaviour:
   inRightPosition: 0
   selected: 0
   placeholderPrefab: {fileID: 1513393044}
+  script: {fileID: 0}
 --- !u!114 &1017332465
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7115,7 +7131,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 1017332466}
+  constraintsManager: {fileID: 16269034}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -7684,7 +7700,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1084889989}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 1.37
   m_Height: 1.72
@@ -7705,6 +7721,7 @@ MonoBehaviour:
   inRightPosition: 0
   selected: 0
   placeholderPrefab: {fileID: 1513393044}
+  script: {fileID: 0}
 --- !u!114 &1084890000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7717,7 +7734,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 181cd563a8349c34ea8978b0bc8d9c7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hostTransform: {fileID: 0}
+  hostTransform: {fileID: 1084889993}
   manipulationType: 3
   twoHandedManipulationType: 7
   allowFarManipulation: 1
@@ -7734,7 +7751,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 63263172}
+  constraintsManager: {fileID: 16269034}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -7999,7 +8016,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1116172348}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.8792238
   m_Height: 2.74
@@ -8020,6 +8037,7 @@ MonoBehaviour:
   inRightPosition: 0
   selected: 0
   placeholderPrefab: {fileID: 1513393044}
+  script: {fileID: 0}
 --- !u!114 &1116172359
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8049,7 +8067,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 1116172360}
+  constraintsManager: {fileID: 16269034}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -8560,7 +8578,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1312062252}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.8450002
   m_Height: 2.2300005
@@ -8581,6 +8599,7 @@ MonoBehaviour:
   inRightPosition: 0
   selected: 0
   placeholderPrefab: {fileID: 1513393044}
+  script: {fileID: 0}
 --- !u!114 &1312062263
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9039,7 +9058,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1400520054}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.845
   m_Height: 2.23
@@ -9060,6 +9079,7 @@ MonoBehaviour:
   inRightPosition: 0
   selected: 0
   placeholderPrefab: {fileID: 1513393044}
+  script: {fileID: 0}
 --- !u!114 &1400520065
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9089,7 +9109,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 1400520066}
+  constraintsManager: {fileID: 16269034}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -9354,7 +9374,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1420667590}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 1.37
   m_Height: 1.72
@@ -9375,6 +9395,7 @@ MonoBehaviour:
   inRightPosition: 0
   selected: 0
   placeholderPrefab: {fileID: 1513393044}
+  script: {fileID: 0}
 --- !u!114 &1420667601
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9387,7 +9408,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 181cd563a8349c34ea8978b0bc8d9c7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hostTransform: {fileID: 0}
+  hostTransform: {fileID: 1420667594}
   manipulationType: 3
   twoHandedManipulationType: 7
   allowFarManipulation: 1
@@ -9404,7 +9425,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 63263172}
+  constraintsManager: {fileID: 16269034}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -9669,7 +9690,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1424441226}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.86
   m_Height: 2.74
@@ -9690,6 +9711,7 @@ MonoBehaviour:
   inRightPosition: 0
   selected: 0
   placeholderPrefab: {fileID: 1513393044}
+  script: {fileID: 0}
 --- !u!114 &1424441237
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9719,7 +9741,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 1424441238}
+  constraintsManager: {fileID: 16269034}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -10066,7 +10088,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1441044197}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.8600002
   m_Height: 2.7400007
@@ -10087,6 +10109,7 @@ MonoBehaviour:
   inRightPosition: 0
   selected: 0
   placeholderPrefab: {fileID: 1513393044}
+  script: {fileID: 0}
 --- !u!114 &1441044208
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10116,7 +10139,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 1441044209}
+  constraintsManager: {fileID: 16269034}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -10381,7 +10404,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1466107141}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.86
   m_Height: 2.74
@@ -10402,6 +10425,7 @@ MonoBehaviour:
   inRightPosition: 0
   selected: 0
   placeholderPrefab: {fileID: 1513393044}
+  script: {fileID: 0}
 --- !u!114 &1466107152
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10431,7 +10455,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 1466107153}
+  constraintsManager: {fileID: 16269034}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -10650,11 +10674,27 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1513393044}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
+  m_IsTrigger: 1
+  m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.72, y: 2.740001, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.4652754, y: 0.4203605, z: 0.15125036}
+  m_Center: {x: -0.004775703, y: 0.00529781, z: -0.016102552}
+--- !u!54 &1513393046
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513393044}
+  serializedVersion: 2
+  m_Mass: 0.0000001
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &1533940664
 GameObject:
   m_ObjectHideFlags: 0
@@ -10892,7 +10932,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1533940664}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.8600002
   m_Height: 2.7400007
@@ -10913,6 +10953,7 @@ MonoBehaviour:
   inRightPosition: 0
   selected: 0
   placeholderPrefab: {fileID: 1513393044}
+  script: {fileID: 0}
 --- !u!114 &1533940675
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10942,7 +10983,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 1533940676}
+  constraintsManager: {fileID: 16269034}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -11289,7 +11330,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1552452322}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.8600002
   m_Height: 2.7400007
@@ -11310,6 +11351,7 @@ MonoBehaviour:
   inRightPosition: 0
   selected: 0
   placeholderPrefab: {fileID: 1513393044}
+  script: {fileID: 0}
 --- !u!114 &1552452333
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11339,7 +11381,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 1552452334}
+  constraintsManager: {fileID: 16269034}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -11604,7 +11646,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1608810135}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.8649823
   m_Height: 2.2300005
@@ -11625,6 +11667,7 @@ MonoBehaviour:
   inRightPosition: 0
   selected: 0
   placeholderPrefab: {fileID: 1513393044}
+  script: {fileID: 0}
 --- !u!114 &1608810146
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11654,7 +11697,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 1608810147}
+  constraintsManager: {fileID: 16269034}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -12139,7 +12182,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1716705220}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.86
   m_Height: 2.74
@@ -12160,6 +12203,7 @@ MonoBehaviour:
   inRightPosition: 0
   selected: 0
   placeholderPrefab: {fileID: 1513393044}
+  script: {fileID: 0}
 --- !u!114 &1716705231
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12189,7 +12233,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 1716705232}
+  constraintsManager: {fileID: 16269034}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -12536,7 +12580,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1721701287}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.8600002
   m_Height: 2.7400007
@@ -12557,6 +12601,7 @@ MonoBehaviour:
   inRightPosition: 0
   selected: 0
   placeholderPrefab: {fileID: 1513393044}
+  script: {fileID: 0}
 --- !u!114 &1721701298
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12586,7 +12631,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 1721701299}
+  constraintsManager: {fileID: 16269034}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -13046,7 +13091,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1769963982}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.87424207
   m_Height: 2.23
@@ -13067,6 +13112,7 @@ MonoBehaviour:
   inRightPosition: 0
   selected: 0
   placeholderPrefab: {fileID: 1513393044}
+  script: {fileID: 0}
 --- !u!114 &1769963993
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13096,7 +13142,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 1769963994}
+  constraintsManager: {fileID: 16269034}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -13361,7 +13407,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1848927329}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.86
   m_Height: 2.74
@@ -13382,6 +13428,7 @@ MonoBehaviour:
   inRightPosition: 0
   selected: 0
   placeholderPrefab: {fileID: 1513393044}
+  script: {fileID: 0}
 --- !u!114 &1848927340
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13411,7 +13458,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 1848927341}
+  constraintsManager: {fileID: 16269034}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -13758,7 +13805,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1903532782}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 1.1150002
   m_Height: 1.7200004
@@ -13779,6 +13826,7 @@ MonoBehaviour:
   inRightPosition: 0
   selected: 0
   placeholderPrefab: {fileID: 1513393044}
+  script: {fileID: 0}
 --- !u!114 &1903532793
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13791,7 +13839,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 181cd563a8349c34ea8978b0bc8d9c7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hostTransform: {fileID: 0}
+  hostTransform: {fileID: 1903532786}
   manipulationType: 3
   twoHandedManipulationType: 7
   allowFarManipulation: 1
@@ -13808,7 +13856,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 63263172}
+  constraintsManager: {fileID: 16269034}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -14319,7 +14367,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1981420609}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.8557227
   m_Height: 2.2300005
@@ -14340,6 +14388,7 @@ MonoBehaviour:
   inRightPosition: 0
   selected: 0
   placeholderPrefab: {fileID: 1513393044}
+  script: {fileID: 0}
 --- !u!114 &1981420620
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14369,7 +14418,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 1981420621}
+  constraintsManager: {fileID: 16269034}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -14634,7 +14683,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1982336756}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.8509961
   m_Height: 2.23
@@ -14655,6 +14704,7 @@ MonoBehaviour:
   inRightPosition: 0
   selected: 0
   placeholderPrefab: {fileID: 1513393044}
+  script: {fileID: 0}
 --- !u!114 &1982336767
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14684,7 +14734,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 1982336768}
+  constraintsManager: {fileID: 16269034}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -15031,7 +15081,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1993177147}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.8589964
   m_Height: 2.23
@@ -15052,6 +15102,7 @@ MonoBehaviour:
   inRightPosition: 0
   selected: 0
   placeholderPrefab: {fileID: 1513393044}
+  script: {fileID: 0}
 --- !u!114 &1993177158
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15081,7 +15132,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 1993177159}
+  constraintsManager: {fileID: 16269034}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -15674,7 +15725,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2141152038}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.81868243
   m_Height: 2.23
@@ -15695,6 +15746,7 @@ MonoBehaviour:
   inRightPosition: 0
   selected: 0
   placeholderPrefab: {fileID: 1513393044}
+  script: {fileID: 0}
 --- !u!114 &2141152049
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15724,7 +15776,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 2141152050}
+  constraintsManager: {fileID: 16269034}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:

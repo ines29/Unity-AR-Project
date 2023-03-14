@@ -49,6 +49,7 @@ public class PuzzlePiece : MonoBehaviour
 
             if (!inRightPosition)
             {
+                inRightPosition = true;  // Markiere das Puzzleteil als an der korrekten Position
                 Debug.Log("Match");
                 StartCoroutine(Snap());
 
@@ -68,5 +69,15 @@ public class PuzzlePiece : MonoBehaviour
 
         }
     }
+    IEnumerator Snap()
+    {
+        yield return new WaitForSecondsRealtime(0);
+        transform.position = rightPosition;  // Bewege das Puzzleteil auf die Zielposition
 
+        GetComponent<NearInteractionGrabbable>().enabled = false;
+        GetComponent<ObjectManipulator>().enabled = false;
+        GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezePositionX;
+        GameManager.counter();
+
+    }
 }

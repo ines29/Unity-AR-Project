@@ -98,6 +98,7 @@ public class MouseClickMove : MonoBehaviour
     //newPosForEmptyCube auf die Position des angeklickten Würfels und isMoving auf true.
     public void ButtonPressed ()
     {
+        Debug.Log("test");
         if (isClickable)
         {
             tempTargetPosition = targetPosition;

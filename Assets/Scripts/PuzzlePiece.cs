@@ -14,13 +14,19 @@ public class PuzzlePiece : MonoBehaviour
 
     private List<Transform> snaps = new List<Transform>(); // Liste der Zielpositionen
 
+
+    private winningScript GameManager;
+    
+
     void Start()
     {
-    
+        GameManager = GameObject.Find("GameManager").GetComponent<winningScript>();
+
         //"rightPosition" auf die aktuelle Position des Puzzleteils setzen
         rightPosition = transform.position;
         // Setze die Startposition des Puzzleteils auf eine zufällige Position innerhalb eines Bereichs
-        transform.position = new Vector3(Random.Range(5f, 11f), Random.Range(2.5f, -7));
+        transform.position = new Vector3(Random.Range(0.2f, 0.55f),Random.Range(-0.3f, 0.16f), 0.9f);
+        Debug.Log(transform.position);
 
         // Erstelle den Platzhalter-GameObject an der richtigen Position
         GameObject placeholder = Instantiate(placeholderPrefab, rightPosition, Quaternion.identity);
@@ -29,24 +35,32 @@ public class PuzzlePiece : MonoBehaviour
        // Debug.Log("Zielpositionen: " + GameObject.FindGameObjectsWithTag("SnapPosition"));
     }
 
-    void Update()
-    {
-       
-    }
+
     void OnTriggerEnter(Collider other)
     {
         Debug.Log(other.name+ gameObject.name);
         if (other.name == gameObject.name+" Placeholder")
         {
-            Debug.Log("Match");
-         
+            if (!inRightPosition)
+            {
+                Debug.Log("Match");
+
                 // Prüfe, ob das Puzzleteil sich innerhalb des Radius von der aktuellen Zielposition befindet
 
-                    transform.position = rightPosition;  // Bewege das Puzzleteil auf die Zielposition
-                    inRightPosition = true;  // Markiere das Puzzleteil als an der korrekten Position
-                     GetComponent<NearInteractionGrabbable>().enabled = false;
-                     GetComponent<ObjectManipulator>().enabled = false;
+                transform.position = rightPosition;  // Bewege das Puzzleteil auf die Zielposition
+                inRightPosition = true;  // Markiere das Puzzleteil als an der korrekten Position
+                GetComponent<NearInteractionGrabbable>().enabled = false;
+                GetComponent<ObjectManipulator>().enabled = false;
+
+
+                GameManager.counter();
+            }
+
+
+
         }
 
     }
+
+
 }

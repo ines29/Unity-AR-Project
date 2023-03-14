@@ -55,7 +55,8 @@ public class MouseClickMove : MonoBehaviour
     void Awake()
     {
         GameObject[] cubes = GameObject.FindGameObjectsWithTag("Cube");
-
+        GameObject[] win = GameObject.FindGameObjectsWithTag("Cubewin");
+        //win[0].SetActive(false);
 
         foreach (GameObject cube in cubes)
         {
@@ -66,6 +67,7 @@ public class MouseClickMove : MonoBehaviour
                 originalPositions.Add(cube.name, cube.transform.position);
                 Debug.Log(cube.name + cube.transform.position);
             }
+            
         }
 
     }

@@ -16,13 +16,14 @@ public class SnapToPos : MonoBehaviour
     [SerializeField]
     private GameObject chessBoard;
     private (int, int) currentPos;
-    
+
     // Start is called before the first frame update
     void Start()
     {
         currentPos = (startCol, startRow);
         fieldsObjects = GameObject.FindGameObjectsWithTag("Field");
-        foreach(GameObject fieldObject in fieldsObjects) {
+        foreach (GameObject fieldObject in fieldsObjects)
+        {
             fields.Add(fieldObject, GetPos(fieldObject));
         }
         AddPosToSnaps(startCol, startRow);
@@ -51,7 +52,7 @@ public class SnapToPos : MonoBehaviour
         Update();
     }
 
-    public (int,int) GetStartPosition()
+    public (int, int) GetStartPosition()
     {
         return (startCol, startRow);
     }
@@ -81,12 +82,12 @@ public class SnapToPos : MonoBehaviour
         return fields.Keys.First(obj => fields[obj].Equals(pos));
     }
 
-    (int,int) GetPos(GameObject field)
+    (int, int) GetPos(GameObject field)
     {
         string name = field.name;
         int col = ConvertColumnToRow(name[0]);
         int row = Int32.Parse(name[3].ToString());
-        if(col == -1)
+        if (col == -1)
         {
             throw new Exception("Field name seems to be wrong, Error with Column in: " + name);
         }
@@ -135,7 +136,7 @@ public class SnapToPos : MonoBehaviour
         GameObject pap = PieceUntilPos(col, row);
         if (pap != null)
         {
-            if (!pap.CompareTag(tag) && pap.Equals(PieceAtPos(col,row)))
+            if (!pap.CompareTag(tag) && pap.Equals(PieceAtPos(col, row)))
             {
                 AddPosToSnaps(col, row); //able to capture => !
             }
@@ -164,47 +165,55 @@ public class SnapToPos : MonoBehaviour
         if (col == currentPos.Item1 && row == currentPos.Item2)
         {
             return null;
-        } else if (col == currentPos.Item1)
+        }
+        else if (col == currentPos.Item1)
         {
             colUp = true;
             if (row < currentPos.Item2)
             {
                 curRow--;
                 rowUp = false;
-            } else
+            }
+            else
             {
                 curRow++;
                 rowUp = true;
             }
-        } else if (row == currentPos.Item2)
+        }
+        else if (row == currentPos.Item2)
         {
             rowUp = true;
             if (col < currentPos.Item1)
             {
                 curCol--;
                 colUp = false;
-            } else
+            }
+            else
             {
                 curCol++;
                 colUp = true;
             }
-        } else if (col < currentPos.Item1 && row < currentPos.Item2)
+        }
+        else if (col < currentPos.Item1 && row < currentPos.Item2)
         {
             curCol--;
             curRow--;
             colUp = rowUp = false;
-        } else if (col > currentPos.Item1 && row > currentPos.Item2)
+        }
+        else if (col > currentPos.Item1 && row > currentPos.Item2)
         {
             curCol++;
             curRow++;
             colUp = rowUp = true;
-        } else if (col > currentPos.Item1 && row < currentPos.Item2)
+        }
+        else if (col > currentPos.Item1 && row < currentPos.Item2)
         {
             curCol++;
             curRow--;
             colUp = true;
             rowUp = false;
-        } else //if(col < currentPos.Item1 && row >= currentPos.Item2)
+        }
+        else //if(col < currentPos.Item1 && row >= currentPos.Item2)
         {
             curCol--;
             curRow++;
@@ -216,7 +225,7 @@ public class SnapToPos : MonoBehaviour
         {
             if (PieceAtPos(curCol, curRow) != null)
                 return PieceAtPos(curCol, curRow);
-            if(curCol == endCol && curRow == endRow)
+            if (curCol == endCol && curRow == endRow)
                 break;
             if (curCol != endCol)
             {
@@ -262,9 +271,10 @@ public class SnapToPos : MonoBehaviour
     {
         snaps.Clear();
         AddPosToSnaps(currentPos.Item1, currentPos.Item2);
-        if (CompareTag("White") && currentPos.Item2 + 1 <= 8) {
+        if (CompareTag("White") && currentPos.Item2 + 1 <= 8)
+        {
             GameObject pap = PieceAtPos(currentPos.Item1, currentPos.Item2 + 1);
-            if (pap == null) 
+            if (pap == null)
                 AddPosToSnaps(currentPos.Item1, currentPos.Item2 + 1);
             pap = PieceAtPos(currentPos.Item1 - 1, currentPos.Item2 + 1);
             if (pap != null)
@@ -310,7 +320,7 @@ public class SnapToPos : MonoBehaviour
     {
         snaps.Clear();
         AddPosToSnaps(currentPos.Item1, currentPos.Item2);
-        for(int i = 1; i < 8; i++)
+        for (int i = 1; i < 8; i++)
         {
             if (currentPos.Item1 + i <= 8)
                 AddPosToSnapsCheckPiecesUntil(currentPos.Item1 + i, currentPos.Item2);

@@ -8,7 +8,7 @@ public class PuzzlePiece : MonoBehaviour
 {
     private Vector3 rightPosition; // die korrekte Position, an die das Puzzleteil platziert werden muss
     public bool inRightPosition; // gibt an, ob das Puzzleteil bereits an der korrekten Position ist
-    public bool selected; // gibt an, ob das Puzzleteil gerade ausgewählt ist
+    public bool selected; // gibt an, ob das Puzzleteil gerade ausgewï¿½hlt ist
     public GameObject placeholderPrefab; // das Prefab des Platzhalter-GameObjects
     public GameObject script;
 
@@ -16,7 +16,7 @@ public class PuzzlePiece : MonoBehaviour
 
 
     private winningScript GameManager;
-    
+
 
     void Start()
     {
@@ -24,28 +24,28 @@ public class PuzzlePiece : MonoBehaviour
 
         //"rightPosition" auf die aktuelle Position des Puzzleteils setzen
         rightPosition = transform.position;
-        // Setze die Startposition des Puzzleteils auf eine zufällige Position innerhalb eines Bereichs
-        transform.position = new Vector3(Random.Range(0.2f, 0.55f),Random.Range(-0.3f, 0.16f), 0.9f);
+        // Setze die Startposition des Puzzleteils auf eine zufï¿½llige Position innerhalb eines Bereichs
+        transform.position = new Vector3(Random.Range(0.2f, 0.55f), Random.Range(-0.3f, 0.16f), 0.9f);
         Debug.Log(transform.position);
 
         // Erstelle den Platzhalter-GameObject an der richtigen Position
         GameObject placeholder = Instantiate(placeholderPrefab, rightPosition, Quaternion.identity);
         placeholder.name = gameObject.name + " Placeholder";
 
-       // Debug.Log("Zielpositionen: " + GameObject.FindGameObjectsWithTag("SnapPosition"));
+        // Debug.Log("Zielpositionen: " + GameObject.FindGameObjectsWithTag("SnapPosition"));
     }
 
 
     void OnTriggerEnter(Collider other)
     {
-        Debug.Log(other.name+ gameObject.name);
-        if (other.name == gameObject.name+" Placeholder")
+        Debug.Log(other.name + gameObject.name);
+        if (other.name == gameObject.name + " Placeholder")
         {
             if (!inRightPosition)
             {
                 Debug.Log("Match");
 
-                // Prüfe, ob das Puzzleteil sich innerhalb des Radius von der aktuellen Zielposition befindet
+                // Prï¿½fe, ob das Puzzleteil sich innerhalb des Radius von der aktuellen Zielposition befindet
 
                 transform.position = rightPosition;  // Bewege das Puzzleteil auf die Zielposition
                 inRightPosition = true;  // Markiere das Puzzleteil als an der korrekten Position

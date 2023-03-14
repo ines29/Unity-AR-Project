@@ -14,6 +14,8 @@ public class PuzzlePiece : MonoBehaviour
 
     private List<Transform> snaps = new List<Transform>(); // Liste der Zielpositionen
 
+
+
     void Start()
     {
     
@@ -39,14 +41,23 @@ public class PuzzlePiece : MonoBehaviour
         if (other.name == gameObject.name+" Placeholder")
         {
             Debug.Log("Match");
+            StartCoroutine(Snap());
          
                 // Prüfe, ob das Puzzleteil sich innerhalb des Radius von der aktuellen Zielposition befindet
 
-                    transform.position = rightPosition;  // Bewege das Puzzleteil auf die Zielposition
-                    inRightPosition = true;  // Markiere das Puzzleteil als an der korrekten Position
-                     GetComponent<NearInteractionGrabbable>().enabled = false;
-                     GetComponent<ObjectManipulator>().enabled = false;
+                    
         }
 
     }
+    IEnumerator Snap()
+    {
+        yield return new WaitForSecondsRealtime(1.5f);
+        transform.position = rightPosition;  // Bewege das Puzzleteil auf die Zielposition
+        inRightPosition = true;  // Markiere das Puzzleteil als an der korrekten Position
+        GetComponent<NearInteractionGrabbable>().enabled = false;
+        GetComponent<ObjectManipulator>().enabled = false;
+
+    }
+      
+    
 }

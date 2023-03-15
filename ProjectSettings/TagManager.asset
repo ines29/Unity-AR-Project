@@ -8,6 +8,9 @@ TagManager:
   - EmptyCube
   - Cube1
   - Cube2
+  - Puzzle
+  - placeholderPrefab
+  - SnapPosition
   layers:
   - Default
   - TransparentFX

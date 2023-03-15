@@ -745,13 +745,13 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 0
   RuntimeCollider: 0
-  mTrackableName: Computer
+  mTrackableName: Labyrinth2
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/MyTestDB.xml
-  mAspectRatio: 0.6666688
+  mAspectRatio: 1
   mImageTargetType: 0
   mWidth: 0.16
-  mHeight: 0.106667005
+  mHeight: 0.16
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
@@ -771,7 +771,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 2001521037}
   mHiddenRoot: {fileID: 0}
-  mTargetName: Computer
+  mTargetName: Labyrinth2
   mDatasetName: Vuforia/MyTestDB.xml
   mCastedBehaviour: {fileID: 2001521037}
   mMeshFilter: {fileID: 0}
@@ -917,7 +917,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f98e7663599230e419addf153615c144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ispressed: 0
   movingButtonVisuals: {fileID: 0}
   distanceSpaceMode: 1
   startPushDistance: 0

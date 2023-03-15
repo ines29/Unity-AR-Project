@@ -15,6 +15,10 @@ TagManager:
   - Puzzle
   - placeholderPrefab
   - SnapPosition
+  - Confetti
+  - Confetti1
+  - Confetti2
+  - Confetti3
   layers:
   - Default
   - TransparentFX

@@ -19,6 +19,10 @@ TagManager:
   - Confetti1
   - Confetti2
   - Confetti3
+  - Field
+  - Chess Board
+  - Black
+  - White
   layers:
   - Default
   - TransparentFX

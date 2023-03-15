@@ -28,7 +28,7 @@ public class TrackPieces : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void UpdatePos(GameObject piece, (int, int) pos)
@@ -37,7 +37,7 @@ public class TrackPieces : MonoBehaviour
         {
             blackPieces[piece] = pos;
             GameObject[] cp = whitePieces.Keys.ToArray();
-            foreach(GameObject white in cp)
+            foreach (GameObject white in cp)
             {
                 if (whitePieces[white] == pos)
                 {
@@ -45,7 +45,8 @@ public class TrackPieces : MonoBehaviour
                     whitePieces.Remove(white);
                 }
             }
-        } else
+        }
+        else
         {
             whitePieces[piece] = pos;
             GameObject[] cp = blackPieces.Keys.ToArray();
@@ -121,7 +122,7 @@ public class TrackPieces : MonoBehaviour
         return false;
     }
 
-    public GameObject PieceAtPos((int,int) pos)
+    public GameObject PieceAtPos((int, int) pos)
     {
         if (blackPieces.ContainsValue(pos))
             return blackPieces.Keys.First(s => blackPieces[s].Equals(pos));

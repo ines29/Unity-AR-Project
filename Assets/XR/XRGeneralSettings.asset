@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d236b7d11115f2143951f1e14045df39, type: 3}
   m_Name: Standalone Settings
   m_EditorClassIdentifier: 
-  m_LoaderManagerInstance: {fileID: -115885680958612420}
+  m_LoaderManagerInstance: {fileID: 0}
   m_InitManagerOnStart: 1
 --- !u!114 &4862331520279804260
 MonoBehaviour:

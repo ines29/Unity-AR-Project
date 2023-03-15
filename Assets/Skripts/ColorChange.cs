@@ -15,6 +15,7 @@ public class ColorChange : MonoBehaviour
     public GameObject confettiBlastOrangePurple;
     public GameObject confettiBlastRainbow;
     public float confettisDelay = 1.0f;
+    public GameObject youWon;
 
     //public GameObject plane;
     public AudioSource cubeSound;
@@ -134,10 +135,21 @@ public class ColorChange : MonoBehaviour
             confettiBlastGreenYellow.SetActive(true);
             confettiBlastOrangePurple.SetActive(true);
             confettiBlastRainbow.SetActive(true);
+            StartCoroutine(winInfo());
+
+
 
 
         }
 
     }
+    IEnumerator winInfo()
+    {
+        yield return new WaitForSecondsRealtime(1);
+        youWon.SetActive(true);
+
+    }
 }
+
+
 

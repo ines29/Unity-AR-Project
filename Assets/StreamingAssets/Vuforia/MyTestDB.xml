@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="Labyrinth" size="0.155000 0.155000" />
+    <ImageTarget name="Computer" size="0.160000 0.106667" />
+    <ImageTarget name="london" size="0.500000 0.733998" />
+  </Tracking>
+</QCARConfig>

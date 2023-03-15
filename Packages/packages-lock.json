@@ -27,11 +27,13 @@
         "com.unity.textmeshpro": "2.1.4"
       }
     },
-    "com.unity.2d.sprite": {
-      "version": "1.0.0",
+    "com.ptc.vuforia.engine": {
+      "version": "file:com.ptc.vuforia.engine-10.13.3.tgz",
       "depth": 0,
-      "source": "builtin",
-      "dependencies": {}
+      "source": "local-tarball",
+      "dependencies": {
+        "com.unity.ugui": "1.0.0"
+      }
     },
     "com.unity.collab-proxy": {
       "version": "1.17.2",
@@ -83,12 +85,12 @@
       },
       "url": "https://packages.unity.com"
     },
-    "com.unity.postprocessing": {
-      "version": "3.2.2",
+    "com.unity.probuilder": {
+      "version": "4.5.2",
       "depth": 0,
       "source": "registry",
       "dependencies": {
-        "com.unity.modules.physics": "1.0.0"
+        "com.unity.settings-manager": "1.0.3"
       },
       "url": "https://packages.unity.com"
     },
@@ -99,6 +101,13 @@
       "dependencies": {
         "com.unity.modules.unitywebrequest": "1.0.0"
       },
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.settings-manager": {
+      "version": "1.0.3",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {},
       "url": "https://packages.unity.com"
     },
     "com.unity.subsystemregistration": {

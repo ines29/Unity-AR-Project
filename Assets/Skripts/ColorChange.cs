@@ -25,13 +25,6 @@ public class ColorChange : MonoBehaviour
     {
 
         PreviousMaterial = GetComponent<Renderer>().material;
-
-        /* if (GameObject.FindWithTag("Rules")!= null)
-         {
-             plane.SetActive(true);
-
-             Invoke("DetectivePlane", 10f);
-         }*/
     }
 
     // Update is called once per frame
@@ -85,34 +78,42 @@ public class ColorChange : MonoBehaviour
 
     }
 
+    public void TurnYellow()
+    {
+        GameObject cube = GameObject.FindWithTag("Cube");
+        GameObject cube1 = GameObject.FindWithTag("Cube1");
+        GameObject cube2 = GameObject.FindWithTag("Cube2");
+
+        if (cube != null)
+        {
+            cube.GetComponent<Renderer>().material = YellowMaterial;
+        }
+
+        if (cube1 != null)
+        {
+            cube1.GetComponent<Renderer>().material = YellowMaterial;
+        }
+
+        if (cube2 != null)
+        {
+            cube2.GetComponent<Renderer>().material = YellowMaterial;
+        }
+
+        CheckWinCondition();
+
+        if (cubeSound != null)
+        {
+            cubeSound.Play();
+        }
+
+    }
+
     public void TurnBack()
     {
         GetComponent<Renderer>().material = PreviousMaterial;
     }
 
-   /* public void PlayConfettis()
-    {
-        StartCoroutine(PlayConfettiCoroutine());
-    }*/
-
-   /* private IEnumerator PlayConfettiCoroutine()
-    {
-        yield return new WaitForSeconds(confettisDelay);
-        confettiBlastBlue.SetActive(true);
-        confettiBlastGreenYellow.SetActive(true);
-        confettiBlastOrangePurple.SetActive(true);
-        confettiBlastRainbow.SetActive(true);
-
-        //start the confetti particle system
-        confettiBlastBlue.GetComponent<ParticleSystem>().Play();
-        confettiBlastGreenYellow.GetComponent<ParticleSystem>().Play();
-        confettiBlastOrangePurple.GetComponent<ParticleSystem>().Play();
-        confettiBlastRainbow.GetComponent<ParticleSystem>().Play();
-
-    }
-   */
-
-
+ 
     public void CheckWinCondition()
     {
         GameObject cube = GameObject.FindWithTag("Cube");
@@ -125,12 +126,6 @@ public class ColorChange : MonoBehaviour
         {
 
             Debug.Log("You won the game!");
-            //PlayConfettis();
-            /*if (GameObject.FindWithTag("Confetti") != null)
-            {
-                confettiBlastBlue.SetActive(true);
-            }*/
-            //
             confettiBlastBlue.SetActive(true);
             confettiBlastGreenYellow.SetActive(true);
             confettiBlastOrangePurple.SetActive(true);

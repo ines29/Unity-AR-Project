@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+<QCARConfig>
   <Tracking>
-    <ImageTarget name="Labyrinth" size="0.155000 0.155000" />
-    <ImageTarget name="Computer" size="0.160000 0.106667" />
-    <ImageTarget name="london" size="0.500000 0.733998" />
+    <ImageTarget name="Labyrinth2" size="0.160000 0.160000" />
+    <ImageTarget name="Puzzle-Bild" size="0.140000 0.140000" />
+    <ImageTarget name="Schiebepuzzle" size="0.136000 0.133875" />
+    <ImageTarget name="Cubes" size="0.160000 0.256170" />
+    <ImageTarget name="Pipes" size="0.160000 0.120000" />
+    <ImageTarget name="Brettspiel" size="0.134000 0.133786" />
   </Tracking>
 </QCARConfig>

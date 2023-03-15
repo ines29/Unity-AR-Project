@@ -6,11 +6,20 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Scenes/Labyrinth.unity
-    guid: c551e6a6f1b44c24dbb18a923f86a08f
-  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
     path: Assets/Scenes/LabyrinthPuzzle.unity
     guid: 3741353bdf895cf4191deaadab51d5f2
+  - enabled: 0
+    path: Assets/Scenes/Unblock Puzzle.unity
+    guid: 14e90d54fd8fe8743aeec7251f7271c1
+  - enabled: 0
+    path: Assets/Scenes/old_LabyrinthPuzzle2.unity
+    guid: 573e6ad7a9cb58b41a26da5cce584e3b
+  - enabled: 1
+    path: Assets/Scenes/LabyrinthPuzzle2.unity
+    guid: 1c6813e729bba064ca1bbf792dbe29ed
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: a05d1dfac07c0f54386f14da82d6af32, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 4effa6a5d3de77744b305e5c60ea0a63, type: 2}

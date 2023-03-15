@@ -10,14 +10,20 @@ public class ColorChange : MonoBehaviour
     public Material YellowMaterial;
     private Material PreviousMaterial;
 
-   /* public GameObject confettiBlastBlue;
-    public GameObject confettiBlastGreenYellow;
-    public GameObject confettiBlastOrangePurple;
-    public GameObject confettiBlastRainbow;
-   */
+    /* public GameObject confettiBlastBlue;
+     public GameObject confettiBlastGreenYellow;
+     public GameObject confettiBlastOrangePurple;
+     public GameObject confettiBlastRainbow;
+    */
     public float confettisDelay = 1.0f;
     public GameObject youWon;
     public GameObject confetti;
+    public GameObject sadMouth;
+    public GameObject happyMouth;
+    public GameObject sadMouth1;
+    public GameObject happyMouth1;
+    public GameObject sadMouth2;
+    public GameObject happyMouth2;
 
     //public GameObject plane;
     public AudioSource cubeSound;
@@ -32,7 +38,7 @@ public class ColorChange : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
     public void TurnRed()
     {
@@ -40,12 +46,15 @@ public class ColorChange : MonoBehaviour
         if (cube != null)
         {
             cube.GetComponent<Renderer>().material = RedMaterial;
+            sadMouth.SetActive(false);
+            happyMouth.SetActive(true);
+
             CheckWinCondition();
             if (cubeSound != null)
             {
                 cubeSound.Play();
             }
-           
+
         }
     }
 
@@ -55,6 +64,8 @@ public class ColorChange : MonoBehaviour
         if (cube != null)
         {
             cube.GetComponent<Renderer>().material = BlueMaterial;
+            sadMouth2.SetActive(false);
+            happyMouth2.SetActive(true);
             CheckWinCondition();
             if (cubeSound != null)
             {
@@ -70,6 +81,8 @@ public class ColorChange : MonoBehaviour
         if (cube != null)
         {
             cube.GetComponent<Renderer>().material = GreenMaterial;
+            sadMouth1.SetActive(false);
+            happyMouth1.SetActive(true);
             CheckWinCondition();
             if (cubeSound != null)
             {
@@ -89,16 +102,22 @@ public class ColorChange : MonoBehaviour
         if (cube != null)
         {
             cube.GetComponent<Renderer>().material = YellowMaterial;
+            sadMouth.SetActive(true);
+            happyMouth.SetActive(false);
         }
 
         if (cube1 != null)
         {
             cube1.GetComponent<Renderer>().material = YellowMaterial;
+            sadMouth1.SetActive(true);
+            happyMouth1.SetActive(false);
         }
 
         if (cube2 != null)
         {
             cube2.GetComponent<Renderer>().material = YellowMaterial;
+            sadMouth2.SetActive(true);
+            happyMouth2.SetActive(false);
         }
 
         CheckWinCondition();
@@ -115,7 +134,7 @@ public class ColorChange : MonoBehaviour
         GetComponent<Renderer>().material = PreviousMaterial;
     }
 
- 
+
     public void CheckWinCondition()
     {
         GameObject cube = GameObject.FindWithTag("Cube");
@@ -130,8 +149,8 @@ public class ColorChange : MonoBehaviour
             Debug.Log("You won the game!");
             //confettiBlastBlue.SetActive(true);
             //confettiBlastGreenYellow.SetActive(true);
-           //confettiBlastOrangePurple.SetActive(true);
-           // confettiBlastRainbow.SetActive(true);
+            //confettiBlastOrangePurple.SetActive(true);
+            // confettiBlastRainbow.SetActive(true);
             StartCoroutine(winInfo());
 
 

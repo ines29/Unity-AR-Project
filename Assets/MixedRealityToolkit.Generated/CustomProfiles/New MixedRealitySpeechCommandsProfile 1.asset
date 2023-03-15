@@ -24,13 +24,6 @@ MonoBehaviour:
       description: None
       axisConstraint: 0
   - localizationKey: 
-    keyword: Turn Green
-    keyCode: 0
-    action:
-      id: 0
-      description: None
-      axisConstraint: 0
-  - localizationKey: 
     keyword: Turn Blue
     keyCode: 0
     action:
@@ -38,7 +31,7 @@ MonoBehaviour:
       description: None
       axisConstraint: 0
   - localizationKey: 
-    keyword: Turn back
+    keyword: Turn Green
     keyCode: 0
     action:
       id: 0
@@ -46,6 +39,13 @@ MonoBehaviour:
       axisConstraint: 0
   - localizationKey: 
     keyword: Turn Yellow
+    keyCode: 0
+    action:
+      id: 0
+      description: None
+      axisConstraint: 0
+  - localizationKey: 
+    keyword: Turn Back
     keyCode: 0
     action:
       id: 0

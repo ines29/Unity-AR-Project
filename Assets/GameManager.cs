@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -29,6 +30,8 @@ public class GameManager : MonoBehaviour
         {
             Debug.Log("You win!");
             Water.SetActive(true);
+            PlayerProgress.wonWaterPuzzle = true;
+            StartCoroutine(EndGame());
         }
 
         }
@@ -36,4 +39,10 @@ public class GameManager : MonoBehaviour
     {
         correctedPipes -= 1;
     }
-}
+    IEnumerator EndGame()
+    {
+        yield return new WaitForSecondsRealtime(4);
+        SceneManager.LoadScene("MainScene", LoadSceneMode.Single);
+    }
+
+    }

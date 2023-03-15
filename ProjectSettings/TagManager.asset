@@ -8,6 +8,10 @@ TagManager:
   - EmptyCube
   - Cube1
   - Cube2
+  - Confetti
+  - Confetti1
+  - Confetti2
+  - Confetti3
   layers:
   - Default
   - TransparentFX

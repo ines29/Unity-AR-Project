@@ -10,8 +10,11 @@ public class ColorChange : MonoBehaviour
     public Material YellowMaterial;
     private Material PreviousMaterial;
 
-    public GameObject fireworks;
-    public float fireworksDelay = 1.0f;
+    public GameObject confettiBlastBlue;
+    public GameObject confettiBlastGreenYellow;
+    public GameObject confettiBlastOrangePurple;
+    public GameObject confettiBlastRainbow;
+    public float confettisDelay = 1.0f;
 
     //public GameObject plane;
     public AudioSource cubeSound;
@@ -21,7 +24,6 @@ public class ColorChange : MonoBehaviour
     {
 
         PreviousMaterial = GetComponent<Renderer>().material;
-        fireworks.SetActive(false);
 
         /* if (GameObject.FindWithTag("Rules")!= null)
          {
@@ -87,18 +89,27 @@ public class ColorChange : MonoBehaviour
         GetComponent<Renderer>().material = PreviousMaterial;
     }
 
-    public void PlayFireworks()
+   /* public void PlayConfettis()
     {
-        StartCoroutine(PlayFireworksCoroutine());
-    }
+        StartCoroutine(PlayConfettiCoroutine());
+    }*/
 
-    private IEnumerator PlayFireworksCoroutine()
+   /* private IEnumerator PlayConfettiCoroutine()
     {
-        yield return new WaitForSeconds(fireworksDelay);
-        fireworks.SetActive(true);
-        //start the fireworks particle system
-        fireworks.GetComponent<ParticleSystem>().Play();
+        yield return new WaitForSeconds(confettisDelay);
+        confettiBlastBlue.SetActive(true);
+        confettiBlastGreenYellow.SetActive(true);
+        confettiBlastOrangePurple.SetActive(true);
+        confettiBlastRainbow.SetActive(true);
+
+        //start the confetti particle system
+        confettiBlastBlue.GetComponent<ParticleSystem>().Play();
+        confettiBlastGreenYellow.GetComponent<ParticleSystem>().Play();
+        confettiBlastOrangePurple.GetComponent<ParticleSystem>().Play();
+        confettiBlastRainbow.GetComponent<ParticleSystem>().Play();
+
     }
+   */
 
 
     public void CheckWinCondition()
@@ -113,7 +124,17 @@ public class ColorChange : MonoBehaviour
         {
 
             Debug.Log("You won the game!");
-            PlayFireworks();
+            //PlayConfettis();
+            /*if (GameObject.FindWithTag("Confetti") != null)
+            {
+                confettiBlastBlue.SetActive(true);
+            }*/
+            //
+            confettiBlastBlue.SetActive(true);
+            confettiBlastGreenYellow.SetActive(true);
+            confettiBlastOrangePurple.SetActive(true);
+            confettiBlastRainbow.SetActive(true);
+
 
         }
 

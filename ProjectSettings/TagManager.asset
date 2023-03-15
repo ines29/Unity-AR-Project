@@ -8,6 +8,10 @@ TagManager:
   - EmptyCube
   - Cube1
   - Cube2
+  - Field
+  - Chess Board
+  - Black
+  - White
   layers:
   - Default
   - TransparentFX

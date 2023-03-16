@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class SceneChangeScript : MonoBehaviour
 {
+    public  string scene;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,7 +19,7 @@ public class SceneChangeScript : MonoBehaviour
 
     public void changeScene()
     {
-        SceneManager.LoadScene("WasserPuzzle",LoadSceneMode.Single);
+        SceneManager.LoadScene(scene,LoadSceneMode.Single);
         Debug.Log("Scene Change");
     }
 }

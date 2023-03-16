@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class winningScript : MonoBehaviour
 {
 
@@ -9,9 +9,11 @@ public class winningScript : MonoBehaviour
     public int PlacedPieces = 0;
 
     //Referenz auf das Endmenu-GameObject
-    public GameObject EndMenu;
 
     public GameObject testCube;
+    public float confettisDelay = 1.0f;
+    public GameObject youWon;
+    public GameObject confetti;
 
     // Start is called before the first frame update
     void Start()
@@ -34,21 +36,20 @@ public class winningScript : MonoBehaviour
         if (PlacedPieces == 36)
         {
             // Aktiviere das Endmenu-GameObject und gebe eine Debug-Meldung aus
-            EndMenu.SetActive(true);
             Debug.Log("You won!");
+            PlayerProgress.wonJigsaw = true;
+            StartCoroutine(EndGame());
         }
     }
-
-    // Methode, um das Spiel zu beenden
-    public void EndGame()
+    IEnumerator EndGame()
     {
-        testCube.SetActive(true);
-
-        // Deaktiviere das Puzzle-Objekt
-        GameObject puzzleObject = GameObject.Find("Puzzle");
-        puzzleObject.SetActive(false);
-
-        // Deaktiviere das EndMenu-Objekt
-        EndMenu.SetActive(false);
+        confetti.SetActive(true);
+        yield return new WaitForSecondsRealtime(1);
+        youWon.SetActive(true);
+        yield return new WaitForSecondsRealtime(4);
+        SceneManager.LoadScene("MainScene", LoadSceneMode.Single);
     }
+
+
+
 }

@@ -8,6 +8,9 @@ public class GameManager : MonoBehaviour
     public GameObject PipesHolder;
     public GameObject[] Pipes;
     public GameObject Water;
+    public float confettisDelay = 1.0f;
+    public GameObject youWon;
+    public GameObject confetti;
     [SerializeField]
     public int totalPipes = 0;
     [SerializeField]
@@ -40,9 +43,13 @@ public class GameManager : MonoBehaviour
         correctedPipes -= 1;
     }
     IEnumerator EndGame()
-    {
+    { 
+        confetti.SetActive(true);
+        yield return new WaitForSecondsRealtime(1);
+        youWon.SetActive(true);
         yield return new WaitForSecondsRealtime(4);
         SceneManager.LoadScene("MainScene", LoadSceneMode.Single);
     }
+
 
     }

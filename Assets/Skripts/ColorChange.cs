@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ColorChange : MonoBehaviour
 {
@@ -161,9 +162,12 @@ public class ColorChange : MonoBehaviour
     }
     IEnumerator winInfo()
     {
+        PlayerProgress.wonCubes = true;
         confetti.SetActive(true);
         yield return new WaitForSecondsRealtime(1);
         youWon.SetActive(true);
+        yield return new WaitForSecondsRealtime(4);
+        SceneManager.LoadScene("MainScene", LoadSceneMode.Single);
 
     }
 }

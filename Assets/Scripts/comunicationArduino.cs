@@ -3,9 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.IO.Ports;
 using Photon.Pun;
+using Photon.Realtime;
 
-public class comunicationArduino : MonoBehaviourPunCallbacks
+
+public class comunicationArduino : MonoBehaviour, IPunObservable
 {
+    public bool test;
     SerialPort stream = new SerialPort("COM5", 9600);
     // Start is called before the first frame update
     void Start()
@@ -23,9 +26,8 @@ public class comunicationArduino : MonoBehaviourPunCallbacks
         PhotonNetwork.ConnectUsingSettings();
     }
 
-    public override void OnConnectedToMaster() { 
+
     
-    }
 
     // Update is called once per frame
     void Update()
@@ -38,14 +40,7 @@ public class comunicationArduino : MonoBehaviourPunCallbacks
                 Debug.Log("Read " + tmp  );
                 stream.Write("1");
                 if (tmp=="1") {
-                    foreach (GameObject gameObj in GameObject.FindObjectsOfType<GameObject>())
-                    {
-                        if (gameObj.name == "Cube")
-                        {
-                            gameObj.GetComponent<Renderer>().material.color = new Color(0, 204, 102);
-                            Debug.Log(gameObj.transform.position);
-                        }
-                    }
+                    this.test = true;
 
                 }
                 //Debug.Log("written");
@@ -64,7 +59,20 @@ public class comunicationArduino : MonoBehaviourPunCallbacks
         
     }
 
-    void send() { 
+    
+
+    public void IPunObservable.OnPhotonSerializeView(PhotonStream photonStream, PhotonMessageInfo info) {
+        if (photonStream.isWriting)
+        {
+            photonStream.SendNext(this.test);
+        }
+        else {
+            this.test = (bool)photonStream.ReceivNext();
+            Debug.Log("empfangen from master");
+        }
     
     }
+
+
+
 }

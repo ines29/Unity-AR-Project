@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 public class MouseClickMove : MonoBehaviour
@@ -16,11 +17,20 @@ public class MouseClickMove : MonoBehaviour
     private float step = 0f;
     private float speed = 10f;
     [SerializeField]
+    private int neededCubes = 15;
+    [SerializeField]
     private Dictionary<string, Vector3> originalPositions = new Dictionary<string, Vector3>();
     private Dictionary<string, Material> originalMaterials = new Dictionary<string, Material>();
     public Material greenMaterial;
     private bool isSaved = false;
     private int count=1;
+    public float confettisDelay = 1.0f;
+    public GameObject youWon;
+    public GameObject confetti;
+
+    public TMPro.TextMeshPro text;
+    public GameObject panel;
+
 
 
 
@@ -69,6 +79,8 @@ public class MouseClickMove : MonoBehaviour
             }
             
         }
+        StartCoroutine(twelve());
+
 
     }
 
@@ -197,7 +209,7 @@ public class MouseClickMove : MonoBehaviour
                 
 
             }
-            if (correctCubes > 2) {
+            if (correctCubes >= neededCubes) {
                 allCubesAreInPlace = true;
             }
 
@@ -205,6 +217,8 @@ public class MouseClickMove : MonoBehaviour
             if (allCubesAreInPlace)
             {
                 Debug.Log("You win!");
+                StartCoroutine(EndGame());
+                PlayerProgress.wonSchiebepuzzle = true;
             }
         }
     }
@@ -255,5 +269,38 @@ public class MouseClickMove : MonoBehaviour
             cubes[i].transform.position = temp;
         }
 
+    }
+    IEnumerator EndGame()
+    {
+        confetti.SetActive(true);
+        yield return new WaitForSecondsRealtime(1);
+        youWon.SetActive(true);
+        yield return new WaitForSecondsRealtime(4);
+        SceneManager.LoadScene("MainScene", LoadSceneMode.Single);
+    }
+
+       IEnumerator twelve()
+    {
+        yield return new WaitForSecondsRealtime(120);
+        neededCubes = 12;
+        panel.SetActive(true);
+        text.text = "Jetzt müssen nur noch 12 Würfel auf der richtigen Position sein";
+        StartCoroutine(eight());
+    }
+
+    IEnumerator eight()
+    {
+        yield return new WaitForSecondsRealtime(60);
+        neededCubes = 8;
+        panel.SetActive(true);
+        text.text = "Jetzt müssen nur noch 8 Würfel auf der richtigen Position sein";
+        StartCoroutine(four());
+    }
+    IEnumerator four()
+    {
+        yield return new WaitForSecondsRealtime(60);
+        panel.SetActive(true);
+        text.text = "Jetzt müssen nur noch 4 Würfel auf der richtigen Position sein";
+        neededCubes = 4;
     }
 }

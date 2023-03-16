@@ -20,4 +20,9 @@ public class DestroyObjectScript : MonoBehaviour
     {
         Destroy(gameObject);
     }
+
+    public void Invisible()
+    {
+        gameObject.SetActive(false);
+    }
 }

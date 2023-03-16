@@ -1,13 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class M2Puzzle : MonoBehaviour
 {
     private TrackPieces ts;
     private int turn = 1;
     [SerializeField]
     private GameObject blackBishopH6;
+    public float confettisDelay = 1.0f;
+    public GameObject youWon;
+    public GameObject confetti;
     // Start is called before the first frame update
     void Start()
     {
@@ -52,6 +55,8 @@ public class M2Puzzle : MonoBehaviour
             {
                 //Win Message
                 print("You won!");
+                PlayerProgress.wonChess = true;
+                StartCoroutine(EndGame());
             }
             else
             {
@@ -62,5 +67,13 @@ public class M2Puzzle : MonoBehaviour
                 //Signal wrong move
             }
         }
+    }
+    IEnumerator EndGame()
+    {
+        confetti.SetActive(true);
+        yield return new WaitForSecondsRealtime(1);
+        youWon.SetActive(true);
+        yield return new WaitForSecondsRealtime(4);
+        SceneManager.LoadScene("MainScene", LoadSceneMode.Single);
     }
 }

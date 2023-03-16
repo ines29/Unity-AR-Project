@@ -56,9 +56,7 @@ public class SnapToPos : MonoBehaviour
         GameObject gO = fields.Keys.FirstOrDefault(obj => obj.GetComponent<Transform>().Equals(trans));
         if (gO != null)
         {
-            print("Updating current Pos of " + gameObject.name + " from " + currentPos);
             fields.TryGetValue(gO, out currentPos);
-            print(gameObject.name + " to " + currentPos);
         }
     }
 

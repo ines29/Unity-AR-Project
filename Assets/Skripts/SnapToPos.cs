@@ -46,12 +46,17 @@ public class SnapToPos : MonoBehaviour
         SetCurrentPositionFromTransform(bestSnap);
     }
 
+    public void UpdateB()
+    {
+        Update();
+    }
+
     public (int,int) GetStartPosition()
     {
         return (startCol, startRow);
     }
 
-    void SetCurrentPositionFromTransform(Transform trans)
+    public void SetCurrentPositionFromTransform(Transform trans)
     {
         GameObject gO = fields.Keys.FirstOrDefault(obj => obj.GetComponent<Transform>().Equals(trans));
         if (gO != null)
@@ -69,6 +74,11 @@ public class SnapToPos : MonoBehaviour
     {
         chessBoard.TryGetComponent<TrackPieces>(out TrackPieces ts);
         ts.UpdatePos(gameObject, currentPos);
+    }
+
+    public GameObject GetField((int, int) pos)
+    {
+        return fields.Keys.First(obj => fields[obj].Equals(pos));
     }
 
     (int,int) GetPos(GameObject field)
@@ -99,7 +109,13 @@ public class SnapToPos : MonoBehaviour
         'h' => 8,
         _ => -1,
     };
-    void AddPosToSnapsCheckPieces(int col, int row)
+
+    public void ClearSnaps()
+    {
+        snaps.Clear();
+    }
+
+    public void AddPosToSnapsCheckPieces(int col, int row)
     {
         GameObject pap = PieceAtPos(col, row);
         if (pap != null)

@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-public class TrackPieces : MonoBehaviour
+public class TrackPiecesOriginal : MonoBehaviour
 {
     private Dictionary<GameObject, (int, int)> blackPieces = new Dictionary<GameObject, (int, int)>();
     private Dictionary<GameObject, (int, int)> whitePieces = new Dictionary<GameObject, (int, int)>();
@@ -96,6 +96,13 @@ public class TrackPieces : MonoBehaviour
 
     public void ChangeTurnToBlack()
     {
+        if (WhiteMoved())
+        {
+            foreach (GameObject white in whitePieces.Keys)
+                white.GetComponent<CapsuleCollider>().enabled = false;
+            foreach (GameObject black in blackPieces.Keys)
+                black.GetComponent<CapsuleCollider>().enabled = true;
+        }
         GameObject[] cp = whitePieces.Keys.ToArray();
         foreach (GameObject white in cp)
         {

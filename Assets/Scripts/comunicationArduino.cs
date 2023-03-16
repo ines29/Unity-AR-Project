@@ -2,8 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.IO.Ports;
+using Photon.Pun;
 
-public class comunicationArduino : MonoBehaviour
+public class comunicationArduino : MonoBehaviourPunCallbacks
 {
     SerialPort stream = new SerialPort("COM5", 9600);
     // Start is called before the first frame update
@@ -19,6 +20,11 @@ public class comunicationArduino : MonoBehaviour
         { 
         
         }
+        PhotonNetwork.ConnectUsingSettings();
+    }
+
+    public override void OnConnectedToMaster() { 
+    
     }
 
     // Update is called once per frame
@@ -31,6 +37,18 @@ public class comunicationArduino : MonoBehaviour
                 string tmp = stream.ReadLine();
                 Debug.Log("Read " + tmp  );
                 stream.Write("1");
+                if (tmp=="1") {
+                    foreach (GameObject gameObj in GameObject.FindObjectsOfType<GameObject>())
+                    {
+                        if (gameObj.name == "Cube")
+                        {
+                            gameObj.GetComponent<Renderer>().material.color = new Color(0, 204, 102);
+                            Debug.Log(gameObj.transform.position);
+                        }
+                    }
+
+                }
+                //Debug.Log("written");
                 // do other stuff with the data
             }
             catch (System.Exception )

@@ -9,14 +9,44 @@ public class comunicationArduino : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        stream.Open();
-        Debug.Log("connection Arduino started");
-
+        try
+        {
+            stream.Open();
+            Debug.Log("connection Arduino started");
+            stream.ReadTimeout = 1;
+        }
+        catch (System.Exception)
+        { 
+        
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(stream.ReadLine());
+        if (true)
+        {
+            try
+            {
+                string tmp = stream.ReadLine();
+                Debug.Log("Read " + tmp  );
+                stream.Write("1");
+                // do other stuff with the data
+            }
+            catch (System.Exception )
+            {
+                //Debug.Log("nothing recived");
+                // no-op, just to silence the timeouts. 
+                // (my arduino sends 12-16 byte packets every 0.1 secs)
+            }
+            
+            
+
+        }
+        
+    }
+
+    void send() { 
+    
     }
 }

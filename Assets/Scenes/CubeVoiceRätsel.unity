@@ -5616,6 +5616,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f98e7663599230e419addf153615c144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ispressed: 0
   movingButtonVisuals: {fileID: 7452691}
   distanceSpaceMode: 1
   startPushDistance: -0.008
@@ -11661,6 +11662,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f98e7663599230e419addf153615c144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ispressed: 0
   movingButtonVisuals: {fileID: 1298759531}
   distanceSpaceMode: 1
   startPushDistance: -0.008
@@ -18409,6 +18411,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f98e7663599230e419addf153615c144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ispressed: 0
   movingButtonVisuals: {fileID: 1291950741}
   distanceSpaceMode: 1
   startPushDistance: -0.008
@@ -87353,6 +87356,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f98e7663599230e419addf153615c144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ispressed: 0
   movingButtonVisuals: {fileID: 1684198291}
   distanceSpaceMode: 1
   startPushDistance: -0.008
@@ -88077,6 +88081,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f98e7663599230e419addf153615c144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ispressed: 0
   movingButtonVisuals: {fileID: 2119952105}
   distanceSpaceMode: 1
   startPushDistance: -0.008
@@ -98869,7 +98874,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83d9acc7968244a8886f3af591305bcb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeProfile: {fileID: 11400000, guid: 8b747ca7c2c56e046b9d3d1b7424417d, type: 2}
+  activeProfile: {fileID: 11400000, guid: 388a9b8e5c7fb4c44b2ed059b2b71f01, type: 2}
 --- !u!4 &2024765008
 Transform:
   m_ObjectHideFlags: 0

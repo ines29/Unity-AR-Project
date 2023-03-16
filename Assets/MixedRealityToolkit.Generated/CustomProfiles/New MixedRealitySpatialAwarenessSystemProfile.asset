@@ -41,4 +41,4 @@ MonoBehaviour:
     componentName: OpenXR Spatial Mesh Observer
     priority: 0
     runtimePlatform: 9
-    observerProfile: {fileID: 11400000, guid: 30f83493eced9484c878c44f054286ab, type: 2}
+    observerProfile: {fileID: 11400000, guid: 3b30c005e61be1a49b9c7ff3127fdd73, type: 2}

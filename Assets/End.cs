@@ -1,33 +1,32 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class End : MonoBehaviour
 {
 
-	public GameObject winPanel;
 	public float effectTime = 10;
 	public float panelTime = 10;
+	public float confettisDelay = 1.0f;
+	public GameObject youWon;
+	public GameObject confetti;
 
 	void OnTriggerEnter(Collider other)
 	{
 		Destroy(other.gameObject);
+		PlayerProgress.wonLabyrinth = true;
 		StartCoroutine(Win());
 	}
 
 	IEnumerator Win()
 	{
-		yield return new WaitForSeconds(effectTime);
-		gameObject.GetComponent<AudioSource>().Play();
-		winPanel.SetActive(true);
-
-		//winEffect.SetActive(true);
-
-		yield return new WaitForSeconds(panelTime);
-
-		//gameObject.GetComponent<AudioSource>().Stop();
-		winPanel.SetActive(false);
-		//winEffect.SetActive(false);
+		confetti.SetActive(true);
+		yield return new WaitForSecondsRealtime(1);
+		youWon.SetActive(true);
+		yield return new WaitForSecondsRealtime(4);
+		SceneManager.LoadScene("MainScene", LoadSceneMode.Single);
 	}
+
 }
 

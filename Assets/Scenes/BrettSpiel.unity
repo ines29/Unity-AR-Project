@@ -7833,13 +7833,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1071528410}
     m_Modifications:
+    - target: {fileID: 1192289701505159040, guid: e9256cee0e1be644e92c65d9e233327e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3f81b211206f39a498f18a80eb77eb8b, type: 2}
     - target: {fileID: 6326240932736230438, guid: e9256cee0e1be644e92c65d9e233327e, type: 3}
       propertyPath: m_Name
       value: EndScene
       objectReference: {fileID: 0}
     - target: {fileID: 6326240932736230438, guid: e9256cee0e1be644e92c65d9e233327e, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8105185953228992717, guid: e9256cee0e1be644e92c65d9e233327e, type: 3}
       propertyPath: m_RootOrder

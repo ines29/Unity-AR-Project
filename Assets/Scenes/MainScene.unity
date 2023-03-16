@@ -1716,7 +1716,6 @@ GameObject:
   m_Component:
   - component: {fileID: 554282177}
   - component: {fileID: 554282179}
-  - component: {fileID: 554282178}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -1738,19 +1737,6 @@ Transform:
   m_Father: {fileID: 1958650778}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &554282178
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 554282176}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3837250ef6d5edb4e934de00ef7943b9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inPresentTime: 1
 --- !u!114 &554282179
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1764,6 +1750,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inPresentTime: 1
+  calendarDate: {fileID: 148511822}
+  targets: {fileID: 585239397}
 --- !u!1 &585239397
 GameObject:
   m_ObjectHideFlags: 0
@@ -3600,6 +3588,18 @@ PrefabInstance:
     - target: {fileID: 1791876988276827193, guid: e7b97721e71b3a54b86374d02939e073, type: 3}
       propertyPath: currentNumberChar
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234104709957827204, guid: e7b97721e71b3a54b86374d02939e073, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234104709957827204, guid: e7b97721e71b3a54b86374d02939e073, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234104709957827204, guid: e7b97721e71b3a54b86374d02939e073, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2851215325243090100, guid: e7b97721e71b3a54b86374d02939e073, type: 3}
       propertyPath: m_Camera

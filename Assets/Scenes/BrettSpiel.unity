@@ -161,8 +161,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startCol: 5
   startRow: 2
-  minDistance: 1
   chessBoard: {fileID: 195369734}
+--- !u!114 &18555175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 18555171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b3e6359c9750ad4fb8a05c9b8704d7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  handType: 3
+  proximityType: -1
+  executionOrder: 0
+  constraintOnRotation: -1
+  useLocalSpaceForConstraint: 0
 --- !u!136 &18555176
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -206,7 +222,7 @@ MonoBehaviour:
   hostTransform: {fileID: 18555172}
   manipulationType: 3
   twoHandedManipulationType: 7
-  allowFarManipulation: 1
+  allowFarManipulation: 0
   useForcesForNearManipulation: 0
   oneHandRotationModeNear: 1
   oneHandRotationModeFar: 1
@@ -239,7 +255,19 @@ MonoBehaviour:
         m_CallState: 2
   onManipulationEnded:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 195369735}
+        m_TargetAssemblyTypeName: TrackPieces, Assembly-CSharp
+        m_MethodName: ChangeTurnToBlack
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onHoverEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -314,8 +342,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startCol: 7
   startRow: 7
-  minDistance: 1
   chessBoard: {fileID: 195369734}
+--- !u!114 &68982731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 68982727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b3e6359c9750ad4fb8a05c9b8704d7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  handType: 3
+  proximityType: -1
+  executionOrder: 0
+  constraintOnRotation: -1
+  useLocalSpaceForConstraint: 0
 --- !u!136 &68982732
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -345,7 +389,7 @@ MonoBehaviour:
   hostTransform: {fileID: 68982728}
   manipulationType: 3
   twoHandedManipulationType: 7
-  allowFarManipulation: 1
+  allowFarManipulation: 0
   useForcesForNearManipulation: 0
   oneHandRotationModeNear: 1
   oneHandRotationModeFar: 1
@@ -378,7 +422,19 @@ MonoBehaviour:
         m_CallState: 2
   onManipulationEnded:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 195369735}
+        m_TargetAssemblyTypeName: TrackPieces, Assembly-CSharp
+        m_MethodName: ChangeTurnToWhite
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onHoverEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -437,8 +493,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startCol: 8
   startRow: 7
-  minDistance: 1
   chessBoard: {fileID: 195369734}
+--- !u!114 &97071114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 97071110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b3e6359c9750ad4fb8a05c9b8704d7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  handType: 3
+  proximityType: -1
+  executionOrder: 0
+  constraintOnRotation: -1
+  useLocalSpaceForConstraint: 0
 --- !u!136 &97071115
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -468,7 +540,7 @@ MonoBehaviour:
   hostTransform: {fileID: 97071111}
   manipulationType: 3
   twoHandedManipulationType: 7
-  allowFarManipulation: 1
+  allowFarManipulation: 0
   useForcesForNearManipulation: 0
   oneHandRotationModeNear: 1
   oneHandRotationModeFar: 1
@@ -501,7 +573,19 @@ MonoBehaviour:
         m_CallState: 2
   onManipulationEnded:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 195369735}
+        m_TargetAssemblyTypeName: TrackPieces, Assembly-CSharp
+        m_MethodName: ChangeTurnToWhite
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onHoverEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -590,8 +674,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startCol: 5
   startRow: 7
-  minDistance: 1
   chessBoard: {fileID: 195369734}
+--- !u!114 &159918794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 159918790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b3e6359c9750ad4fb8a05c9b8704d7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  handType: 3
+  proximityType: -1
+  executionOrder: 0
+  constraintOnRotation: -1
+  useLocalSpaceForConstraint: 0
 --- !u!136 &159918795
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -621,7 +721,7 @@ MonoBehaviour:
   hostTransform: {fileID: 159918791}
   manipulationType: 3
   twoHandedManipulationType: 7
-  allowFarManipulation: 1
+  allowFarManipulation: 0
   useForcesForNearManipulation: 0
   oneHandRotationModeNear: 1
   oneHandRotationModeFar: 1
@@ -635,7 +735,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 159918797}
+  constraintsManager: {fileID: 68982734}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -654,7 +754,19 @@ MonoBehaviour:
         m_CallState: 2
   onManipulationEnded:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 195369735}
+        m_TargetAssemblyTypeName: TrackPieces, Assembly-CSharp
+        m_MethodName: ChangeTurnToWhite
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onHoverEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -820,8 +932,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startCol: 2
   startRow: 1
-  minDistance: 1
   chessBoard: {fileID: 195369734}
+--- !u!114 &269032292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 269032288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b3e6359c9750ad4fb8a05c9b8704d7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  handType: 3
+  proximityType: -1
+  executionOrder: 0
+  constraintOnRotation: -1
+  useLocalSpaceForConstraint: 0
 --- !u!136 &269032293
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -851,7 +979,7 @@ MonoBehaviour:
   hostTransform: {fileID: 269032289}
   manipulationType: 3
   twoHandedManipulationType: 7
-  allowFarManipulation: 1
+  allowFarManipulation: 0
   useForcesForNearManipulation: 0
   oneHandRotationModeNear: 1
   oneHandRotationModeFar: 1
@@ -865,7 +993,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 269032295}
+  constraintsManager: {fileID: 18555177}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -884,7 +1012,19 @@ MonoBehaviour:
         m_CallState: 2
   onManipulationEnded:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 195369735}
+        m_TargetAssemblyTypeName: TrackPieces, Assembly-CSharp
+        m_MethodName: ChangeTurnToBlack
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onHoverEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -1660,7 +1800,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startCol: 3
   startRow: 7
-  minDistance: 1
   chessBoard: {fileID: 195369734}
 --- !u!114 &522597846
 MonoBehaviour:
@@ -1681,6 +1820,23 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -6151451014588545107, guid: 333d9e0c2d0c22bb5ad021bc40a7a257, type: 3}
   m_PrefabInstance: {fileID: 518508709}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &522597848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 522597844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b3e6359c9750ad4fb8a05c9b8704d7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  handType: 3
+  proximityType: -1
+  executionOrder: 0
+  constraintOnRotation: -1
+  useLocalSpaceForConstraint: 0
 --- !u!136 &522597849
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1710,7 +1866,7 @@ MonoBehaviour:
   hostTransform: {fileID: 522597847}
   manipulationType: 3
   twoHandedManipulationType: 7
-  allowFarManipulation: 1
+  allowFarManipulation: 0
   useForcesForNearManipulation: 0
   oneHandRotationModeNear: 1
   oneHandRotationModeFar: 1
@@ -1724,7 +1880,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 522597851}
+  constraintsManager: {fileID: 68982734}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -1743,7 +1899,19 @@ MonoBehaviour:
         m_CallState: 2
   onManipulationEnded:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 195369735}
+        m_TargetAssemblyTypeName: TrackPieces, Assembly-CSharp
+        m_MethodName: ChangeTurnToWhite
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onHoverEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -2035,8 +2203,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startCol: 4
   startRow: 1
-  minDistance: 1
   chessBoard: {fileID: 195369734}
+--- !u!114 &654659204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 654659200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b3e6359c9750ad4fb8a05c9b8704d7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  handType: 3
+  proximityType: -1
+  executionOrder: 0
+  constraintOnRotation: -1
+  useLocalSpaceForConstraint: 0
 --- !u!136 &654659205
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2066,7 +2250,7 @@ MonoBehaviour:
   hostTransform: {fileID: 654659201}
   manipulationType: 3
   twoHandedManipulationType: 7
-  allowFarManipulation: 1
+  allowFarManipulation: 0
   useForcesForNearManipulation: 0
   oneHandRotationModeNear: 1
   oneHandRotationModeFar: 1
@@ -2080,7 +2264,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 654659207}
+  constraintsManager: {fileID: 18555177}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -2099,7 +2283,19 @@ MonoBehaviour:
         m_CallState: 2
   onManipulationEnded:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 195369735}
+        m_TargetAssemblyTypeName: TrackPieces, Assembly-CSharp
+        m_MethodName: ChangeTurnToBlack
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onHoverEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -2379,7 +2575,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startCol: 1
   startRow: 8
-  minDistance: 1
   chessBoard: {fileID: 195369734}
 --- !u!114 &842026375
 MonoBehaviour:
@@ -2400,6 +2595,23 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5860264980486679503, guid: 333d9e0c2d0c22bb5ad021bc40a7a257, type: 3}
   m_PrefabInstance: {fileID: 518508709}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &842026377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 842026373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b3e6359c9750ad4fb8a05c9b8704d7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  handType: 3
+  proximityType: -1
+  executionOrder: 0
+  constraintOnRotation: -1
+  useLocalSpaceForConstraint: 0
 --- !u!136 &842026378
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2429,7 +2641,7 @@ MonoBehaviour:
   hostTransform: {fileID: 842026376}
   manipulationType: 3
   twoHandedManipulationType: 7
-  allowFarManipulation: 1
+  allowFarManipulation: 0
   useForcesForNearManipulation: 0
   oneHandRotationModeNear: 1
   oneHandRotationModeFar: 1
@@ -2443,7 +2655,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 842026380}
+  constraintsManager: {fileID: 68982734}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -2462,7 +2674,19 @@ MonoBehaviour:
         m_CallState: 2
   onManipulationEnded:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 195369735}
+        m_TargetAssemblyTypeName: TrackPieces, Assembly-CSharp
+        m_MethodName: ChangeTurnToWhite
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onHoverEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -2532,7 +2756,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startCol: 4
   startRow: 2
-  minDistance: 1
   chessBoard: {fileID: 195369734}
 --- !u!114 &911955054
 MonoBehaviour:
@@ -2553,6 +2776,23 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8643950247656180066, guid: 333d9e0c2d0c22bb5ad021bc40a7a257, type: 3}
   m_PrefabInstance: {fileID: 518508709}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &911955056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 911955052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b3e6359c9750ad4fb8a05c9b8704d7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  handType: 3
+  proximityType: -1
+  executionOrder: 0
+  constraintOnRotation: -1
+  useLocalSpaceForConstraint: 0
 --- !u!136 &911955057
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2582,7 +2822,7 @@ MonoBehaviour:
   hostTransform: {fileID: 911955055}
   manipulationType: 3
   twoHandedManipulationType: 7
-  allowFarManipulation: 1
+  allowFarManipulation: 0
   useForcesForNearManipulation: 0
   oneHandRotationModeNear: 1
   oneHandRotationModeFar: 1
@@ -2596,7 +2836,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 18555177}
+  constraintsManager: {fileID: 911955059}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -2615,7 +2855,19 @@ MonoBehaviour:
         m_CallState: 2
   onManipulationEnded:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 195369735}
+        m_TargetAssemblyTypeName: TrackPieces, Assembly-CSharp
+        m_MethodName: ChangeTurnToBlack
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onHoverEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -2745,7 +2997,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startCol: 2
   startRow: 8
-  minDistance: 1
   chessBoard: {fileID: 195369734}
 --- !u!114 &1013727049
 MonoBehaviour:
@@ -2766,6 +3017,23 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5441037279452845427, guid: 333d9e0c2d0c22bb5ad021bc40a7a257, type: 3}
   m_PrefabInstance: {fileID: 518508709}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1013727051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1013727047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b3e6359c9750ad4fb8a05c9b8704d7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  handType: 3
+  proximityType: -1
+  executionOrder: 0
+  constraintOnRotation: -1
+  useLocalSpaceForConstraint: 0
 --- !u!136 &1013727052
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2795,7 +3063,7 @@ MonoBehaviour:
   hostTransform: {fileID: 1013727050}
   manipulationType: 3
   twoHandedManipulationType: 7
-  allowFarManipulation: 1
+  allowFarManipulation: 0
   useForcesForNearManipulation: 0
   oneHandRotationModeNear: 1
   oneHandRotationModeFar: 1
@@ -2828,7 +3096,19 @@ MonoBehaviour:
         m_CallState: 2
   onManipulationEnded:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 195369735}
+        m_TargetAssemblyTypeName: TrackPieces, Assembly-CSharp
+        m_MethodName: ChangeTurnToWhite
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onHoverEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -2887,8 +3167,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startCol: 1
   startRow: 1
-  minDistance: 1
   chessBoard: {fileID: 195369734}
+--- !u!114 &1016040296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1016040292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b3e6359c9750ad4fb8a05c9b8704d7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  handType: 3
+  proximityType: -1
+  executionOrder: 0
+  constraintOnRotation: -1
+  useLocalSpaceForConstraint: 0
 --- !u!136 &1016040297
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2918,7 +3214,7 @@ MonoBehaviour:
   hostTransform: {fileID: 1016040293}
   manipulationType: 3
   twoHandedManipulationType: 7
-  allowFarManipulation: 1
+  allowFarManipulation: 0
   useForcesForNearManipulation: 0
   oneHandRotationModeNear: 1
   oneHandRotationModeFar: 1
@@ -2932,7 +3228,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 1016040299}
+  constraintsManager: {fileID: 18555177}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -2951,7 +3247,19 @@ MonoBehaviour:
         m_CallState: 2
   onManipulationEnded:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 195369735}
+        m_TargetAssemblyTypeName: TrackPieces, Assembly-CSharp
+        m_MethodName: ChangeTurnToBlack
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onHoverEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -2991,7 +3299,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startCol: 5
   startRow: 1
-  minDistance: 1
   chessBoard: {fileID: 195369734}
 --- !u!114 &1027300392
 MonoBehaviour:
@@ -3012,6 +3319,23 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -2207139333990191015, guid: 333d9e0c2d0c22bb5ad021bc40a7a257, type: 3}
   m_PrefabInstance: {fileID: 518508709}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1027300394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1027300390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b3e6359c9750ad4fb8a05c9b8704d7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  handType: 3
+  proximityType: -1
+  executionOrder: 0
+  constraintOnRotation: -1
+  useLocalSpaceForConstraint: 0
 --- !u!136 &1027300395
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3041,7 +3365,7 @@ MonoBehaviour:
   hostTransform: {fileID: 1027300393}
   manipulationType: 3
   twoHandedManipulationType: 7
-  allowFarManipulation: 1
+  allowFarManipulation: 0
   useForcesForNearManipulation: 0
   oneHandRotationModeNear: 1
   oneHandRotationModeFar: 1
@@ -3055,7 +3379,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 1027300397}
+  constraintsManager: {fileID: 18555177}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -3074,7 +3398,19 @@ MonoBehaviour:
         m_CallState: 2
   onManipulationEnded:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 195369735}
+        m_TargetAssemblyTypeName: TrackPieces, Assembly-CSharp
+        m_MethodName: ChangeTurnToBlack
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onHoverEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -3250,7 +3586,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startCol: 8
   startRow: 2
-  minDistance: 1
   chessBoard: {fileID: 195369734}
 --- !u!114 &1151828186
 MonoBehaviour:
@@ -3271,6 +3606,23 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -3924650690326678932, guid: 333d9e0c2d0c22bb5ad021bc40a7a257, type: 3}
   m_PrefabInstance: {fileID: 518508709}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1151828188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1151828184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b3e6359c9750ad4fb8a05c9b8704d7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  handType: 3
+  proximityType: -1
+  executionOrder: 0
+  constraintOnRotation: -1
+  useLocalSpaceForConstraint: 0
 --- !u!136 &1151828189
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3300,7 +3652,7 @@ MonoBehaviour:
   hostTransform: {fileID: 1151828187}
   manipulationType: 3
   twoHandedManipulationType: 7
-  allowFarManipulation: 1
+  allowFarManipulation: 0
   useForcesForNearManipulation: 0
   oneHandRotationModeNear: 1
   oneHandRotationModeFar: 1
@@ -3333,7 +3685,19 @@ MonoBehaviour:
         m_CallState: 2
   onManipulationEnded:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 195369735}
+        m_TargetAssemblyTypeName: TrackPieces, Assembly-CSharp
+        m_MethodName: ChangeTurnToBlack
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onHoverEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -3392,8 +3756,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startCol: 2
   startRow: 2
-  minDistance: 1
   chessBoard: {fileID: 195369734}
+--- !u!114 &1170048314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1170048310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b3e6359c9750ad4fb8a05c9b8704d7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  handType: 3
+  proximityType: -1
+  executionOrder: 0
+  constraintOnRotation: -1
+  useLocalSpaceForConstraint: 0
 --- !u!136 &1170048315
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3423,7 +3803,7 @@ MonoBehaviour:
   hostTransform: {fileID: 1170048311}
   manipulationType: 3
   twoHandedManipulationType: 7
-  allowFarManipulation: 1
+  allowFarManipulation: 0
   useForcesForNearManipulation: 0
   oneHandRotationModeNear: 1
   oneHandRotationModeFar: 1
@@ -3456,7 +3836,19 @@ MonoBehaviour:
         m_CallState: 2
   onManipulationEnded:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 195369735}
+        m_TargetAssemblyTypeName: TrackPieces, Assembly-CSharp
+        m_MethodName: ChangeTurnToBlack
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onHoverEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -3557,7 +3949,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startCol: 6
   startRow: 7
-  minDistance: 1
   chessBoard: {fileID: 195369734}
 --- !u!114 &1211232642
 MonoBehaviour:
@@ -3578,6 +3969,23 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -1364737173697001796, guid: 333d9e0c2d0c22bb5ad021bc40a7a257, type: 3}
   m_PrefabInstance: {fileID: 518508709}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1211232644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1211232640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b3e6359c9750ad4fb8a05c9b8704d7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  handType: 3
+  proximityType: -1
+  executionOrder: 0
+  constraintOnRotation: -1
+  useLocalSpaceForConstraint: 0
 --- !u!136 &1211232645
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3607,7 +4015,7 @@ MonoBehaviour:
   hostTransform: {fileID: 1211232643}
   manipulationType: 3
   twoHandedManipulationType: 7
-  allowFarManipulation: 1
+  allowFarManipulation: 0
   useForcesForNearManipulation: 0
   oneHandRotationModeNear: 1
   oneHandRotationModeFar: 1
@@ -3621,7 +4029,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 1211232647}
+  constraintsManager: {fileID: 68982734}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -3640,7 +4048,19 @@ MonoBehaviour:
         m_CallState: 2
   onManipulationEnded:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 195369735}
+        m_TargetAssemblyTypeName: TrackPieces, Assembly-CSharp
+        m_MethodName: ChangeTurnToWhite
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onHoverEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -3699,8 +4119,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startCol: 1
   startRow: 2
-  minDistance: 1
   chessBoard: {fileID: 195369734}
+--- !u!114 &1277879086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1277879082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b3e6359c9750ad4fb8a05c9b8704d7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  handType: 3
+  proximityType: -1
+  executionOrder: 0
+  constraintOnRotation: -1
+  useLocalSpaceForConstraint: 0
 --- !u!136 &1277879087
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3730,7 +4166,7 @@ MonoBehaviour:
   hostTransform: {fileID: 1277879083}
   manipulationType: 3
   twoHandedManipulationType: 7
-  allowFarManipulation: 1
+  allowFarManipulation: 0
   useForcesForNearManipulation: 0
   oneHandRotationModeNear: 1
   oneHandRotationModeFar: 1
@@ -3744,7 +4180,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 18555177}
+  constraintsManager: {fileID: 1277879089}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -3763,7 +4199,19 @@ MonoBehaviour:
         m_CallState: 2
   onManipulationEnded:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 195369735}
+        m_TargetAssemblyTypeName: TrackPieces, Assembly-CSharp
+        m_MethodName: ChangeTurnToBlack
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onHoverEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -3923,7 +4371,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startCol: 6
   startRow: 1
-  minDistance: 1
   chessBoard: {fileID: 195369734}
 --- !u!114 &1370188950
 MonoBehaviour:
@@ -3944,6 +4391,23 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1508615578867987786, guid: 333d9e0c2d0c22bb5ad021bc40a7a257, type: 3}
   m_PrefabInstance: {fileID: 518508709}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1370188952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1370188948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b3e6359c9750ad4fb8a05c9b8704d7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  handType: 3
+  proximityType: -1
+  executionOrder: 0
+  constraintOnRotation: -1
+  useLocalSpaceForConstraint: 0
 --- !u!136 &1370188953
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3973,7 +4437,7 @@ MonoBehaviour:
   hostTransform: {fileID: 1370188951}
   manipulationType: 3
   twoHandedManipulationType: 7
-  allowFarManipulation: 1
+  allowFarManipulation: 0
   useForcesForNearManipulation: 0
   oneHandRotationModeNear: 1
   oneHandRotationModeFar: 1
@@ -3987,7 +4451,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 1370188955}
+  constraintsManager: {fileID: 18555177}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -4006,7 +4470,19 @@ MonoBehaviour:
         m_CallState: 2
   onManipulationEnded:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 195369735}
+        m_TargetAssemblyTypeName: TrackPieces, Assembly-CSharp
+        m_MethodName: ChangeTurnToBlack
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onHoverEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -4095,8 +4571,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startCol: 3
   startRow: 2
-  minDistance: 1
   chessBoard: {fileID: 195369734}
+--- !u!114 &1414612088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1414612084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b3e6359c9750ad4fb8a05c9b8704d7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  handType: 3
+  proximityType: -1
+  executionOrder: 0
+  constraintOnRotation: -1
+  useLocalSpaceForConstraint: 0
 --- !u!136 &1414612089
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -4126,7 +4618,7 @@ MonoBehaviour:
   hostTransform: {fileID: 1414612085}
   manipulationType: 3
   twoHandedManipulationType: 7
-  allowFarManipulation: 1
+  allowFarManipulation: 0
   useForcesForNearManipulation: 0
   oneHandRotationModeNear: 1
   oneHandRotationModeFar: 1
@@ -4140,14 +4632,14 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 18555177}
+  constraintsManager: {fileID: 1414612091}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1414612084}
+      - m_Target: {fileID: 1414612087}
         m_TargetAssemblyTypeName: SnapToPos, Assembly-CSharp
-        m_MethodName: 
+        m_MethodName: PawnMoves
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4159,7 +4651,19 @@ MonoBehaviour:
         m_CallState: 2
   onManipulationEnded:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 195369735}
+        m_TargetAssemblyTypeName: TrackPieces, Assembly-CSharp
+        m_MethodName: ChangeTurnToBlack
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onHoverEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -4259,7 +4763,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startCol: 6
   startRow: 2
-  minDistance: 1
   chessBoard: {fileID: 195369734}
 --- !u!114 &1516941523
 MonoBehaviour:
@@ -4280,6 +4783,23 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 156668734556824257, guid: 333d9e0c2d0c22bb5ad021bc40a7a257, type: 3}
   m_PrefabInstance: {fileID: 518508709}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1516941525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1516941521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b3e6359c9750ad4fb8a05c9b8704d7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  handType: 3
+  proximityType: -1
+  executionOrder: 0
+  constraintOnRotation: -1
+  useLocalSpaceForConstraint: 0
 --- !u!136 &1516941526
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -4309,7 +4829,7 @@ MonoBehaviour:
   hostTransform: {fileID: 1516941524}
   manipulationType: 3
   twoHandedManipulationType: 7
-  allowFarManipulation: 1
+  allowFarManipulation: 0
   useForcesForNearManipulation: 0
   oneHandRotationModeNear: 1
   oneHandRotationModeFar: 1
@@ -4323,7 +4843,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 18555177}
+  constraintsManager: {fileID: 1516941528}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -4342,7 +4862,19 @@ MonoBehaviour:
         m_CallState: 2
   onManipulationEnded:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 195369735}
+        m_TargetAssemblyTypeName: TrackPieces, Assembly-CSharp
+        m_MethodName: ChangeTurnToBlack
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onHoverEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -4505,8 +5037,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startCol: 3
   startRow: 1
-  minDistance: 1
   chessBoard: {fileID: 195369734}
+--- !u!114 &1602353242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1602353238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b3e6359c9750ad4fb8a05c9b8704d7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  handType: 3
+  proximityType: -1
+  executionOrder: 0
+  constraintOnRotation: -1
+  useLocalSpaceForConstraint: 0
 --- !u!136 &1602353243
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -4536,7 +5084,7 @@ MonoBehaviour:
   hostTransform: {fileID: 1602353239}
   manipulationType: 3
   twoHandedManipulationType: 7
-  allowFarManipulation: 1
+  allowFarManipulation: 0
   useForcesForNearManipulation: 0
   oneHandRotationModeNear: 1
   oneHandRotationModeFar: 1
@@ -4550,7 +5098,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 1602353245}
+  constraintsManager: {fileID: 18555177}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -4569,7 +5117,19 @@ MonoBehaviour:
         m_CallState: 2
   onManipulationEnded:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 195369735}
+        m_TargetAssemblyTypeName: TrackPieces, Assembly-CSharp
+        m_MethodName: ChangeTurnToBlack
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onHoverEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -4609,7 +5169,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startCol: 7
   startRow: 8
-  minDistance: 1
   chessBoard: {fileID: 195369734}
 --- !u!114 &1617438870
 MonoBehaviour:
@@ -4630,6 +5189,23 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -5769479522669058503, guid: 333d9e0c2d0c22bb5ad021bc40a7a257, type: 3}
   m_PrefabInstance: {fileID: 518508709}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1617438872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1617438868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b3e6359c9750ad4fb8a05c9b8704d7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  handType: 3
+  proximityType: -1
+  executionOrder: 0
+  constraintOnRotation: -1
+  useLocalSpaceForConstraint: 0
 --- !u!136 &1617438873
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -4659,7 +5235,7 @@ MonoBehaviour:
   hostTransform: {fileID: 1617438871}
   manipulationType: 3
   twoHandedManipulationType: 7
-  allowFarManipulation: 1
+  allowFarManipulation: 0
   useForcesForNearManipulation: 0
   oneHandRotationModeNear: 1
   oneHandRotationModeFar: 1
@@ -4673,7 +5249,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 1617438875}
+  constraintsManager: {fileID: 68982734}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -4692,7 +5268,19 @@ MonoBehaviour:
         m_CallState: 2
   onManipulationEnded:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 195369735}
+        m_TargetAssemblyTypeName: TrackPieces, Assembly-CSharp
+        m_MethodName: ChangeTurnToWhite
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onHoverEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -4792,7 +5380,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startCol: 7
   startRow: 2
-  minDistance: 1
   chessBoard: {fileID: 195369734}
 --- !u!114 &1674914137
 MonoBehaviour:
@@ -4813,6 +5400,23 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6722431378318692551, guid: 333d9e0c2d0c22bb5ad021bc40a7a257, type: 3}
   m_PrefabInstance: {fileID: 518508709}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1674914139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1674914135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b3e6359c9750ad4fb8a05c9b8704d7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  handType: 3
+  proximityType: -1
+  executionOrder: 0
+  constraintOnRotation: -1
+  useLocalSpaceForConstraint: 0
 --- !u!136 &1674914140
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -4842,7 +5446,7 @@ MonoBehaviour:
   hostTransform: {fileID: 1674914138}
   manipulationType: 3
   twoHandedManipulationType: 7
-  allowFarManipulation: 1
+  allowFarManipulation: 0
   useForcesForNearManipulation: 0
   oneHandRotationModeNear: 1
   oneHandRotationModeFar: 1
@@ -4875,7 +5479,19 @@ MonoBehaviour:
         m_CallState: 2
   onManipulationEnded:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 195369735}
+        m_TargetAssemblyTypeName: TrackPieces, Assembly-CSharp
+        m_MethodName: ChangeTurnToBlack
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onHoverEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -4945,7 +5561,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startCol: 6
   startRow: 8
-  minDistance: 1
   chessBoard: {fileID: 195369734}
 --- !u!114 &1690036194
 MonoBehaviour:
@@ -4961,6 +5576,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShowTetherWhenManipulating: 0
   IsBoundsHandles: 0
+--- !u!114 &1690036195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1690036192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b3e6359c9750ad4fb8a05c9b8704d7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  handType: 3
+  proximityType: -1
+  executionOrder: 0
+  constraintOnRotation: -1
+  useLocalSpaceForConstraint: 0
 --- !u!136 &1690036197
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -4990,7 +5622,7 @@ MonoBehaviour:
   hostTransform: {fileID: 518508711}
   manipulationType: 3
   twoHandedManipulationType: 7
-  allowFarManipulation: 1
+  allowFarManipulation: 0
   useForcesForNearManipulation: 0
   oneHandRotationModeNear: 1
   oneHandRotationModeFar: 1
@@ -5004,7 +5636,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 1690036199}
+  constraintsManager: {fileID: 68982734}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -5023,7 +5655,19 @@ MonoBehaviour:
         m_CallState: 2
   onManipulationEnded:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 195369735}
+        m_TargetAssemblyTypeName: TrackPieces, Assembly-CSharp
+        m_MethodName: ChangeTurnToWhite
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onHoverEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -5202,8 +5846,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startCol: 4
   startRow: 8
-  minDistance: 1
   chessBoard: {fileID: 195369734}
+--- !u!114 &1833857429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1833857425}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b3e6359c9750ad4fb8a05c9b8704d7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  handType: 3
+  proximityType: -1
+  executionOrder: 0
+  constraintOnRotation: -1
+  useLocalSpaceForConstraint: 0
 --- !u!136 &1833857430
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -5233,7 +5893,7 @@ MonoBehaviour:
   hostTransform: {fileID: 1833857426}
   manipulationType: 3
   twoHandedManipulationType: 7
-  allowFarManipulation: 1
+  allowFarManipulation: 0
   useForcesForNearManipulation: 0
   oneHandRotationModeNear: 1
   oneHandRotationModeFar: 1
@@ -5247,7 +5907,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 1833857432}
+  constraintsManager: {fileID: 68982734}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -5266,7 +5926,19 @@ MonoBehaviour:
         m_CallState: 2
   onManipulationEnded:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 195369735}
+        m_TargetAssemblyTypeName: TrackPieces, Assembly-CSharp
+        m_MethodName: ChangeTurnToWhite
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onHoverEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -5336,7 +6008,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startCol: 3
   startRow: 8
-  minDistance: 1
   chessBoard: {fileID: 195369734}
 --- !u!114 &1871900515
 MonoBehaviour:
@@ -5357,6 +6028,23 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -1949889544583882347, guid: 333d9e0c2d0c22bb5ad021bc40a7a257, type: 3}
   m_PrefabInstance: {fileID: 518508709}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1871900517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1871900513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b3e6359c9750ad4fb8a05c9b8704d7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  handType: 3
+  proximityType: -1
+  executionOrder: 0
+  constraintOnRotation: -1
+  useLocalSpaceForConstraint: 0
 --- !u!136 &1871900518
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -5386,7 +6074,7 @@ MonoBehaviour:
   hostTransform: {fileID: 1871900516}
   manipulationType: 3
   twoHandedManipulationType: 7
-  allowFarManipulation: 1
+  allowFarManipulation: 0
   useForcesForNearManipulation: 0
   oneHandRotationModeNear: 1
   oneHandRotationModeFar: 1
@@ -5400,7 +6088,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 1871900520}
+  constraintsManager: {fileID: 68982734}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -5419,7 +6107,19 @@ MonoBehaviour:
         m_CallState: 2
   onManipulationEnded:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 195369735}
+        m_TargetAssemblyTypeName: TrackPieces, Assembly-CSharp
+        m_MethodName: ChangeTurnToWhite
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onHoverEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -5459,7 +6159,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startCol: 2
   startRow: 7
-  minDistance: 1
   chessBoard: {fileID: 195369734}
 --- !u!114 &1877289610
 MonoBehaviour:
@@ -5480,6 +6179,23 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3209319878924333048, guid: 333d9e0c2d0c22bb5ad021bc40a7a257, type: 3}
   m_PrefabInstance: {fileID: 518508709}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1877289612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1877289608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b3e6359c9750ad4fb8a05c9b8704d7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  handType: 3
+  proximityType: -1
+  executionOrder: 0
+  constraintOnRotation: -1
+  useLocalSpaceForConstraint: 0
 --- !u!136 &1877289613
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -5509,7 +6225,7 @@ MonoBehaviour:
   hostTransform: {fileID: 1877289611}
   manipulationType: 3
   twoHandedManipulationType: 7
-  allowFarManipulation: 1
+  allowFarManipulation: 0
   useForcesForNearManipulation: 0
   oneHandRotationModeNear: 1
   oneHandRotationModeFar: 1
@@ -5523,7 +6239,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 1877289615}
+  constraintsManager: {fileID: 68982734}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -5542,7 +6258,19 @@ MonoBehaviour:
         m_CallState: 2
   onManipulationEnded:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 195369735}
+        m_TargetAssemblyTypeName: TrackPieces, Assembly-CSharp
+        m_MethodName: ChangeTurnToWhite
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onHoverEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -5661,8 +6389,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startCol: 7
   startRow: 1
-  minDistance: 1
   chessBoard: {fileID: 195369734}
+--- !u!114 &1936134280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1936134276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b3e6359c9750ad4fb8a05c9b8704d7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  handType: 3
+  proximityType: -1
+  executionOrder: 0
+  constraintOnRotation: -1
+  useLocalSpaceForConstraint: 0
 --- !u!136 &1936134281
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -5692,7 +6436,7 @@ MonoBehaviour:
   hostTransform: {fileID: 1936134277}
   manipulationType: 3
   twoHandedManipulationType: 7
-  allowFarManipulation: 1
+  allowFarManipulation: 0
   useForcesForNearManipulation: 0
   oneHandRotationModeNear: 1
   oneHandRotationModeFar: 1
@@ -5706,7 +6450,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 1936134283}
+  constraintsManager: {fileID: 18555177}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -5725,7 +6469,19 @@ MonoBehaviour:
         m_CallState: 2
   onManipulationEnded:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 195369735}
+        m_TargetAssemblyTypeName: TrackPieces, Assembly-CSharp
+        m_MethodName: ChangeTurnToBlack
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onHoverEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -5874,8 +6630,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startCol: 5
   startRow: 8
-  minDistance: 1
   chessBoard: {fileID: 195369734}
+--- !u!114 &2010775988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2010775984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b3e6359c9750ad4fb8a05c9b8704d7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  handType: 3
+  proximityType: -1
+  executionOrder: 0
+  constraintOnRotation: -1
+  useLocalSpaceForConstraint: 0
 --- !u!136 &2010775989
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -5905,7 +6677,7 @@ MonoBehaviour:
   hostTransform: {fileID: 2010775985}
   manipulationType: 3
   twoHandedManipulationType: 7
-  allowFarManipulation: 1
+  allowFarManipulation: 0
   useForcesForNearManipulation: 0
   oneHandRotationModeNear: 1
   oneHandRotationModeFar: 1
@@ -5919,7 +6691,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 2010775991}
+  constraintsManager: {fileID: 68982734}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -5938,7 +6710,19 @@ MonoBehaviour:
         m_CallState: 2
   onManipulationEnded:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 195369735}
+        m_TargetAssemblyTypeName: TrackPieces, Assembly-CSharp
+        m_MethodName: ChangeTurnToWhite
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onHoverEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -5997,8 +6781,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startCol: 8
   startRow: 1
-  minDistance: 1
   chessBoard: {fileID: 195369734}
+--- !u!114 &2018617981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2018617977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b3e6359c9750ad4fb8a05c9b8704d7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  handType: 3
+  proximityType: -1
+  executionOrder: 0
+  constraintOnRotation: -1
+  useLocalSpaceForConstraint: 0
 --- !u!136 &2018617982
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -6028,7 +6828,7 @@ MonoBehaviour:
   hostTransform: {fileID: 2018617978}
   manipulationType: 3
   twoHandedManipulationType: 7
-  allowFarManipulation: 1
+  allowFarManipulation: 0
   useForcesForNearManipulation: 0
   oneHandRotationModeNear: 1
   oneHandRotationModeFar: 1
@@ -6061,7 +6861,19 @@ MonoBehaviour:
         m_CallState: 2
   onManipulationEnded:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 195369735}
+        m_TargetAssemblyTypeName: TrackPieces, Assembly-CSharp
+        m_MethodName: ChangeTurnToBlack
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onHoverEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -6101,7 +6913,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startCol: 4
   startRow: 7
-  minDistance: 1
   chessBoard: {fileID: 195369734}
 --- !u!114 &2033107502
 MonoBehaviour:
@@ -6122,6 +6933,23 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -2972657859179362469, guid: 333d9e0c2d0c22bb5ad021bc40a7a257, type: 3}
   m_PrefabInstance: {fileID: 518508709}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2033107504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2033107500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b3e6359c9750ad4fb8a05c9b8704d7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  handType: 3
+  proximityType: -1
+  executionOrder: 0
+  constraintOnRotation: -1
+  useLocalSpaceForConstraint: 0
 --- !u!136 &2033107505
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -6151,7 +6979,7 @@ MonoBehaviour:
   hostTransform: {fileID: 2033107503}
   manipulationType: 3
   twoHandedManipulationType: 7
-  allowFarManipulation: 1
+  allowFarManipulation: 0
   useForcesForNearManipulation: 0
   oneHandRotationModeNear: 1
   oneHandRotationModeFar: 1
@@ -6165,7 +6993,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 2033107507}
+  constraintsManager: {fileID: 68982734}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -6184,7 +7012,19 @@ MonoBehaviour:
         m_CallState: 2
   onManipulationEnded:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 195369735}
+        m_TargetAssemblyTypeName: TrackPieces, Assembly-CSharp
+        m_MethodName: ChangeTurnToWhite
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onHoverEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -6243,8 +7083,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startCol: 1
   startRow: 7
-  minDistance: 1
   chessBoard: {fileID: 195369734}
+--- !u!114 &2049677054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2049677050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b3e6359c9750ad4fb8a05c9b8704d7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  handType: 3
+  proximityType: -1
+  executionOrder: 0
+  constraintOnRotation: -1
+  useLocalSpaceForConstraint: 0
 --- !u!136 &2049677055
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -6274,7 +7130,7 @@ MonoBehaviour:
   hostTransform: {fileID: 2049677051}
   manipulationType: 3
   twoHandedManipulationType: 7
-  allowFarManipulation: 1
+  allowFarManipulation: 0
   useForcesForNearManipulation: 0
   oneHandRotationModeNear: 1
   oneHandRotationModeFar: 1
@@ -6288,7 +7144,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 2049677057}
+  constraintsManager: {fileID: 68982734}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -6307,7 +7163,19 @@ MonoBehaviour:
         m_CallState: 2
   onManipulationEnded:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 195369735}
+        m_TargetAssemblyTypeName: TrackPieces, Assembly-CSharp
+        m_MethodName: ChangeTurnToWhite
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onHoverEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -6366,8 +7234,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startCol: 8
   startRow: 8
-  minDistance: 1
   chessBoard: {fileID: 195369734}
+--- !u!114 &2050748465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2050748461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b3e6359c9750ad4fb8a05c9b8704d7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  handType: 3
+  proximityType: -1
+  executionOrder: 0
+  constraintOnRotation: -1
+  useLocalSpaceForConstraint: 0
 --- !u!136 &2050748466
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -6397,7 +7281,7 @@ MonoBehaviour:
   hostTransform: {fileID: 2050748462}
   manipulationType: 3
   twoHandedManipulationType: 7
-  allowFarManipulation: 1
+  allowFarManipulation: 0
   useForcesForNearManipulation: 0
   oneHandRotationModeNear: 1
   oneHandRotationModeFar: 1
@@ -6411,7 +7295,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 2050748468}
+  constraintsManager: {fileID: 68982734}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -6430,7 +7314,19 @@ MonoBehaviour:
         m_CallState: 2
   onManipulationEnded:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 195369735}
+        m_TargetAssemblyTypeName: TrackPieces, Assembly-CSharp
+        m_MethodName: ChangeTurnToWhite
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onHoverEntered:
     m_PersistentCalls:
       m_Calls: []

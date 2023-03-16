@@ -14,8 +14,6 @@ public class SnapToPos : MonoBehaviour
     [SerializeField]
     private int startRow;
     [SerializeField]
-    private float minDistance = 1;
-    [SerializeField]
     private GameObject chessBoard;
     private (int, int) currentPos;
     
@@ -44,8 +42,8 @@ public class SnapToPos : MonoBehaviour
                 bestSnap = snap;
             }
         }
-        SetCurrentPositionFromTransform(bestSnap);
         transform.position = bestSnap.position;
+        SetCurrentPositionFromTransform(bestSnap);
     }
 
     public (int,int) GetStartPosition()
@@ -56,8 +54,21 @@ public class SnapToPos : MonoBehaviour
     void SetCurrentPositionFromTransform(Transform trans)
     {
         GameObject gO = fields.Keys.FirstOrDefault(obj => obj.GetComponent<Transform>().Equals(trans));
-        if(gO != null)
+        if (gO != null)
+        {
+            print("Updating current Pos of " + gameObject.name + " from " + currentPos);
             fields.TryGetValue(gO, out currentPos);
+            print(gameObject.name + " to " + currentPos);
+        }
+    }
+
+    internal (int, int) GetCurrentPos()
+    {
+        return currentPos;
+    }
+
+    public void UpdatePositionWithBoard()
+    {
         chessBoard.TryGetComponent<TrackPieces>(out TrackPieces ts);
         ts.UpdatePos(gameObject, currentPos);
     }
@@ -90,6 +101,36 @@ public class SnapToPos : MonoBehaviour
         'h' => 8,
         _ => -1,
     };
+    void AddPosToSnapsCheckPieces(int col, int row)
+    {
+        GameObject pap = PieceAtPos(col, row);
+        if (pap != null)
+        {
+            if (!pap.CompareTag(tag))
+            {
+                AddPosToSnaps(col, row); //able to capture => !
+            }
+        }
+        else
+        {
+            AddPosToSnaps(col, row);
+        }
+    }
+    void AddPosToSnapsCheckPiecesUntil(int col, int row)
+    {
+        GameObject pap = PieceUntilPos(col, row);
+        if (pap != null)
+        {
+            if (!pap.CompareTag(tag) && pap.Equals(PieceAtPos(col,row)))
+            {
+                AddPosToSnaps(col, row); //able to capture => !
+            }
+        }
+        else
+        {
+            AddPosToSnaps(col, row);
+        }
+    }
 
     void AddPosToSnaps(int col, int row)
     {
@@ -97,7 +138,7 @@ public class SnapToPos : MonoBehaviour
         snaps.Add(gO.GetComponent<Transform>());
     }
 
-    bool PieceUntilPos(int col, int row)
+    GameObject PieceUntilPos(int col, int row)
     {
         int curCol = currentPos.Item1;
         int curRow = currentPos.Item2;
@@ -108,7 +149,7 @@ public class SnapToPos : MonoBehaviour
 
         if (col == currentPos.Item1 && row == currentPos.Item2)
         {
-            return false;
+            return null;
         } else if (col == currentPos.Item1)
         {
             colUp = true;
@@ -159,8 +200,8 @@ public class SnapToPos : MonoBehaviour
         int ctr = 10;
         while (ctr > 0)
         {
-            if (PieceAtPos(curCol, curRow))
-                return true;
+            if (PieceAtPos(curCol, curRow) != null)
+                return PieceAtPos(curCol, curRow);
             if(curCol == endCol && curRow == endRow)
                 break;
             if (curCol != endCol)
@@ -181,10 +222,10 @@ public class SnapToPos : MonoBehaviour
         }
         if (ctr == 0)
             print("Opps, something went wrong, infinite loop avoided");
-        return false;
+        return null;
     }
 
-    bool PieceAtPos(int col, int row)
+    GameObject PieceAtPos(int col, int row)
     {
         //GameObject gO = fields.Keys.FirstOrDefault(s => fields[s].Equals((col, row)));
         //print("Found empty object " + gO.name + " with position "+ gO.GetComponent<Transform>().position);
@@ -207,11 +248,49 @@ public class SnapToPos : MonoBehaviour
     {
         snaps.Clear();
         AddPosToSnaps(currentPos.Item1, currentPos.Item2);
-        if (CompareTag("White") && currentPos.Item2 + 1 <= 8 && !PieceAtPos(currentPos.Item1, currentPos.Item2 + 1))
-            AddPosToSnaps(currentPos.Item1, currentPos.Item2 + 1);
-        if (CompareTag("Black") && currentPos.Item2 - 1 > 0 && !PieceAtPos(currentPos.Item1, currentPos.Item2 - 1))
-            AddPosToSnaps(currentPos.Item1, currentPos.Item2 - 1);
-
+        if (CompareTag("White") && currentPos.Item2 + 1 <= 8) {
+            GameObject pap = PieceAtPos(currentPos.Item1, currentPos.Item2 + 1);
+            if (pap == null) 
+                AddPosToSnaps(currentPos.Item1, currentPos.Item2 + 1);
+            pap = PieceAtPos(currentPos.Item1 - 1, currentPos.Item2 + 1);
+            if (pap != null)
+            {
+                if (!pap.CompareTag(tag))
+                {
+                    AddPosToSnaps(currentPos.Item1 - 1, currentPos.Item2 + 1); //able to capture => !
+                }
+            }
+            pap = PieceAtPos(currentPos.Item1 + 1, currentPos.Item2 + 1);
+            if (pap != null)
+            {
+                if (!pap.CompareTag(tag))
+                {
+                    AddPosToSnaps(currentPos.Item1 + 1, currentPos.Item2 + 1); //able to capture => !
+                }
+            }
+        }
+        if (CompareTag("Black") && currentPos.Item2 - 1 > 0)
+        {
+            GameObject pap = PieceAtPos(currentPos.Item1, currentPos.Item2 - 1);
+            if (pap == null)
+                AddPosToSnaps(currentPos.Item1, currentPos.Item2 - 1);
+            pap = PieceAtPos(currentPos.Item1 - 1, currentPos.Item2 - 1);
+            if (pap != null)
+            {
+                if (!pap.CompareTag(tag))
+                {
+                    AddPosToSnaps(currentPos.Item1 - 1, currentPos.Item2 - 1); //able to capture => !
+                }
+            }
+            pap = PieceAtPos(currentPos.Item1 + 1, currentPos.Item2 - 1);
+            if (pap != null)
+            {
+                if (!pap.CompareTag(tag))
+                {
+                    AddPosToSnaps(currentPos.Item1 + 1, currentPos.Item2 - 1); //able to capture => !
+                }
+            }
+        }
     }
     public void RookMoves()
     {
@@ -219,46 +298,46 @@ public class SnapToPos : MonoBehaviour
         AddPosToSnaps(currentPos.Item1, currentPos.Item2);
         for(int i = 1; i < 8; i++)
         {
-            if (currentPos.Item1 + i <= 8 && !PieceUntilPos(currentPos.Item1 + i, currentPos.Item2))
-                AddPosToSnaps(currentPos.Item1 + i, currentPos.Item2);
+            if (currentPos.Item1 + i <= 8)
+                AddPosToSnapsCheckPiecesUntil(currentPos.Item1 + i, currentPos.Item2);
 
-            if (currentPos.Item2 + i <= 8 && !PieceUntilPos(currentPos.Item1, currentPos.Item2 + i))
-                AddPosToSnaps(currentPos.Item1, currentPos.Item2 + i);
+            if (currentPos.Item2 + i <= 8)
+                AddPosToSnapsCheckPiecesUntil(currentPos.Item1, currentPos.Item2 + i);
 
-            if (currentPos.Item1 - i > 0 && !PieceUntilPos(currentPos.Item1 - i, currentPos.Item2))
-                AddPosToSnaps(currentPos.Item1 - i, currentPos.Item2);
+            if (currentPos.Item1 - i > 0)
+                AddPosToSnapsCheckPiecesUntil(currentPos.Item1 - i, currentPos.Item2);
 
-            if (currentPos.Item2 - i > 0 && !PieceUntilPos(currentPos.Item1, currentPos.Item2 - i))
-                AddPosToSnaps(currentPos.Item1, currentPos.Item2 - i);
+            if (currentPos.Item2 - i > 0)
+                AddPosToSnapsCheckPiecesUntil(currentPos.Item1, currentPos.Item2 - i);
         }
     }
     public void KnightMoves()
     {
         snaps.Clear();
         AddPosToSnaps(currentPos.Item1, currentPos.Item2);
-        if (currentPos.Item1 + 2 <= 8 && currentPos.Item2 - 1 > 0 && !PieceAtPos(currentPos.Item1 + 2, currentPos.Item2 - 1))
-            AddPosToSnaps(currentPos.Item1 + 2, currentPos.Item2 - 1);
+        if (currentPos.Item1 + 2 <= 8 && currentPos.Item2 - 1 > 0)
+            AddPosToSnapsCheckPieces(currentPos.Item1 + 2, currentPos.Item2 - 1);
 
-        if (currentPos.Item1 + 2 <= 8 && currentPos.Item2 + 1 <= 8 && !PieceAtPos(currentPos.Item1 + 2, currentPos.Item2 + 1))
-            AddPosToSnaps(currentPos.Item1 + 2, currentPos.Item2 + 1);
+        if (currentPos.Item1 + 2 <= 8 && currentPos.Item2 + 1 <= 8)
+            AddPosToSnapsCheckPieces(currentPos.Item1 + 2, currentPos.Item2 + 1);
 
-        if (currentPos.Item1 + 1 <= 8 && currentPos.Item2 + 2 <= 8 && !PieceAtPos(currentPos.Item1 + 1, currentPos.Item2 + 2))
-            AddPosToSnaps(currentPos.Item1 + 1, currentPos.Item2 + 2);
+        if (currentPos.Item1 + 1 <= 8 && currentPos.Item2 + 2 <= 8)
+            AddPosToSnapsCheckPieces(currentPos.Item1 + 1, currentPos.Item2 + 2);
 
-        if (currentPos.Item1 - 1 > 0 && currentPos.Item2 + 2 <= 8 && !PieceAtPos(currentPos.Item1 - 1, currentPos.Item2 + 2))
-            AddPosToSnaps(currentPos.Item1 - 1, currentPos.Item2 + 2);
+        if (currentPos.Item1 - 1 > 0 && currentPos.Item2 + 2 <= 8)
+            AddPosToSnapsCheckPieces(currentPos.Item1 - 1, currentPos.Item2 + 2);
 
-        if (currentPos.Item1 - 2 > 0 && currentPos.Item2 + 1 <= 8 && !PieceAtPos(currentPos.Item1 - 2, currentPos.Item2 + 1))
-            AddPosToSnaps(currentPos.Item1 - 2, currentPos.Item2 + 1);
+        if (currentPos.Item1 - 2 > 0 && currentPos.Item2 + 1 <= 8)
+            AddPosToSnapsCheckPieces(currentPos.Item1 - 2, currentPos.Item2 + 1);
 
-        if (currentPos.Item1 - 2 > 0 && currentPos.Item2 - 1 > 0 && !PieceAtPos(currentPos.Item1 - 2, currentPos.Item2 - 1))
-            AddPosToSnaps(currentPos.Item1 - 2, currentPos.Item2 - 1);
+        if (currentPos.Item1 - 2 > 0 && currentPos.Item2 - 1 > 0)
+            AddPosToSnapsCheckPieces(currentPos.Item1 - 2, currentPos.Item2 - 1);
 
-        if (currentPos.Item1 - 1 > 0 && currentPos.Item2 - 2 > 0 && !PieceAtPos(currentPos.Item1 - 1, currentPos.Item2 - 2))
-            AddPosToSnaps(currentPos.Item1 - 1, currentPos.Item2 - 2);
+        if (currentPos.Item1 - 1 > 0 && currentPos.Item2 - 2 > 0)
+            AddPosToSnapsCheckPieces(currentPos.Item1 - 1, currentPos.Item2 - 2);
 
-        if (currentPos.Item1 + 1 <= 8 && currentPos.Item2 - 2 > 0 && !PieceAtPos(currentPos.Item1 + 1, currentPos.Item2 - 2))
-            AddPosToSnaps(currentPos.Item1 + 1, currentPos.Item2 - 2);
+        if (currentPos.Item1 + 1 <= 8 && currentPos.Item2 - 2 > 0)
+            AddPosToSnapsCheckPieces(currentPos.Item1 + 1, currentPos.Item2 - 2);
     }
     public void BishopMoves()
     {
@@ -266,17 +345,17 @@ public class SnapToPos : MonoBehaviour
         AddPosToSnaps(currentPos.Item1, currentPos.Item2);
         for (int i = 1; i < 8; i++)
         {
-            if (currentPos.Item1 + i <= 8 && currentPos.Item2 + i <= 8 && !PieceUntilPos(currentPos.Item1 + i, currentPos.Item2 + i))
-                AddPosToSnaps(currentPos.Item1 + i, currentPos.Item2 + i);
+            if (currentPos.Item1 + i <= 8 && currentPos.Item2 + i <= 8)
+                AddPosToSnapsCheckPiecesUntil(currentPos.Item1 + i, currentPos.Item2 + i);
 
-            if (currentPos.Item1 + i <= 8 && currentPos.Item2 - i > 0 && !PieceUntilPos(currentPos.Item1 + i, currentPos.Item2 - i))
-                AddPosToSnaps(currentPos.Item1 + i, currentPos.Item2 - i);
+            if (currentPos.Item1 + i <= 8 && currentPos.Item2 - i > 0)
+                AddPosToSnapsCheckPiecesUntil(currentPos.Item1 + i, currentPos.Item2 - i);
 
-            if (currentPos.Item1 - i > 0 && currentPos.Item2 + i <= 8 && !PieceUntilPos(currentPos.Item1 - i, currentPos.Item2 + i))
-                AddPosToSnaps(currentPos.Item1 - i, currentPos.Item2 + i);
+            if (currentPos.Item1 - i > 0 && currentPos.Item2 + i <= 8)
+                AddPosToSnapsCheckPiecesUntil(currentPos.Item1 - i, currentPos.Item2 + i);
 
-            if (currentPos.Item1 - i > 0 && currentPos.Item2 - i > 0 && !PieceUntilPos(currentPos.Item1 - i, currentPos.Item2 - i))
-                AddPosToSnaps(currentPos.Item1 - i, currentPos.Item2 - i);
+            if (currentPos.Item1 - i > 0 && currentPos.Item2 - i > 0)
+                AddPosToSnapsCheckPiecesUntil(currentPos.Item1 - i, currentPos.Item2 - i);
         }
     }
     public void QueenMoves()
@@ -285,57 +364,57 @@ public class SnapToPos : MonoBehaviour
         AddPosToSnaps(currentPos.Item1, currentPos.Item2);
         for (int i = 1; i < 8; i++)
         {
-            if (currentPos.Item1 + i <= 8 && !PieceUntilPos(currentPos.Item1 + i, currentPos.Item2))
-                AddPosToSnaps(currentPos.Item1 + i, currentPos.Item2);
+            if (currentPos.Item1 + i <= 8)
+                AddPosToSnapsCheckPiecesUntil(currentPos.Item1 + i, currentPos.Item2);
 
-            if (currentPos.Item2 + i <= 8 && !PieceUntilPos(currentPos.Item1, currentPos.Item2 + i))
-                AddPosToSnaps(currentPos.Item1, currentPos.Item2 + i);
+            if (currentPos.Item2 + i <= 8)
+                AddPosToSnapsCheckPiecesUntil(currentPos.Item1, currentPos.Item2 + i);
 
-            if (currentPos.Item1 - i > 0 && !PieceUntilPos(currentPos.Item1 - i, currentPos.Item2))
-                AddPosToSnaps(currentPos.Item1 - i, currentPos.Item2);
+            if (currentPos.Item1 - i > 0)
+                AddPosToSnapsCheckPiecesUntil(currentPos.Item1 - i, currentPos.Item2);
 
-            if (currentPos.Item2 - i > 0 && !PieceUntilPos(currentPos.Item1, currentPos.Item2 - i))
-                AddPosToSnaps(currentPos.Item1, currentPos.Item2 - i);
+            if (currentPos.Item2 - i > 0)
+                AddPosToSnapsCheckPiecesUntil(currentPos.Item1, currentPos.Item2 - i);
 
-            if (currentPos.Item1 + i <= 8 && currentPos.Item2 + i <= 8 && !PieceUntilPos(currentPos.Item1 + i, currentPos.Item2 + i))
-                AddPosToSnaps(currentPos.Item1 + i, currentPos.Item2 + i);
+            if (currentPos.Item1 + i <= 8 && currentPos.Item2 + i <= 8)
+                AddPosToSnapsCheckPiecesUntil(currentPos.Item1 + i, currentPos.Item2 + i);
 
-            if (currentPos.Item1 + i <= 8 && currentPos.Item2 - i > 0 && !PieceUntilPos(currentPos.Item1 + i, currentPos.Item2 - i))
-                AddPosToSnaps(currentPos.Item1 + i, currentPos.Item2 - i);
+            if (currentPos.Item1 + i <= 8 && currentPos.Item2 - i > 0)
+                AddPosToSnapsCheckPiecesUntil(currentPos.Item1 + i, currentPos.Item2 - i);
 
-            if (currentPos.Item1 - i > 0 && currentPos.Item2 + i <= 8 && !PieceUntilPos(currentPos.Item1 - i, currentPos.Item2 + i))
-                AddPosToSnaps(currentPos.Item1 - i, currentPos.Item2 + i);
+            if (currentPos.Item1 - i > 0 && currentPos.Item2 + i <= 8)
+                AddPosToSnapsCheckPiecesUntil(currentPos.Item1 - i, currentPos.Item2 + i);
 
-            if (currentPos.Item1 - i > 0 && currentPos.Item2 - i > 0 && !PieceUntilPos(currentPos.Item1 - i, currentPos.Item2 - i))
-                AddPosToSnaps(currentPos.Item1 - i, currentPos.Item2 - i);
+            if (currentPos.Item1 - i > 0 && currentPos.Item2 - i > 0)
+                AddPosToSnapsCheckPiecesUntil(currentPos.Item1 - i, currentPos.Item2 - i);
         }
     }
     public void KingMoves()
     {
         snaps.Clear();
         AddPosToSnaps(currentPos.Item1, currentPos.Item2);
-        if (currentPos.Item1 + 1 <= 8 && !PieceAtPos(currentPos.Item1 + 1, currentPos.Item2))
-            AddPosToSnaps(currentPos.Item1 + 1, currentPos.Item2);
+        if (currentPos.Item1 + 1 <= 8)
+            AddPosToSnapsCheckPieces(currentPos.Item1 + 1, currentPos.Item2);
 
-        if (currentPos.Item1 + 1 <= 8 && currentPos.Item2 + 1 <= 8 && !PieceAtPos(currentPos.Item1 + 1, currentPos.Item2 + 1))
-            AddPosToSnaps(currentPos.Item1 + 1, currentPos.Item2 + 1);
+        if (currentPos.Item1 + 1 <= 8 && currentPos.Item2 + 1 <= 8)
+            AddPosToSnapsCheckPieces(currentPos.Item1 + 1, currentPos.Item2 + 1);
 
-        if (currentPos.Item2 + 1 <= 8 && !PieceAtPos(currentPos.Item1, currentPos.Item2 + 1))
-            AddPosToSnaps(currentPos.Item1, currentPos.Item2 + 1);
+        if (currentPos.Item2 + 1 <= 8)
+            AddPosToSnapsCheckPieces(currentPos.Item1, currentPos.Item2 + 1);
 
-        if (currentPos.Item1 - 1 > 0 && currentPos.Item2 + 1 <= 8 && !PieceAtPos(currentPos.Item1 - 1, currentPos.Item2 + 1))
-            AddPosToSnaps(currentPos.Item1 - 1, currentPos.Item2 + 1);
+        if (currentPos.Item1 - 1 > 0 && currentPos.Item2 + 1 <= 8)
+            AddPosToSnapsCheckPieces(currentPos.Item1 - 1, currentPos.Item2 + 1);
 
-        if (currentPos.Item1 - 1 > 0 && !PieceAtPos(currentPos.Item1 - 1, currentPos.Item2))
-            AddPosToSnaps(currentPos.Item1 - 1, currentPos.Item2);
+        if (currentPos.Item1 - 1 > 0)
+            AddPosToSnapsCheckPieces(currentPos.Item1 - 1, currentPos.Item2);
 
-        if (currentPos.Item1 - 1 > 0 && currentPos.Item2 - 1 > 0 && !PieceAtPos(currentPos.Item1 - 1, currentPos.Item2 - 1))
-            AddPosToSnaps(currentPos.Item1 - 1, currentPos.Item2 - 1);
+        if (currentPos.Item1 - 1 > 0 && currentPos.Item2 - 1 > 0)
+            AddPosToSnapsCheckPieces(currentPos.Item1 - 1, currentPos.Item2 - 1);
 
-        if (currentPos.Item2 - 1 > 0 && !PieceAtPos(currentPos.Item1, currentPos.Item2 - 1))
-            AddPosToSnaps(currentPos.Item1, currentPos.Item2 - 1);
+        if (currentPos.Item2 - 1 > 0)
+            AddPosToSnapsCheckPieces(currentPos.Item1, currentPos.Item2 - 1);
 
-        if (currentPos.Item1 + 1 <= 8 && currentPos.Item2 - 1 > 0 && !PieceAtPos(currentPos.Item1 + 1, currentPos.Item2 - 1))
-            AddPosToSnaps(currentPos.Item1 + 1, currentPos.Item2 - 1);
+        if (currentPos.Item1 + 1 <= 8 && currentPos.Item2 - 1 > 0)
+            AddPosToSnapsCheckPieces(currentPos.Item1 + 1, currentPos.Item2 - 1);
     }
 }

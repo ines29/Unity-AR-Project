@@ -10,12 +10,14 @@ public class ColorChange : MonoBehaviour
     public Material YellowMaterial;
     private Material PreviousMaterial;
 
-    public GameObject confettiBlastBlue;
+   /* public GameObject confettiBlastBlue;
     public GameObject confettiBlastGreenYellow;
     public GameObject confettiBlastOrangePurple;
     public GameObject confettiBlastRainbow;
+   */
     public float confettisDelay = 1.0f;
     public GameObject youWon;
+    public GameObject confetti;
 
     //public GameObject plane;
     public AudioSource cubeSound;
@@ -126,10 +128,10 @@ public class ColorChange : MonoBehaviour
         {
 
             Debug.Log("You won the game!");
-            confettiBlastBlue.SetActive(true);
-            confettiBlastGreenYellow.SetActive(true);
-            confettiBlastOrangePurple.SetActive(true);
-            confettiBlastRainbow.SetActive(true);
+            //confettiBlastBlue.SetActive(true);
+            //confettiBlastGreenYellow.SetActive(true);
+           //confettiBlastOrangePurple.SetActive(true);
+           // confettiBlastRainbow.SetActive(true);
             StartCoroutine(winInfo());
 
 
@@ -140,6 +142,7 @@ public class ColorChange : MonoBehaviour
     }
     IEnumerator winInfo()
     {
+        confetti.SetActive(true);
         yield return new WaitForSecondsRealtime(1);
         youWon.SetActive(true);
 

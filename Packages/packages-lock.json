@@ -28,7 +28,7 @@
       }
     },
     "com.ptc.vuforia.engine": {
-      "version": "file:com.ptc.vuforia.engine-10.13.3.tgz",
+      "version": "file:../Assets/Editor/Migration/com.ptc.vuforia.engine-10.13.3.tgz",
       "depth": 0,
       "source": "local-tarball",
       "dependencies": {

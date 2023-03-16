@@ -1537,7 +1537,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 444684d5092b27f4ab33b3f392c57bcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: CubeVoicePuzzle
+  scene: "CubeVoiceR\xE4tsel"
 --- !u!114 &1509764667
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2049,7 +2049,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 444684d5092b27f4ab33b3f392c57bcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: Jigsaw-Puzzle
+  scene: Jigsaw-Puzzle-Game
 --- !u!114 &1981354378
 MonoBehaviour:
   m_ObjectHideFlags: 0

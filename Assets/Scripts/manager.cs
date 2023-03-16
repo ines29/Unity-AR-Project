@@ -6,14 +6,14 @@ public class manager : MonoBehaviour
 {
     public bool inPresentTime = true;
     public setCalendarDate calendarDate;
-    public GameObject vuforiaStuff;
+    //public GameObject vuforiaStuff;
     public GameObject targets;
 
     // Start is called before the first frame update
     void Start()
     {
-        calendarDate.changeDateOfCalendar(inPresentTime);
-        vuforiaStuff.SetActive(false);
+        //calendarDate.changeDateOfCalendar(inPresentTime);
+        //vuforiaStuff.SetActive(false);
     }
 
     public void setTime(int year)
@@ -24,13 +24,13 @@ public class manager : MonoBehaviour
             calendarDate.changeDateOfCalendar(inPresentTime);
             targets.SetActive(true);
             //Prüfe wassersensor
-            vuforiaStuff.SetActive(true);
+            //vuforiaStuff.SetActive(true);
             //unser Stuff
         } else
         {
             inPresentTime = false;
             calendarDate.changeDateOfCalendar(inPresentTime);
-            vuforiaStuff.SetActive(false); //unser Stuff
+            //vuforiaStuff.SetActive(false); //unser Stuff
             targets.SetActive(false);
         }
     }

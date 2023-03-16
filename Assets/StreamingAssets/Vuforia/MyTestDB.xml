@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig>
   <Tracking>
+    <ImageTarget name="Kalender" size="0.286000 0.200736" />
     <ImageTarget name="buch" size="0.160000 0.184719" />
     <ImageTarget name="Labyrinth2" size="0.160000 0.160000" />
     <ImageTarget name="Puzzle-Bild" size="0.140000 0.140000" />

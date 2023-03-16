@@ -94,7 +94,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3cf79659a011bd419c7a2a30eb74e9a, type: 3}
   m_Name: EyeGazeInteraction WSA
   m_EditorClassIdentifier: 
-  m_enabled: 0
+  m_enabled: 1
   nameUi: Eye Gaze Interaction Profile
   version: 0.0.1
   featureIdInternal: com.unity.openxr.feature.input.eyetracking
@@ -343,7 +343,7 @@ MonoBehaviour:
   required: 1
   disableFirstPersonObserver: 0
   enablePoseUpdateOnBeforeRender: 0
-  validationRuleTarget: 0
+  validationRuleTarget: 1
 --- !u!114 &-404286092419197153
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -404,7 +404,6 @@ MonoBehaviour:
   - {fileID: -7142641760490020157}
   - {fileID: 1217305124110879784}
   - {fileID: -4409868976109384337}
-  - {fileID: 4422943769585846926}
   - {fileID: 8197089093048912879}
   - {fileID: 3569225239207469876}
   - {fileID: -672138105601767318}
@@ -413,7 +412,7 @@ MonoBehaviour:
   - {fileID: -7992208806523141880}
   - {fileID: -7631715760972294877}
   m_renderMode: 1
-  m_depthSubmissionMode: 0
+  m_depthSubmissionMode: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -482,7 +481,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c79c911b38743a649b1c1eddb5097202, type: 3}
   m_Name: HandTrackingFeaturePlugin WSA
   m_EditorClassIdentifier: 
-  m_enabled: 0
+  m_enabled: 1
   nameUi: Hand Tracking
   version: 1.7.2
   featureIdInternal: com.microsoft.openxr.feature.handtracking
@@ -680,7 +679,6 @@ MonoBehaviour:
   - {fileID: -7199569051382542185}
   - {fileID: 2257976548810137757}
   - {fileID: -259052789975181907}
-  - {fileID: 2047049614934748867}
   - {fileID: -5179172973716009278}
   - {fileID: -4033725324150797640}
   - {fileID: -2431138644812816525}
@@ -690,6 +688,21 @@ MonoBehaviour:
   - {fileID: -5146646310968137772}
   - {fileID: -5017162938429098105}
   - {fileID: 7881776353473753477}
+  m_renderMode: 1
+  m_depthSubmissionMode: 0
+--- !u!114 &7128268428203247884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5a1f07dc5afe854f9f12a4194aca3fb, type: 3}
+  m_Name: Standalone
+  m_EditorClassIdentifier: 
+  features: []
   m_renderMode: 1
   m_depthSubmissionMode: 0
 --- !u!114 &7881776353473753477

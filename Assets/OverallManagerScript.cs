@@ -9,9 +9,18 @@ public class OverallManagerScript : MonoBehaviour
     public TMPro.TextMeshPro text;
     public GameObject infopanel;
     public OpenLock myLock;
+    public GameObject flower;
+    public GameObject button;
    
     void Start()
     {
+        if (PlayerProgress.firstTime)
+        {
+            flower.SetActive(true);
+            button.SetActive(true);
+            PlayerProgress.firstTime = false;
+
+        }
         Debug.Log("Start");
         Debug.Log(PlayerProgress.wonWaterPuzzle);
         int solved = 0;

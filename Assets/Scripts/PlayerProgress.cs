@@ -11,6 +11,7 @@ public static class PlayerProgress
     public static bool wonSchiebepuzzle { get; set; }
     public static bool wonLabyrinth { get; set; }
     public static bool isWatered { get; set; }
+    public static bool firstTime { get; set; } = true;
 
 
 }

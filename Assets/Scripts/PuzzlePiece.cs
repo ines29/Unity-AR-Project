@@ -48,7 +48,8 @@ public class PuzzlePiece : MonoBehaviour
             {
                 inRightPosition = true;  // Markiere das Puzzleteil als an der korrekten Position
                 Debug.Log("Match");
-                StartCoroutine(Snap());
+                //StartCoroutine(Snap());
+
 
                 // Prüfe, ob das Puzzleteil sich innerhalb des Radius von der aktuellen Zielposition befindet
 
@@ -57,9 +58,18 @@ public class PuzzlePiece : MonoBehaviour
         }
 
     }
-    IEnumerator Snap()
+
+    private void OnTriggerExit(Collider other)
     {
-        yield return new WaitForSecondsRealtime(0);
+        inRightPosition = false;
+    }
+    public void Snap()
+    {
+        if(inRightPosition)
+        {
+
+    
+       // yield return new WaitForSecondsRealtime(0);
         transform.position = rightPosition;  // Bewege das Puzzleteil auf die Zielposition
         transform.eulerAngles = rightRotation;
 
@@ -67,6 +77,7 @@ public class PuzzlePiece : MonoBehaviour
         GetComponent<ObjectManipulator>().enabled = false;
         //GetComponent<Rigidbody>().constraints =  RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezePositionX;
         GameManager.counter();
+        }
 
     }
       

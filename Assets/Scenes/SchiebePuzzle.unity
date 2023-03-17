@@ -1115,10 +1115,10 @@ MonoBehaviour:
   neededCubes: 15
   greenMaterial: {fileID: 2100000, guid: c57e390fc54580e46923d295e674f25c, type: 2}
   confettisDelay: 1
-  youWon: {fileID: 0}
-  confetti: {fileID: 0}
-  text: {fileID: 0}
-  panel: {fileID: 0}
+  youWon: {fileID: 1868397250}
+  confetti: {fileID: 1868397249}
+  text: {fileID: 606852734}
+  panel: {fileID: 1503252705}
 --- !u!65 &329064542
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1400,10 +1400,10 @@ MonoBehaviour:
   neededCubes: 15
   greenMaterial: {fileID: 2100000, guid: c57e390fc54580e46923d295e674f25c, type: 2}
   confettisDelay: 1
-  youWon: {fileID: 0}
-  confetti: {fileID: 0}
-  text: {fileID: 0}
-  panel: {fileID: 0}
+  youWon: {fileID: 1868397250}
+  confetti: {fileID: 1868397249}
+  text: {fileID: 606852734}
+  panel: {fileID: 1503252705}
 --- !u!65 &403271016
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1859,10 +1859,10 @@ MonoBehaviour:
   neededCubes: 15
   greenMaterial: {fileID: 2100000, guid: c57e390fc54580e46923d295e674f25c, type: 2}
   confettisDelay: 1
-  youWon: {fileID: 0}
-  confetti: {fileID: 0}
-  text: {fileID: 0}
-  panel: {fileID: 0}
+  youWon: {fileID: 1868397250}
+  confetti: {fileID: 1868397249}
+  text: {fileID: 606852734}
+  panel: {fileID: 1503252705}
 --- !u!65 &572219539
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2483,10 +2483,10 @@ MonoBehaviour:
   neededCubes: 15
   greenMaterial: {fileID: 2100000, guid: c57e390fc54580e46923d295e674f25c, type: 2}
   confettisDelay: 1
-  youWon: {fileID: 0}
-  confetti: {fileID: 0}
-  text: {fileID: 0}
-  panel: {fileID: 0}
+  youWon: {fileID: 1868397250}
+  confetti: {fileID: 1868397249}
+  text: {fileID: 606852734}
+  panel: {fileID: 1503252705}
 --- !u!65 &681558065
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2753,10 +2753,10 @@ MonoBehaviour:
   neededCubes: 15
   greenMaterial: {fileID: 2100000, guid: c57e390fc54580e46923d295e674f25c, type: 2}
   confettisDelay: 1
-  youWon: {fileID: 0}
-  confetti: {fileID: 0}
-  text: {fileID: 0}
-  panel: {fileID: 0}
+  youWon: {fileID: 1868397250}
+  confetti: {fileID: 1868397249}
+  text: {fileID: 606852734}
+  panel: {fileID: 1503252705}
 --- !u!65 &732888943
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3010,10 +3010,10 @@ MonoBehaviour:
   neededCubes: 15
   greenMaterial: {fileID: 2100000, guid: c57e390fc54580e46923d295e674f25c, type: 2}
   confettisDelay: 1
-  youWon: {fileID: 0}
-  confetti: {fileID: 0}
-  text: {fileID: 0}
-  panel: {fileID: 0}
+  youWon: {fileID: 1868397250}
+  confetti: {fileID: 1868397249}
+  text: {fileID: 606852734}
+  panel: {fileID: 1503252705}
 --- !u!65 &765675403
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3260,10 +3260,10 @@ MonoBehaviour:
   neededCubes: 15
   greenMaterial: {fileID: 2100000, guid: c57e390fc54580e46923d295e674f25c, type: 2}
   confettisDelay: 1
-  youWon: {fileID: 0}
-  confetti: {fileID: 0}
-  text: {fileID: 0}
-  panel: {fileID: 0}
+  youWon: {fileID: 1868397250}
+  confetti: {fileID: 1868397249}
+  text: {fileID: 606852734}
+  panel: {fileID: 1503252705}
 --- !u!65 &862828944
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3449,10 +3449,10 @@ MonoBehaviour:
   neededCubes: 15
   greenMaterial: {fileID: 2100000, guid: c57e390fc54580e46923d295e674f25c, type: 2}
   confettisDelay: 1
-  youWon: {fileID: 0}
-  confetti: {fileID: 0}
-  text: {fileID: 0}
-  panel: {fileID: 0}
+  youWon: {fileID: 1868397250}
+  confetti: {fileID: 1868397249}
+  text: {fileID: 606852734}
+  panel: {fileID: 1503252705}
 --- !u!65 &879869507
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4180,10 +4180,10 @@ MonoBehaviour:
   neededCubes: 15
   greenMaterial: {fileID: 2100000, guid: c57e390fc54580e46923d295e674f25c, type: 2}
   confettisDelay: 1
-  youWon: {fileID: 0}
-  confetti: {fileID: 0}
-  text: {fileID: 0}
-  panel: {fileID: 0}
+  youWon: {fileID: 1868397250}
+  confetti: {fileID: 1868397249}
+  text: {fileID: 606852734}
+  panel: {fileID: 1503252705}
 --- !u!65 &979416329
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4755,10 +4755,10 @@ MonoBehaviour:
   neededCubes: 15
   greenMaterial: {fileID: 2100000, guid: c57e390fc54580e46923d295e674f25c, type: 2}
   confettisDelay: 1
-  youWon: {fileID: 0}
-  confetti: {fileID: 0}
-  text: {fileID: 0}
-  panel: {fileID: 0}
+  youWon: {fileID: 1868397250}
+  confetti: {fileID: 1868397249}
+  text: {fileID: 606852734}
+  panel: {fileID: 1503252705}
 --- !u!65 &1146766068
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6299,10 +6299,10 @@ MonoBehaviour:
   neededCubes: 15
   greenMaterial: {fileID: 2100000, guid: c57e390fc54580e46923d295e674f25c, type: 2}
   confettisDelay: 1
-  youWon: {fileID: 0}
-  confetti: {fileID: 0}
-  text: {fileID: 0}
-  panel: {fileID: 0}
+  youWon: {fileID: 1868397250}
+  confetti: {fileID: 1868397249}
+  text: {fileID: 606852734}
+  panel: {fileID: 1503252705}
 --- !u!65 &1420923214
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7051,10 +7051,10 @@ MonoBehaviour:
   neededCubes: 15
   greenMaterial: {fileID: 2100000, guid: c57e390fc54580e46923d295e674f25c, type: 2}
   confettisDelay: 1
-  youWon: {fileID: 0}
-  confetti: {fileID: 0}
-  text: {fileID: 0}
-  panel: {fileID: 0}
+  youWon: {fileID: 1868397250}
+  confetti: {fileID: 1868397249}
+  text: {fileID: 606852734}
+  panel: {fileID: 1503252705}
 --- !u!65 &1538309506
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7240,10 +7240,10 @@ MonoBehaviour:
   neededCubes: 15
   greenMaterial: {fileID: 2100000, guid: c57e390fc54580e46923d295e674f25c, type: 2}
   confettisDelay: 1
-  youWon: {fileID: 0}
-  confetti: {fileID: 0}
-  text: {fileID: 0}
-  panel: {fileID: 0}
+  youWon: {fileID: 1868397250}
+  confetti: {fileID: 1868397249}
+  text: {fileID: 606852734}
+  panel: {fileID: 1503252705}
 --- !u!65 &1562424616
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8108,10 +8108,10 @@ MonoBehaviour:
   neededCubes: 15
   greenMaterial: {fileID: 2100000, guid: c57e390fc54580e46923d295e674f25c, type: 2}
   confettisDelay: 1
-  youWon: {fileID: 0}
-  confetti: {fileID: 0}
-  text: {fileID: 0}
-  panel: {fileID: 0}
+  youWon: {fileID: 1868397250}
+  confetti: {fileID: 1868397249}
+  text: {fileID: 606852734}
+  panel: {fileID: 1503252705}
 --- !u!114 &1826526445
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8297,10 +8297,10 @@ MonoBehaviour:
   neededCubes: 15
   greenMaterial: {fileID: 2100000, guid: c57e390fc54580e46923d295e674f25c, type: 2}
   confettisDelay: 1
-  youWon: {fileID: 0}
-  confetti: {fileID: 0}
-  text: {fileID: 0}
-  panel: {fileID: 0}
+  youWon: {fileID: 1868397250}
+  confetti: {fileID: 1868397249}
+  text: {fileID: 606852734}
+  panel: {fileID: 1503252705}
 --- !u!114 &1854843552
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8514,6 +8514,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e9256cee0e1be644e92c65d9e233327e, type: 3}
+--- !u!1 &1868397249 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6181925211596575537, guid: e9256cee0e1be644e92c65d9e233327e, type: 3}
+  m_PrefabInstance: {fileID: 1868397248}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1868397250 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1192289702400668870, guid: e9256cee0e1be644e92c65d9e233327e, type: 3}
+  m_PrefabInstance: {fileID: 1868397248}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1902879983
 GameObject:
   m_ObjectHideFlags: 0

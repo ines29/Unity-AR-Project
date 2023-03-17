@@ -32,7 +32,9 @@ public class GrowFlowerTest : MonoBehaviour
 
     public void growButton()
     {
+        Debug.Log("Flower grow");
         hasStartedGrowing = true;
+        gameObject.SetActive(true);
         StartCoroutine(IncreaseGrowth());
     }
 

@@ -8,6 +8,7 @@ public class manager : MonoBehaviour
     public setCalendarDate calendarDate;
     //public GameObject vuforiaStuff;
     public GameObject targets;
+    public GrowFlowerTest flower;
 
     // Start is called before the first frame update
     void Start()
@@ -23,6 +24,10 @@ public class manager : MonoBehaviour
             inPresentTime = true;
             calendarDate.changeDateOfCalendar(inPresentTime);
             targets.SetActive(true);
+            if (PlayerProgress.isWatered)
+            {
+                flower.growButton();
+            }
             //Prüfe wassersensor
             //vuforiaStuff.SetActive(true);
             //unser Stuff

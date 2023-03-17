@@ -10,6 +10,7 @@ public static class PlayerProgress
     public static bool wonJigsaw { get; set; }
     public static bool wonSchiebepuzzle { get; set; }
     public static bool wonLabyrinth { get; set; }
+    public static bool isWatered { get; set; };
 
 
 }

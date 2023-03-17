@@ -8,6 +8,7 @@ public class OverallManagerScript : MonoBehaviour
     // Start is called before the first frame update
     public TMPro.TextMeshPro text;
     public GameObject infopanel;
+    public OpenLock myLock;
    
     void Start()
     {
@@ -46,6 +47,11 @@ public class OverallManagerScript : MonoBehaviour
             infopanel.SetActive(true);
 
 
+        }
+
+        if (solved == 6)
+        {
+            myLock.openRemoteBox();
         }
 
 

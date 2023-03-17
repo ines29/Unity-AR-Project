@@ -2188,6 +2188,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1047648384}
   - component: {fileID: 1047648385}
+  - component: {fileID: 1047648386}
   m_Layer: 0
   m_Name: OverallManager
   m_TagString: Untagged
@@ -2223,6 +2224,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: {fileID: 2119042220}
   infopanel: {fileID: 8494443047433613357}
+  myLock: {fileID: 1047648386}
+--- !u!114 &1047648386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1047648383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb9fd34954d3b1e409704d3d01df1fc3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1136722154 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: be48b9ffc566316488278a8801e25fce, type: 3}

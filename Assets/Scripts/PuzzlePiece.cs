@@ -61,7 +61,10 @@ public class PuzzlePiece : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        inRightPosition = false;
+        if (other.name == gameObject.name + " Placeholder")
+        {
+            inRightPosition = false;
+        }
     }
     public void Snap()
     {

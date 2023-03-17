@@ -23,7 +23,7 @@ public class manager : MonoBehaviour
         {
             inPresentTime = true;
             calendarDate.changeDateOfCalendar(inPresentTime);
-            targets.SetActive(true);
+            //targets.SetActive(true);
             if (PlayerProgress.isWatered)
             {
                 flower.growButton();
@@ -36,7 +36,7 @@ public class manager : MonoBehaviour
             inPresentTime = false;
             calendarDate.changeDateOfCalendar(inPresentTime);
             //vuforiaStuff.SetActive(false); //unser Stuff
-            targets.SetActive(false);
+            //targets.SetActive(false);
         }
     }
 }

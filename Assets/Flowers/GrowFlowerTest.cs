@@ -17,6 +17,7 @@ public class GrowFlowerTest : MonoBehaviour
     public GameObject textObject2;
     public GameObject textObject3;
     public GameObject button;
+    public GameObject flower;
 
     //public TextMeshProUGUI flowerText;  // Drag & Drop Text Objekt auf dieses Feld im Inspector
     /* void Update()
@@ -80,6 +81,7 @@ public class GrowFlowerTest : MonoBehaviour
     {
         GetComponent<NearInteractionGrabbable>().enabled = false;
         GetComponent<ObjectManipulator>().enabled = false;
+        gameObject.SetActive(false);
         Destroy(button);
 
     }

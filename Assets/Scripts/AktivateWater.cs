@@ -10,7 +10,6 @@ public class AktivateWater : MonoBehaviour
     public float periodSeconds = 1f;
     public bool isWater = false;
     public UnityEvent onChange;
-    public GrowFlowerTest flower;
     bool flowerGrew = false;
     void Update()
     {

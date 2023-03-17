@@ -647,6 +647,10 @@ PrefabInstance:
       propertyPath: mTrackableName
       value: Kalender
       objectReference: {fileID: 0}
+    - target: {fileID: 2697970407331756076, guid: 6380d171c58741144a466697d713ca2f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 9151586206757831184, guid: 6380d171c58741144a466697d713ca2f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 6380d171c58741144a466697d713ca2f, type: 3}

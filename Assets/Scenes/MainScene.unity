@@ -6326,7 +6326,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2240948198337413583
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7395,7 +7395,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &8494443047433613358
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8164,7 +8164,6 @@ GameObject:
   - component: {fileID: 8494443048326080646}
   - component: {fileID: 8494443048326080647}
   - component: {fileID: 8494443048326080644}
-  - component: {fileID: 8494443048326080645}
   m_Layer: 0
   m_Name: Close
   m_TagString: Untagged
@@ -8191,34 +8190,6 @@ MonoBehaviour:
   localCenter: {x: 0, y: 0, z: -0.008}
   bounds: {x: 0.032, y: 0.032}
   touchableCollider: {fileID: 8494443048326080651}
---- !u!114 &8494443048326080645
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8494443048326080643}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2cf098d972aeb8b4daa70b00381af006, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mainLabelText: {fileID: 8494443048084309339}
-  interactable: {fileID: 8494443048326080646}
-  seeItSayItLabel: {fileID: 8494443048497439776}
-  seeItSayItLabelText: {fileID: 8494443047868066230}
-  iconStyle: 0
-  iconCharLabel: {fileID: 8494443047037144602}
-  iconCharFont: {fileID: 0}
-  iconChar: 0
-  iconSpriteRenderer: {fileID: 8494443046784766973}
-  iconSprite: {fileID: 21300000, guid: 20f25674b9512834f88938d45ed495d7, type: 3}
-  iconQuadRenderer: {fileID: 8494443048541734850}
-  iconQuadTextureNameID: _MainTex
-  iconQuadTexture: {fileID: 0}
-  defaultButtonQuadMaterial: {fileID: 2100000, guid: fa419ab56051229449e3b813df8f295f, type: 2}
-  iconSet: {fileID: 11400000, guid: 8b386ef895f7c924f8c4b03d1d3ed683, type: 2}
-  defaultIconSet: {fileID: 11400000, guid: 8b386ef895f7c924f8c4b03d1d3ed683, type: 2}
 --- !u!114 &8494443048326080646
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -1,6 +1,8 @@
 using UnityEngine;
 using System.Collections;
 using TMPro;
+using Microsoft.MixedReality.Toolkit.Input;
+using Microsoft.MixedReality.Toolkit.UI;
 
 public class GrowFlowerTest : MonoBehaviour
 {
@@ -14,6 +16,7 @@ public class GrowFlowerTest : MonoBehaviour
     public GameObject textObject1;
     public GameObject textObject2;
     public GameObject textObject3;
+    public GameObject button;
 
     //public TextMeshProUGUI flowerText;  // Drag & Drop Text Objekt auf dieses Feld im Inspector
     /* void Update()
@@ -29,7 +32,9 @@ public class GrowFlowerTest : MonoBehaviour
 
     public void growButton()
     {
+        Debug.Log("Flower grow");
         hasStartedGrowing = true;
+        gameObject.SetActive(true);
         StartCoroutine(IncreaseGrowth());
     }
 
@@ -68,6 +73,14 @@ public class GrowFlowerTest : MonoBehaviour
             textObject2.SetActive(false);
             textObject3.SetActive(false);
         }
+
+    }
+
+    public void stoppMoving()
+    {
+        GetComponent<NearInteractionGrabbable>().enabled = false;
+        GetComponent<ObjectManipulator>().enabled = false;
+        Destroy(button);
 
     }
 
